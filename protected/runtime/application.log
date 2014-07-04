@@ -1,0 +1,1156 @@
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery-1.9.1.min.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/f...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/functions.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/e...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/easing.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.columnizer.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.hoverdir.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/playlist.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.feedBackBox.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/img/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/img/musicstore_clr.png
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/e...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/easing.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/playlist.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.hoverdir.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.columnizer.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/f...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/functions.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.feedBackBox.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/img/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/img/musicstore_clr.png
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery-1.9.1.min.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/e...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/easing.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/playlist.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.hoverdir.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.columnizer.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/f...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/functions.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.feedBackBox.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/e...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/easing.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/playlist.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.hoverdir.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.columnizer.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/f...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/functions.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/06/30 17:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.feedBackBox.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.hoverdir.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/playlist.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/f...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/functions.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.columnizer.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery-1.9.1.min.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/e...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/easing.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/img/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/img/musicstore_clr.png
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.feedBackBox.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/e...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/easing.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/playlist.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.hoverdir.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.columnizer.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/f...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/functions.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.feedBackBox.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:10:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/img/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/img/musicstore_clr.png
+---
+2014/07/01 14:12:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery-1.9.1.min.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/e...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/easing.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.hoverdir.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.columnizer.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/playlist.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/f...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/functions.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.feedBackBox.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/img/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/img/musicstore_clr.png
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/e...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/easing.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/p...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/playlist.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.hoverdir.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.columnizer.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/f...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/functions.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/js/j...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/js/jquery.feedBackBox.js
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 14:12:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "files".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('files')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('files')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/files/img/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/files/img/musicstore_clr.png
+---
+2014/07/01 14:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registration.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('registration.ht...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('registration.ht...')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/registrati...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/registration.html
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 16:28:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registration.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('registration.ht...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('registration.ht...')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/registrati...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/registration.html
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 16:31:45 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "signup".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 16:32:55 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "signup".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 16:33:05 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "signup".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 16:33:06 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "signup".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/login
+---
+2014/07/01 16:33:09 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "signup".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 16:33:27 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "signup".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', NULL, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(102): CController->render('signup')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 16:33:28 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "signup".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', NULL, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(102): CController->render('signup')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 16:34:45 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "signup".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', NULL, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(102): CController->render('signup')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 16:34:46 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "signup".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', NULL, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(102): CController->render('signup')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 16:35:17 [error] [php] Undefined variable: model (C:\wamp\www\Hai_interactive\demo\musicstore\protected\views\site\signup.php:36)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(102): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/site/signup
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\views\site\signup.php (36)
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (102)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/01 16:50:34 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.email" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('email')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(LoginForm), 'email')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(LoginForm), 'email', Array)
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(655): CHtml::activeTextField(Object(LoginForm), 'email', Array)
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\protected\views\site\signup.php(37): CActiveForm->textField(Object(LoginForm), 'email', Array)
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#9 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#11 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 16:52:52 [error] [exception.CException] exception 'CException' with message 'Property "Users.username" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('username')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('username')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Users), 'username')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Users), 'username', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(655): CHtml::activeTextField(Object(Users), 'username', Array)
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\protected\views\site\signup.php(36): CActiveForm->textField(Object(Users), 'username', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 16:52:53 [error] [exception.CException] exception 'CException' with message 'Property "Users.username" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('username')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('username')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Users), 'username')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Users), 'username', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(655): CHtml::activeTextField(Object(Users), 'username', Array)
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\protected\views\site\signup.php(36): CActiveForm->textField(Object(Users), 'username', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 16:52:53 [error] [exception.CException] exception 'CException' with message 'Property "Users.username" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('username')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('username')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Users), 'username')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Users), 'username', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(655): CHtml::activeTextField(Object(Users), 'username', Array)
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\protected\views\site\signup.php(36): CActiveForm->textField(Object(Users), 'username', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 16:53:48 [error] [exception.CException] exception 'CException' with message 'Property "Users.email" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('email')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('email')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Users), 'email')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Users), 'email', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(655): CHtml::activeTextField(Object(Users), 'email', Array)
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\protected\views\site\signup.php(37): CActiveForm->textField(Object(Users), 'email', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 16:54:05 [error] [exception.CException] exception 'CException' with message 'Property "Users.password" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('password')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('password')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Users), 'password')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1351): CHtml::activeInputField('password', Object(Users), 'password', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(685): CHtml::activePasswordField(Object(Users), 'password', Array)
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\protected\views\site\signup.php(39): CActiveForm->passwordField(Object(Users), 'password', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(103): CController->render('signup', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 17:39:58 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_repassword" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('user_repassword')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('user_repassword')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Users), 'user_repassword')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1351): CHtml::activeInputField('password', Object(Users), 'user_repassword', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(685): CHtml::activePasswordField(Object(Users), 'user_repassword', Array)
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\protected\views\site\signup.php(40): CActiveForm->passwordField(Object(Users), 'user_repassword', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(122): CController->render('signup', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 17:39:58 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_repassword" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('user_repassword')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('user_repassword')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Users), 'user_repassword')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1351): CHtml::activeInputField('password', Object(Users), 'user_repassword', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(685): CHtml::activePasswordField(Object(Users), 'user_repassword', Array)
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\protected\views\site\signup.php(40): CActiveForm->passwordField(Object(Users), 'user_repassword', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(122): CController->render('signup', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+---
+2014/07/01 17:51:58 [error] [php] Undefined index: user_last_name (C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/site/signup
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (118)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/01 17:53:10 [error] [php] Undefined index: user_last_name (C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/site/signup
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (118)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/01 17:53:38 [error] [php] Undefined index: user_last_name (C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/site/signup
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (118)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/01 17:54:19 [error] [php] Undefined index: user_last_name (C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/site/signup
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (118)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/01 17:55:03 [error] [php] Undefined index: user_last_name (C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/site/signup
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (118)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/01 17:56:09 [error] [php] Undefined index: user_last_name (C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/site/signup
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (118)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/01 17:56:23 [error] [php] Undefined index: user_email (C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php:119)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/site/signup
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (119)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/01 17:56:42 [error] [php] Undefined index: user_first_name (C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/site/signup
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (116)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/01 17:57:00 [error] [php] Undefined index: user_email (C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php:120)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/site/signup
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (120)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/01 18:36:48 [error] [exception.CException] exception 'CException' with message 'Property "Users.password" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('password')
+#1 C:\wamp\www\yii\framework\validators\CRequiredValidator.php(52): CActiveRecord->__get('password')
+#2 C:\wamp\www\yii\framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(Users), 'password')
+#3 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(Users), NULL)
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(116): CModel->validate()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/signup
+---
+2014/07/01 18:36:57 [error] [exception.CException] exception 'CException' with message 'Property "Users.repeat_password" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('repeat_password')
+#1 C:\wamp\www\yii\framework\validators\CRequiredValidator.php(52): CActiveRecord->__get('repeat_password')
+#2 C:\wamp\www\yii\framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(Users), 'repeat_password')
+#3 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(Users), NULL)
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php(116): CModel->validate()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/musicstore/index.php/site/signup
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/signup
+---
+2014/07/01 18:42:19 [warning] [application] Failed to set unsafe attribute "user_repassword" of "Users".
+in C:\wamp\www\Hai_interactive\demo\musicstore\protected\controllers\SiteController.php (114)
+in C:\wamp\www\Hai_interactive\demo\musicstore\index.php (13)
+2014/07/02 17:17:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('index.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('index.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.html')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/index.html
+HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/index
+---
