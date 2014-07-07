@@ -1154,3 +1154,178 @@ Stack trace:
 REQUEST_URI=/musicstore/index.php/site/index.html
 HTTP_REFERER=http://demo.localhost.com/musicstore/index.php/site/index
 ---
+2014/07/05 14:15:28 [error] [php] Use of undefined constant onclick - assumed 'onclick' (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\site\login.php:42)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(97): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/site/login
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\site\login.php (42)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php (97)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/07 16:52:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(619): CApplication->getDb()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Users))
+#7 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(398): CActiveRecord::model('Users')
+#8 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(11): CActiveRecord->__construct()
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UsersController->actionFbconnect()
+#11 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('fbconnect')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/fbconnect')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/musicestore/index.php/users/fbconnect
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/07 16:52:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(619): CApplication->getDb()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Users))
+#7 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(398): CActiveRecord::model('Users')
+#8 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(11): CActiveRecord->__construct()
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UsersController->actionFbconnect()
+#11 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('fbconnect')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/fbconnect')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/musicestore/index.php/users/fbconnect
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/07 17:22:40 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_thumb" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('user_thumb')
+#1 C:\wamp\www\yii\framework\validators\CStringValidator.php(80): CActiveRecord->__get('user_thumb')
+#2 C:\wamp\www\yii\framework\validators\CValidator.php(214): CStringValidator->validateAttribute(Object(Users), 'user_thumb')
+#3 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(Users), NULL)
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(14): CModel->validate()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UsersController->actionFbconnect()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('fbconnect')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/fbconnect')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/musicestore/index.php/users/fbconnect
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/07 17:25:00 [error] [php] Undefined variable: response (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:36)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/fbconnect
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (36)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/07 17:32:45 [error] [exception.CException] exception 'CException' with message 'Property "Users.id" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id')
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(22): CActiveRecord->__get('id')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UsersController->actionFbconnect()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('fbconnect')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/fbconnect')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/users/fbconnect
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/07 17:34:23 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_avatar" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('user_avatar', '')
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(28): CActiveRecord->__set('user_avatar', '')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UsersController->actionFbconnect()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('fbconnect')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/fbconnect')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/users/fbconnect
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/07 17:36:33 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_avatar" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('user_avatar', '')
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(28): CActiveRecord->__set('user_avatar', '')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UsersController->actionFbconnect()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('fbconnect')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/fbconnect')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/users/fbconnect
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/07 18:14:06 [error] [exception.CDbException] exception 'CDbException' with message 'Table "user_details" does not have a column named "user_email".' in C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(13): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UsersController->actionFb()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('fb')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/fb')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/users/fb
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/07 18:18:31 [error] [exception.CException] exception 'CException' with message 'UsersController and its behaviors do not have a method or closure named "Session".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(17): CComponent->__call('Session', Array)
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(17): CController->Session('msjvmv@gmail.co...')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UsersController->actionFb()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('fb')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/fb')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/users/fb
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---

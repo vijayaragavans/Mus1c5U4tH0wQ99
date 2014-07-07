@@ -150,7 +150,6 @@ class SiteController extends Controller
 	                    Yii::app()->session['user_first_name'] = $userData['user_first_name'];
 	                    Yii::app()->session['user_last_name'] = $userData['user_last_name'];
 	                    Yii::app()->session['user_email'] = $userData['user_email'];
-	                    Yii::app()->session['user_thumb'] = $userData['user_thumb'];
 	                    Yii::app()->session['user_created_on'] = $userData['user_created_on'];                    
 	                    Yii::app()->session['user_updated_on'] = $userData['user_updated_on'];                   
 	                    return true;

@@ -45,11 +45,11 @@ class Users extends CActiveRecord
 		return array(
 			array('user_first_name, user_last_name, user_email', 'required'),
 			 array('user_password, user_repassword', 'required', 'on'=>'insert'),
-			array('user_first_name, user_last_name, user_email, user_password, user_thumb', 'length', 'max'=>250),
+			array('user_first_name, user_last_name, user_email, user_password', 'length', 'max'=>250),
 			array('user_is_active', 'length', 'max'=>1),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('user_id, user_first_name, user_last_name, user_email, user_password, user_thumb, user_is_active, user_created_on, user_updated_on', 'safe', 'on'=>'search'),
+			array('user_id, user_first_name, user_last_name, user_email, user_password, user_is_active, user_created_on, user_updated_on', 'safe', 'on'=>'search'),
 			array('user_repassword', 'compare', 'compareAttribute'=>'user_password'),
 
 		);
@@ -77,7 +77,6 @@ class Users extends CActiveRecord
 			'user_last_name' => 'User Last Name',
 			'user_email' => 'User Email',
 			'user_password' => 'User Password',
-			'user_thumb' => 'User Thumb',
 			'user_is_active' => 'User Is Active',
 			'user_created_on' => 'User Created On',
 			'user_updated_on' => 'User Updated On',
@@ -100,7 +99,6 @@ class Users extends CActiveRecord
 		$criteria->compare('user_last_name',$this->user_last_name,true);
 		$criteria->compare('user_email',$this->user_email,true);
 		$criteria->compare('user_password',$this->user_password,true);
-		$criteria->compare('user_thumb',$this->user_thumb,true);
 		$criteria->compare('user_is_active',$this->user_is_active,true);
 		$criteria->compare('user_created_on',$this->user_created_on,true);
 		$criteria->compare('user_updated_on',$this->user_updated_on,true);
@@ -109,5 +107,6 @@ class Users extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
 
 }
