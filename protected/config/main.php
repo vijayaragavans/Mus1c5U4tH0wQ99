@@ -93,8 +93,13 @@ return array(
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
-	'params'=>array(
-		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
-	),
+		'params'=>array(
+			// this is used in contact page
+			'adminEmail'=>'webmaster@example.com',
+			'Fb_App_ID' => '298627920311869',			// Demo.haiinteractive.com
+			'Fb_URL' => 'http://demo.haiinteractive.com/musicestore'	// Demo.haiinteractive.com
+
+			//'Fb_App_ID' => '1468178786757324',			// Demo.localhost.com
+			//'Fb_URL' => 'http://demo.locahost.com/musicestore'	// Demo.localhost.com
+		),
 );

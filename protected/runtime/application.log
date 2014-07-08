@@ -1490,3 +1490,47 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/musicestore/index.php/site/login
 ---
+2014/07/08 18:36:31 [error] [php] Undefined index: HOST_NAME (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\site\fb.php:79)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\site\login.php(10): SiteController->renderPartial()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(98): SiteController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/site/login
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\site\fb.php (79)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\site\login.php (10)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php (98)
+2014/07/08 18:40:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(619): CApplication->getDb()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Users))
+#7 C:\wamp\www\Hai_interactive\demo\musicestore\protected\models\Users.php(27): CActiveRecord::model('Users')
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(15): Users::model()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UsersController->actionFb()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('fb')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/fb')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/musicestore/index.php/users/fb
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---

@@ -3,8 +3,8 @@
 <script language="javascript" type="text/javascript">
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '1468178786757324', // App ID
-      channelUrl : 'http://demo.localhost.com/musicestore/',
+      appId      : "<?php echo Yii::app()->params['Fb_App_ID']; ?>", // App ID
+      channelUrl : "<?php echo Yii::app()->params['Fb_URL']; ?>",
       status     : true, // check login status
       cookie     : true, // enable cookies to allow the server to access the session
       xfbml      : true  // parse XFBML
@@ -73,3 +73,4 @@ function getUserInfo() {
     </script>
 <div id="fb-root"></div>
 <input type='hidden' name='user_avatar' id='user_avatar' value="" />
+
