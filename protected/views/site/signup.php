@@ -7,6 +7,8 @@ $this->pageTitle=Yii::app()->name . ' - Signup';
 $this->breadcrumbs=array(
 	'Login',
 );
+$this->renderPartial('fb');
+
 ?>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css' />
   <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/form-style.css" rel="stylesheet" type="text/css" />
@@ -22,7 +24,7 @@ $this->breadcrumbs=array(
       <div class='line'></div>
       
       <!-- If you don't want a social buttons, delete all of these code -->
-        <a class='btn-facebook' href='#'>Connect with Facebook</a>
+        <a class='btn-facebook' href='#' onclick="FbLogin()">Connect with Facebook</a>
         <a class='btn-twitter' href='#'>Connect with Twitter</a>
 	<!-- <p class="note">Fields with <span class="required">*</span> are required.</p> -->
 <?php $form=$this->beginWidget('CActiveForm', array(

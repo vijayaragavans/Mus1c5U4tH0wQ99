@@ -13,9 +13,6 @@
  * @property string $user_avatar
  * @property string $user_source
  * @property string $user_detail_updated_on
- *
- * The followings are the available model relations:
- * @property Users $user
  */
 class UserDetails extends CActiveRecord
 {
@@ -45,7 +42,7 @@ class UserDetails extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, user_fb_id, user_profile_name, user_link, user_gender, user_avatar, user_source, user_detail_updated_on', 'required'),
+			array('user_id, user_fb_id, user_profile_name, user_source, user_detail_updated_on', 'required'),
 			array('user_id', 'numerical', 'integerOnly'=>true),
 			array('user_fb_id', 'length', 'max'=>20),
 			array('user_profile_name, user_link, user_avatar', 'length', 'max'=>250),
@@ -64,7 +61,6 @@ class UserDetails extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'user' => array(self::BELONGS_TO, 'Users', 'user_id'),
 		);
 	}
 

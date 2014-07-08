@@ -10,20 +10,23 @@ class UsersController extends Controller
 
 	public function actionFb(){
 		$user_email = Yii::app()->request->getPost('uemail');
+		$cat=Yii::app()->createController('site');//returns array containing controller instance and action index.
+		$cat=$cat[0]; //get the controller instance.
 		$details = Users::model()->findByAttributes(array( "user_email"=>$user_email ));
-		if( $details->user_id == null || empty($details->user_id) ){
+		if( is_null( $details ) || empty($details ) ){
 			$dr = $this->Fbconnect();
-			echo $dr;
+			$response = $cat->Session( $user_email ); //use a public method.
+			echo $response;
+			die;
 		}else{
-			$cat=Yii::app()->createController('site');//returns array containing controller instance and action index.
-			$cat=$cat[0]; //get the controller instance.
-			$cat->Session( $user_email ); //use a public method.
-			echo 1;
+			$response = $cat->Session( $user_email ); //use a public method.
+			print_r($response);
 			die;
 		}
 	}
 
 	public function Fbconnect(){
+		$cat=Yii::app()->createController('site');//returns array containing controller instance and action index.
 		$this->current_date =  date('Y-m-d H:i:s');
 		$model = new Users();
 		$model->user_first_name = Yii::app()->request->getPost('ufirstname');
@@ -44,6 +47,9 @@ class UsersController extends Controller
 				$user_details_model->user_source = 'facebook';
 				$user_details_model->user_detail_updated_on = $this->current_date;
 				$user_details_model->save();
+				$cat[0]->Session( $model->user_email ); 
+				echo 1;
+				die;
 
 			}
 

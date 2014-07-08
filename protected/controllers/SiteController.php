@@ -77,6 +77,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+		( Yii::app()->session['user_id'] > 0 ) ? $this->redirect( Yii::app()->baseUrl .'/index.php/site/index') : '';
 		$model=new LoginForm;
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
@@ -98,6 +99,7 @@ class SiteController extends Controller
 	}
 
 	public function actionSignup(){
+		( Yii::app()->session['user_id'] > 0 ) ? $this->redirect( Yii::app()->baseUrl .'/index.php/site/index') : '';
 		$model=new Users;
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='signup-form')
@@ -144,14 +146,19 @@ class SiteController extends Controller
 
 
 	public function Session( $email ){
-		$model=new Users;
-		        $userData = Users::model()->findByAttributes(array("user_email" => $email ));
+		      $userData = Users::model()->findByAttributes(array("user_email" => $email ));
+		      $details = UserDetails::model()->findByAttributes(array("user_id" => $userData['user_id'] ));
 	                    Yii::app()->session['user_id'] = $userData['user_id'];
+	                    Yii::app()->session['user_detail_id'] = $details['user_detail_id'];
+	                    Yii::app()->session['user_fb_id'] = $details['user_fb_id'];
+	                    Yii::app()->session['user_gender'] = $details['user_gender'];
+	                    Yii::app()->session['user_avatar'] = $details['user_avatar'];
 	                    Yii::app()->session['user_first_name'] = $userData['user_first_name'];
 	                    Yii::app()->session['user_last_name'] = $userData['user_last_name'];
 	                    Yii::app()->session['user_email'] = $userData['user_email'];
 	                    Yii::app()->session['user_created_on'] = $userData['user_created_on'];                    
 	                    Yii::app()->session['user_updated_on'] = $userData['user_updated_on'];                   
-	                    return true;
+	                    echo 1;
+	                    die;
 	}
 }

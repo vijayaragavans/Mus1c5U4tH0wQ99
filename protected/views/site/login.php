@@ -23,7 +23,7 @@ $this->renderPartial('fb');
       <div class='line'></div>
       
       <!-- If you don't want a social buttons, delete all of these code -->
-        <a class='btn-facebook' href='#' onclick = "FbLogin()">Connect with Facebook</a>
+        <a class='btn-facebook' href='#' onclick="FbLogin()">Connect with Facebook</a>
         <a class='btn-twitter' href='#'>Connect with Twitter</a>
 	<!-- <p class="note">Fields with <span class="required">*</span> are required.</p> -->
 <?php $form=$this->beginWidget('CActiveForm', array(
