@@ -56,7 +56,7 @@ class UsersController extends Controller
 				$user_details_model = new UserDetails();
 				$user_details_model->user_id = $model->user_id;
 				echo $user_fb_id;
-				$user_details_model->user_fb_id = '';
+				$user_details_model->user_fb_id = $user_fb_id;
 				$user_details_model->user_profile_name = $user_profile_name;
 				$user_details_model->user_link = $user_link;
 				$user_details_model->user_gender = $user_gender;
