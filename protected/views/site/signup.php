@@ -25,6 +25,7 @@ $this->renderPartial('fb');
       
       <!-- If you don't want a social buttons, delete all of these code -->
         <a class='btn-facebook' href='#' onclick="FbLogin()">Connect with Facebook</a>
+        <a class='btn-google' href='<?php echo Yii::app()->request->baseUrl; ?>/index.php/users/Googleconnect' ><img src='<?php echo Yii::app()->request->baseUrl; ?>/files/img/google.png' style='  border-radius: 3px; height: 38px;margin-left: 8px;width: 205px;'/></a>
         <!-- <a class='btn-twitter' href='#'>Connect with Twitter</a> -->
 	<!-- <p class="note">Fields with <span class="required">*</span> are required.</p> -->
 <?php $form=$this->beginWidget('CActiveForm', array(

@@ -1534,3 +1534,597 @@ Stack trace:
 REQUEST_URI=/musicestore/index.php/users/fb
 HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
 ---
+2014/07/09 17:47:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(619): CApplication->getDb()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Users))
+#7 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(398): CActiveRecord::model('Users')
+#8 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(103): CActiveRecord->__construct()
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#11 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/musicestore/index.php/site/signup
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/12 16:41:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(619): CApplication->getDb()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Users))
+#7 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(398): CActiveRecord::model('Users')
+#8 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(103): CActiveRecord->__construct()
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#11 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/musicestore/index.php/site/signup
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/12 16:48:24 [error] [exception.CException] exception 'CException' with message 'Property "UserDetails.source" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('source', 'direct')
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(126): CActiveRecord->__set('source', 'direct')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSignup()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('signup')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/site/signup
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/signup
+---
+2014/07/12 18:33:17 [error] [php] Undefined variable: demo_scope (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:74)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (74)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:33:54 [error] [php] Undefined variable: demo_redirect_uri (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:74)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (74)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:38:46 [error] [php] header() expects parameter 3 to be long, string given (C:\wamp\www\yii\framework\web\CHttpRequest.php:763)
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(71): UsersController->redirect()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UsersController->actionGoogleconnect()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (71)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:42:25 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:111)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/sillEnUGvWFqCATrqunpdHXKaqtM.cm-mo-0ikcYRgrKXntQAax1g5cZXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (111)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (69)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:43:05 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:111)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/sillEnUGvWFqCATrqunpdHXKaqtM.cm-mo-0ikcYRgrKXntQAax1g5cZXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (111)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (69)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:43:50 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:111)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/sillEnUGvWFqCATrqunpdHXKaqtM.cm-mo-0ikcYRgrKXntQAax1g5cZXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (111)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (69)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:45:54 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:111)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/sillEnUGvWFqCATrqunpdHXKaqtM.cm-mo-0ikcYRgrKXntQAax1g5cZXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (111)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (69)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:47:26 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:111)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/sillEnUGvWFqCATrqunpdHXKaqtM.cm-mo-0ikcYRgrKXntQAax1g5cZXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (111)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (69)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:49:12 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:112)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/sillEnUGvWFqCATrqunpdHXKaqtM.cm-mo-0ikcYRgrKXntQAax1g5cZXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (112)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (69)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:50:13 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:112)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/sillEnUGvWFqCATrqunpdHXKaqtM.cm-mo-0ikcYRgrKXntQAax1g5cZXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (112)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (69)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:51:48 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:110)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/sillEnUGvWFqCATrqunpdHXKaqtM.cm-mo-0ikcYRgrKXntQAax1g5cZXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (110)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (69)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:53:21 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:112)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/sillEnUGvWFqCATrqunpdHXKaqtM.cm-mo-0ikcYRgrKXntQAax1g5cZXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (112)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (69)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:54:31 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:113)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/sillEnUGvWFqCATrqunpdHXKaqtM.cm-mo-0ikcYRgrKXntQAax1g5cZXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (113)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (70)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:56:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('Googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/Googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/12 18:56:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('Googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/Googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+---
+2014/07/12 18:56:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('Googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/Googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+---
+2014/07/12 18:57:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('Googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/Googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+---
+2014/07/12 18:57:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('Googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/Googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+---
+2014/07/12 18:57:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('Googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/Googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+---
+2014/07/12 18:58:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('Googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/Googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/login
+---
+2014/07/12 18:58:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('Googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/Googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+---
+2014/07/12 18:58:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/googleconnect
+---
+2014/07/12 18:59:13 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:115)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/googleconnect?code=asdasd
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (115)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (70)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 18:59:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/googleconnect
+---
+2014/07/12 19:05:17 [error] [exception.CException] exception 'CException' with message 'Property "UsersController.url" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php(7): CComponent->__set('url', '/musicestore/in...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(360): UsersController->__construct('users', NULL)
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(277): CWebApplication->createController('users/Googlecon...')
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/Googlecon...')
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/mrkP6KeXiwx4_4QpODDADesaS7Qx.0ukbxEVCHxgTgrKXntQAax0UM-tXjgI
+---
+2014/07/12 19:05:54 [error] [php] Function split() is deprecated (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:9)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(277): CWebApplication->createController()
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#2 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#3 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/mrkP6KeXiwx4_4QpODDADesaS7Qx.0ukbxEVCHxgTgrKXntQAax0UM-tXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (9)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:07:43 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:112)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/mrkP6KeXiwx4_4QpODDADesaS7Qx.0ukbxEVCHxgTgrKXntQAax0UM-tXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (112)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (67)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:08:50 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:112)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/mrkP6KeXiwx4_4QpODDADesaS7Qx.0ukbxEVCHxgTgrKXntQAax0UM-tXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (112)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (67)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:10:26 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:107)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/mrkP6KeXiwx4_4QpODDADesaS7Qx.0ukbxEVCHxgTgrKXntQAax0UM-tXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (107)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (67)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:10:50 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:106)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/mrkP6KeXiwx4_4QpODDADesaS7Qx.0ukbxEVCHxgTgrKXntQAax0UM-tXjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (106)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (67)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:11:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('Googleconnect')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('users/Googlecon...')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/musicestore/index.php/users/Googleconnect
+---
+2014/07/12 19:15:40 [error] [php] Missing argument 2 for UsersController::get_oauth2_token(), called in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php on line 69 and defined (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:82)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/7xbih0fcpfd1YC_EhO15ik85Quf_.8u3O-4KAbW0cgrKXntQAax38SQFYjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (82)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (69)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:16:26 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:107)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/7xbih0fcpfd1YC_EhO15ik85Quf_.8u3O-4KAbW0cgrKXntQAax38SQFYjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (107)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (68)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:17:14 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:109)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/J8WuO30ZzLhFF77n8j2G3VZ6-SEm.8qCH1VeXjswdgrKXntQAax1O0gZYjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (109)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (68)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:18:31 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:110)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/uzZHmMJZCmI5ljKZI3vldSb2zt_i.Ut9mj8Ptr18agrKXntQAax3QOglYjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (110)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (68)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:19:41 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:110)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/uzZHmMJZCmI5ljKZI3vldSb2zt_i.Ut9mj8Ptr18agrKXntQAax3QOglYjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (110)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (68)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:20:35 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:110)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/rcN9ZqXO93lkaOBvyoYtS_dG7IgN.ko6myK_DkjkZgrKXntQAax20HQ1YjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (110)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (68)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:23:31 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:110)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/JkGTPJC-F6GKgK9OF_aVE3_kMsOy.Mu-0mJflC5QdgrKXntQAax0cPg9YjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (110)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (68)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:25:10 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:110)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/JkGTPJC-F6GKgK9OF_aVE3_kMsOy.Mu-0mJflC5QdgrKXntQAax0cPg9YjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (110)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (68)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/12 19:27:02 [error] [php] Undefined property: stdClass::$access_token (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php:110)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): UsersController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): UsersController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UsersController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/EnF-AmRroFHkc2HZtIfDP0k7Jp4F.IlF07r_y-D8VgrKXntQAax1whhdYjgI
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (110)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (68)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)

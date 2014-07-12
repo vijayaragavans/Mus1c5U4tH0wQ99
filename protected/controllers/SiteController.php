@@ -5,6 +5,7 @@ class SiteController extends Controller
 	/**
 	 * Declares class-based actions.
 	 */
+	private $current_date;
 	public function actions()
 	{
 		return array(
@@ -99,6 +100,7 @@ class SiteController extends Controller
 	}
 
 	public function actionSignup(){
+		$this->current_date =  date('Y-m-d H:i:s');
 		( Yii::app()->session['user_id'] > 0 ) ? $this->redirect( Yii::app()->baseUrl .'/index.php/site/index') : '';
 		$model=new Users;
 		// if it is ajax validation request
@@ -120,14 +122,20 @@ class SiteController extends Controller
 				  $model->user_repassword= MD5( $_POST['Users']['user_repassword'] ) ;
 				  $model->user_password= MD5( $_POST['Users']['user_password'] ) ;
 				  $model->user_created_on = date('Y-m-d H:i:s');
-				 $model->save();
-				 /*
-				 *	Session Setup for User Information
-				 */
-					$this->Session( $_POST['Users']['user_email'] );
-				 //var_export($model->getErrors(), true);
+				 if( $model->save() ){
+				 	$response = new UserDetails();
+				 	$response->user_id = $model->user_id;
+				 	$response->user_source = 'direct';
+					$response->user_detail_updated_on = $this->current_date;
+				 	$response->save();
+					 /*
+					 *	Session Setup for User Information
+					 */
+					       $this->Session( $_POST['Users']['user_email'] );
+					 //var_export($model->getErrors(), true);
 
-				$this->redirect(Yii::app()->user->returnUrl);
+					$this->redirect(Yii::app()->user->returnUrl);
+				 }
 			}
 
 		}
@@ -159,6 +167,5 @@ class SiteController extends Controller
 	                    Yii::app()->session['user_created_on'] = $userData['user_created_on'];                    
 	                    Yii::app()->session['user_updated_on'] = $userData['user_updated_on'];                   
 	                    echo 1;
-	                    die;
 	}
 }
