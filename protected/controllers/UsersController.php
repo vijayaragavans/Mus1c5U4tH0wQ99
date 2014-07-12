@@ -65,7 +65,7 @@ class UsersController extends Controller
 				$user_details_model->save();
 				var_export($user_details_model->getErrors(), true);
 				$cat[0]->Session( $model->user_email ); 
-				echo 1;
+				echo 99;
 				die;
 
 			}
@@ -87,8 +87,9 @@ class UsersController extends Controller
 		 	 Yii::app()->session['accessToken'] = $this->get_oauth2_token( $client_id, $client_secret, $demo_redirect_uri, $code);
 			if (isset(Yii::app()->session['accessToken'])){
 			    $Obj = $this->call_api(Yii::app()->session['accessToken'],"https://www.googleapis.com/oauth2/v1/userinfo");	// Getting information from Google Plus
-    			$this->Store_User_Info( $Obj->given_name, $Obj->family_name, $Obj->email, md5('Paass121'), md5('Paass121'), $current_date, $Obj->id, $Obj->name, $Obj->link, $Obj->gender, $Obj->picture, 'google', $current_date );
-
+    			$response = $this->Store_User_Info( $Obj->given_name, $Obj->family_name, $Obj->email, md5('Paass121'), md5('Paass121'), $current_date, $Obj->id, $Obj->name, $Obj->link, $Obj->gender, $Obj->picture, 'google', $current_date );
+    				print_r($response);
+    				die;
 			}
 		}else{
 		$loginUrl = sprintf("https://accounts.google.com/o/oauth2/auth?scope=%s&state=%s&redirect_uri=%s&response_type=code&client_id=%s",$demo_scope,$state,$demo_redirect_uri,$client_id);
