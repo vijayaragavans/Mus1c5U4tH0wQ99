@@ -37,7 +37,10 @@ class UsersController extends Controller
 		$user_gender =  Yii::app()->request->getPost('ugender');
 		$user_avatar = Yii::app()->request->getPost('user_avatar');
 		$user_detail_updated_on = date('Y-m-d H:i:s');
-			$this->Store_User_Info( $user_first_name, $user_last_name, $user_email, $user_password, $user_repassword, $user_created_on, $user_fb_id, $user_profile_name, $user_link, $user_gender, $user_avatar, 'facebook', $user_detail_updated_on);
+			$respons = $this->Store_User_Info( $user_first_name, $user_last_name, $user_email, $user_password, $user_repassword, $user_created_on, $user_fb_id, $user_profile_name, $user_link, $user_gender, $user_avatar, 'facebook', $user_detail_updated_on);
+			if( $respons == 1){
+				$this->redirect(Yii::app()->user->returnUrl);
+			}
 	}
 
 
@@ -55,8 +58,7 @@ class UsersController extends Controller
 			if( $model->save() ){
 				$user_details_model = new UserDetails();
 				$user_details_model->user_id = $model->user_id;
-				echo $user_fb_id;
-				$user_details_model->user_fb_id = $user_fb_id;
+				$user_details_model->user_fb_id = '';
 				$user_details_model->user_profile_name = $user_profile_name;
 				$user_details_model->user_link = $user_link;
 				$user_details_model->user_gender = $user_gender;
@@ -87,9 +89,20 @@ class UsersController extends Controller
 		 	 Yii::app()->session['accessToken'] = $this->get_oauth2_token( $client_id, $client_secret, $demo_redirect_uri, $code);
 			if (isset(Yii::app()->session['accessToken'])){
 			    $Obj = $this->call_api(Yii::app()->session['accessToken'],"https://www.googleapis.com/oauth2/v1/userinfo");	// Getting information from Google Plus
-    			$response = $this->Store_User_Info( $Obj->given_name, $Obj->family_name, $Obj->email, md5('Paass121'), md5('Paass121'), $current_date, $Obj->id, $Obj->name, $Obj->link, $Obj->gender, $Obj->picture, 'google', $current_date );
-    				print_r($response);
-    				die;
+
+			$cat=Yii::app()->createController('site');//returns array containing controller instance and action index.
+			$cat=$cat[0]; //get the controller instance.
+			$details = Users::model()->findByAttributes(array( "user_email"=>$user_email ));
+			if( is_null( $details ) || empty($details ) ){
+   				$result = $this->Store_User_Info( $Obj->given_name, $Obj->family_name, $Obj->email, md5('Paass121'), md5('Paass121'), $current_date, $Obj->id, $Obj->name, $Obj->link, $Obj->gender, $Obj->picture, 'google', $current_date );
+ 				$response = $cat->Session( $user_email ); //use a public method.
+ 				if($result == 1){
+					$this->redirect(Yii::app()->user->returnUrl);
+ 				}
+			}else{
+				$response = $cat->Session( $user_email ); //use a public method.
+				$this->redirect(Yii::app()->user->returnUrl);
+			}
 			}
 		}else{
 		$loginUrl = sprintf("https://accounts.google.com/o/oauth2/auth?scope=%s&state=%s&redirect_uri=%s&response_type=code&client_id=%s",$demo_scope,$state,$demo_redirect_uri,$client_id);
