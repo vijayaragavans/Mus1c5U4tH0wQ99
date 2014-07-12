@@ -58,7 +58,7 @@ class UsersController extends Controller
 	public function actionGoogleconnect( ){
 		$client_id = "185689089285-1n0lph4srff9lil1sf0pjfrgkb9atffn.apps.googleusercontent.com"; //your client id
 		$client_secret = "7A2lgkpnBDvimoIdeFeSpUQv"; //your client secret
-		$demo_redirect_uri = "http://demo.localhost.com/musicestore/index.php/users/Googleconnect";
+		$demo_redirect_uri = "http://demo.haiinteractive.com/musicestore/index.php/users/Googleconnect";
 		$demo_scope = "email"; //google scope to access
 		$state = "profile"; //optional
 		$access_type = "offline"; //optional - allows for retrieval of refresh_token for offline access

@@ -82,7 +82,7 @@ h1 {
 }
 
 .btn-facebook {
-  margin-left: 30px;
+  margin-left: 15px;
   background-color: #3f8ff2;
   background-image: url(../design/fb-icon.png);
   background-image: url(../design/fb-icon.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4f74bf), to(#3f8ff2));
