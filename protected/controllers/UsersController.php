@@ -64,6 +64,7 @@ class UsersController extends Controller
 				$user_details_model->user_detail_updated_on = $user_detail_updated_on;
 				$user_details_model->save();
 				var_export($user_details_model->getErrors(), true);
+				die;
 				$cat[0]->Session( $model->user_email ); 
 				echo 99;
 				die;
