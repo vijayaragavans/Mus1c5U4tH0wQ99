@@ -68,8 +68,6 @@ class UsersController extends Controller
 				$user_details_model->save();
 				$cat[0]->Session( $model->user_email ); 
 				echo 1;
-				die;
-
 			}
 
 		}
