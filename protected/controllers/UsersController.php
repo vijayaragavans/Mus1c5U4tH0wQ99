@@ -25,26 +25,43 @@ class UsersController extends Controller
 	}
 
 	public function Fbconnect(){
+		$user_first_name = Yii::app()->request->getPost('ufirstname');
+		$user_last_name = Yii::app()->request->getPost('ulastname');
+		$user_email = Yii::app()->request->getPost('uemail');
+		$user_password = md5('Paass121');
+		$user_repassword = md5('Paass121');
+		$user_created_on = date('Y-m-d H:i:s');
+		$user_fb_id = Yii::app()->request->getPost('uid');
+		$user_profile_name = Yii::app()->request->getPost('uname');
+		$user_link = Yii::app()->request->getPost('user_link');
+		$user_gender =  Yii::app()->request->getPost('ugender');
+		$user_avatar = Yii::app()->request->getPost('user_avatar');
+		$user_detail_updated_on = date('Y-m-d H:i:s');
+			$this->Store_User_Info( $user_first_name, $user_last_name, $user_email, $user_password, $user_repassword, $user_created_on, $user_fb_id, $user_profile_name, $user_link, $user_gender, $user_avatar, 'facebook', $user_detail_updated_on);
+	}
+
+
+	public function Store_User_Info( $user_first_name, $user_last_name, $user_email, $user_password, $user_repassword, $user_created_on, $user_fb_id, $user_profile_name, $user_link, $user_gender, $user_avatar, $user_source, $user_detail_updated_on)
+	{
 		$cat=Yii::app()->createController('site');//returns array containing controller instance and action index.
-		$this->current_date =  date('Y-m-d H:i:s');
 		$model = new Users();
-		$model->user_first_name = Yii::app()->request->getPost('ufirstname');
-		$model->user_last_name = Yii::app()->request->getPost('ulastname');
-		$model->user_email = Yii::app()->request->getPost('uemail');
-		$model->user_password = md5('Paass121');
-		$model->user_repassword = md5('Paass121');
-		$model->user_created_on = date('Y-m-d H:i:s');
+		$model->user_first_name = $user_first_name;
+		$model->user_last_name = $user_last_name;
+		$model->user_email = $user_email;
+		$model->user_password = $user_password;
+		$model->user_repassword = $user_repassword;
+		$model->user_created_on = $user_created_on;
 		if($model->validate() ){
 			if( $model->save() ){
 				$user_details_model = new UserDetails();
 				$user_details_model->user_id = $model->user_id;
-				$user_details_model->user_fb_id = Yii::app()->request->getPost('uid');
-				$user_details_model->user_profile_name = Yii::app()->request->getPost('uname');
-				$user_details_model->user_link = Yii::app()->request->getPost('user_link');
-				$user_details_model->user_gender = Yii::app()->request->getPost('ugender');
-				$user_details_model->user_avatar = Yii::app()->request->getPost('user_avatar');
-				$user_details_model->user_source = 'facebook';
-				$user_details_model->user_detail_updated_on = $this->current_date;
+				$user_details_model->user_fb_id = $user_fb_id;
+				$user_details_model->user_profile_name = $user_profile_name;
+				$user_details_model->user_link = $user_link;
+				$user_details_model->user_gender = $user_gender;
+				$user_details_model->user_avatar = $user_avatar;
+				$user_details_model->user_source = $user_source;
+				$user_details_model->user_detail_updated_on = $user_detail_updated_on;
 				$user_details_model->save();
 				$cat[0]->Session( $model->user_email ); 
 				echo 1;
