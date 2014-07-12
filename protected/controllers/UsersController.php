@@ -79,15 +79,16 @@ class UsersController extends Controller
 		$demo_scope = "email"; //google scope to access
 		$state = "profile"; //optional
 		$access_type = "offline"; //optional - allows for retrieval of refresh_token for offline access
+		$current_date = date('Y-m-d H:i:s');
 		//Oauth 2.0: exchange token for session token so multiple calls can be made to api
 		$code = Yii::app()->getRequest()->getParam('code');
 		if(isset($code)){
 		 	 Yii::app()->session['accessToken'] = $this->get_oauth2_token( $client_id, $client_secret, $demo_redirect_uri, $code);
 			if (isset(Yii::app()->session['accessToken'])){
-			    $accountObj = $this->call_api(Yii::app()->session['accessToken'],"https://www.googleapis.com/oauth2/v1/userinfo");
-			    echo 'success' . Yii::app()->session['accessToken'];
-			    print_r($accountObj);
-			    die;
+			    $Obj = $this->call_api(Yii::app()->session['accessToken'],"https://www.googleapis.com/oauth2/v1/userinfo");	// Getting information from Google Plus
+			    echo $Obj['given_name'];
+    			$this->Store_User_Info( $Obj['given_name'], $Obj['family_name'], $Obj['email'], md5('Paass121'), md5('Paass121'), $current_date, $Obj['id'], $Obj['name'], $Obj['link'], $Obj['gender'], $Obj['picture'], 'google', $current_date);
+
 			}
 		}else{
 		$loginUrl = sprintf("https://accounts.google.com/o/oauth2/auth?scope=%s&state=%s&redirect_uri=%s&response_type=code&client_id=%s",$demo_scope,$state,$demo_redirect_uri,$client_id);
@@ -136,11 +137,7 @@ class UsersController extends Controller
 		  $curlheader[0] = "Authorization: Bearer " . $accessToken;
 		  curl_setopt($curl, CURLOPT_HTTPHEADER, $curlheader);
 		  $json_response = curl_exec($curl);
-		  print_r($json_response);
-		  print_r(curl_error($curl));
-		  die;
-		  curl_close($curl);
-		    
+		  curl_close($curl);		    
 		  $responseObj = json_decode($json_response);
 		  return $responseObj;      
 	}
