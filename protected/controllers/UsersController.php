@@ -93,12 +93,12 @@ class UsersController extends Controller
 			$details = Users::model()->findByAttributes(array( "user_email"=>$Obj->email ));
 			if( is_null( $details ) || empty($details ) ){
    				$result = $this->Store_User_Info( $Obj->given_name, $Obj->family_name, $Obj->email, md5('Paass121'), md5('Paass121'), $current_date, $Obj->id, $Obj->name, $Obj->link, $Obj->gender, $Obj->picture, 'google', $current_date );
- 				$response = $cat->Session( $user_email ); //use a public method.
+ 				$response = $cat->Session( $Obj->email ); //use a public method.
  				if($result == 1){
 					$this->redirect(Yii::app()->user->returnUrl);
  				}
 			}else{
-				$response = $cat->Session( $user_email ); //use a public method.
+				$response = $cat->Session( $Obj->email ); //use a public method.
 				$this->redirect(Yii::app()->user->returnUrl);
 			}
 			}
