@@ -90,7 +90,7 @@ class UsersController extends Controller
 
 			$cat=Yii::app()->createController('site');//returns array containing controller instance and action index.
 			$cat=$cat[0]; //get the controller instance.
-			$details = Users::model()->findByAttributes(array( "user_email"=>$user_email ));
+			$details = Users::model()->findByAttributes(array( "user_email"=>$Obj->email ));
 			if( is_null( $details ) || empty($details ) ){
    				$result = $this->Store_User_Info( $Obj->given_name, $Obj->family_name, $Obj->email, md5('Paass121'), md5('Paass121'), $current_date, $Obj->id, $Obj->name, $Obj->link, $Obj->gender, $Obj->picture, 'google', $current_date );
  				$response = $cat->Session( $user_email ); //use a public method.
