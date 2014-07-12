@@ -55,8 +55,6 @@ class UsersController extends Controller
 			if( $model->save() ){
 				$user_details_model = new UserDetails();
 				$user_details_model->user_id = $model->user_id;
-				echo $model->user_id. ' ' .$user_fb_id. ' ' .$user_profile_name. '  ' .$user_link. ' ' .$user_gender. ' ' .$user_avatar. ' ' .$user_source. ' ' .$user_detail_updated_on;
-				die;
 				$user_details_model->user_fb_id = $user_fb_id;
 				$user_details_model->user_profile_name = $user_profile_name;
 				$user_details_model->user_link = $user_link;
@@ -65,8 +63,6 @@ class UsersController extends Controller
 				$user_details_model->user_source = $user_source;
 				$user_details_model->user_detail_updated_on = $user_detail_updated_on;
 				$user_details_model->save();
-				var_export($user_details_model->getErrors(), true);
-				die;
 				$cat[0]->Session( $model->user_email ); 
 				echo 99;
 				die;
