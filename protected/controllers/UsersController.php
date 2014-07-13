@@ -61,7 +61,7 @@ class UsersController extends Controller
 			if( $model->save() ){
 				$user_details_model = new UserDetails();
 				$user_details_model->user_id = $model->user_id;
-				$user_details_model->user_fb_id = "$user_fb_id";
+				$user_details_model->user_fb_id = $user_fb_id;
 				$user_details_model->user_profile_name = $user_profile_name;
 				$user_details_model->user_link = $user_link;
 				$user_details_model->user_gender = $user_gender;
@@ -95,7 +95,7 @@ class UsersController extends Controller
 			$cat=$cat[0]; //get the controller instance.
 			$details = Users::model()->findByAttributes(array( "user_email"=>$Obj->email ));
 			if( is_null( $details ) || empty($details ) ){
-   				$result = $this->Store_User_Info( $Obj->given_name, $Obj->family_name, $Obj->email, md5('Paass121'), md5('Paass121'), $current_date, $Obj->id, $Obj->name, $Obj->link, $Obj->gender, $Obj->picture, 'google', $current_date );
+   				$result = $this->Store_User_Info( $Obj->given_name, $Obj->family_name, $Obj->email, md5('Paass121'), md5('Paass121'), $current_date, 9999, $Obj->name, $Obj->link, $Obj->gender, $Obj->picture, 'google', $current_date );
  				$response = $cat->Session( $Obj->email ); //use a public method.
 					$this->redirect(Yii::app()->user->returnUrl);
 			}else{
