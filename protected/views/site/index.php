@@ -41,7 +41,7 @@
 	                    <?php foreach( $songs as $song ){
  ?>	                        <li>
 			<a href="music-open.html">
-			<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/images/<?php echo $song->song_img_url; ?>" style='height:260px; width:260px;'/>
+			<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/images/songs_thumb/<?php echo $song->song_img_url; ?>" style='height:260px; width:260px;'/>
 	                                <div>
 	                                    <h3><?php echo $song->song_title; ?></h3>
 	                                    <span>Release date: March 28, 2013</span>
