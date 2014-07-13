@@ -30,7 +30,10 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$songs = TblSongs::model()->findAll(); 
+	              $criteria = new CDbCriteria;
+	              $criteria->order = "song_id desc";
+	              $criteria->limit = 12;
+		$songs = TblSongs::model()->findAll( $criteria ); 
 		$this->render('index',array('songs'=>$songs));
 	}
 
