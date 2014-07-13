@@ -2128,3 +2128,133 @@ REQUEST_URI=/musicestore/index.php/users/Googleconnect?state=profile&code=4/EnF-
 in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (110)
 in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UsersController.php (68)
 in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/13 11:45:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "music-open.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('music-open.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('music-open.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/music-open...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/site/music-open.html
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/13 11:45:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "music-open.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('music-open.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('music-open.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/music-open...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/site/music-open.html
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/13 11:55:46 [error] [php] include(Tblsongs.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(33): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/site/index
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php (33)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/13 11:55:57 [error] [php] include(TblSongs.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(33): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/site/index
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php (33)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/13 11:55:58 [error] [php] include(TblSongs.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(33): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/site/index
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php (33)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/13 11:57:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\gii\generators\model\ModelCode.php(56): CModule->__get('db')
+#5 C:\wamp\www\yii\framework\web\CFormModel.php(40): ModelCode->init()
+#6 C:\wamp\www\yii\framework\gii\CCodeGenerator.php(154): CFormModel->__construct()
+#7 C:\wamp\www\yii\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/musicestore/index.php/gii/model
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/gii/default/index
+---
+2014/07/13 12:09:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "music-open.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('music-open.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('music-open.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/music-open...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/site/music-open.html
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/13 12:09:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "music-open.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('music-open.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('music-open.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/music-open...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/site/music-open.html
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/13 14:00:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "music-open.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('music-open.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('music-open.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/music-open...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/site/music-open.html
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/13 14:00:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "music-open.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('music-open.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('music-open.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/music-open...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/site/music-open.html
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---

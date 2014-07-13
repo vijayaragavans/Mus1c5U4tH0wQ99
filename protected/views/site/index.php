@@ -38,171 +38,19 @@
 	<div class="col span_6_of_8">
 		<div id="covers_container">
 	                    <ul id="covers" class="group">
-	                        <li>
+	                    <?php foreach( $songs as $song ){
+ ?>	                        <li>
 			<a href="music-open.html">
-				<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/1.jpg" />
-				<div>
-	                                    <h3>World Destruction</h3>
-	                                    <span>Release date: March 28, 1992</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-				</div>
-	                            </a>
-	                        </li>
-	                        <li>
-		<a href="music-open.html">
-			<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/2.jpg" />
+			<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/images/<?php echo $song->song_img_url; ?>" style='height:260px; width:260px;'/>
 	                                <div>
-	                                    <h3>Only if you run</h3>
+	                                    <h3><?php echo $song->song_title; ?></h3>
 	                                    <span>Release date: March 28, 2013</span>
 	                                    <hr>
 	                                    <h4>Click for details</h4>
 	                                </div>
 	                            </a>
 	                        </li>
-	                        <li>
-	                            <a href="music-open.html">
-	                                <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/3.jpg" />
-	                                <div>
-	                                    <h3>The Distance</h3>
-	                                    <span>Release date: March 28, 2013</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-		<a href="music-open.html">
-			<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/4.jpg" />
-			<div>
-	                                    <h3>Space (I Belive in)</h3>
-	                                    <span>Release date: March 29, 1992</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-			</div>
-	                            </a>
-	                        </li>
-	                        <li>
-		<a href="music-open.html">
-			<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/5.jpg" />
-	                                <div>
-	                                    <h3>All Around the World</h3>
-	                                    <span>Release date: March 30, 2013</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="music-open.html">
-	                                <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/6.jpg" />
-	                                <div>
-	                                    <h3>Killing</h3>
-	                                    <span>Release date: March 1, 2013</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-	                                </div>
-	                            </a>
-	                        </li> 
-		<li>
-			<a href="music-open.html">
-				<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/7.jpg" />
-				<div>
-	                                    <h3>Last Stop: This Town</h3>
-	                                    <span>Release date: March 2, 1992</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-			</div>
-	                            </a>
-	                        </li>
-	                        <li>
-		<a href="music-open.html">
-			<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/8.jpg" />
-	                                <div>
-	                                    <h3>A small Victory</h3>
-	                                    <span>Release date: March 3, 2013</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="music-open.html">
-	                                <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/9.jpg" />
-	                                <div>
-	                                    <h3>Against the Ninja</h3>
-	                                    <span>Release date: March 4, 2013</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-	                                </div>
-	                            </a>
-	                        </li> 
-		<li>
-			<a href="music-open.html">
-				<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/10.jpg" />
-				<div>
-	                                    <h3>Come with me now</h3>
-	                                    <span>Release date: March 5, 1992</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-			</div>
-	                            </a>
-	                        </li>
-	                        <li>
-		<a href="music-open.html">
-			<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/11.jpg" />
-	                                <div>
-	                                    <h3>Basketball</h3>
-	                                    <span>Release date: March 5, 2013</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="music-open.html">
-	                                <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/12.jpg" />
-	                                <div>
-	                                    <h3>Mother Mother</h3>
-	                                    <span>Release date: March 6, 2013</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-	                                </div>
-	                            </a>
-	                        </li> 
-		<li>
-			<a href="music-open.html">
-				<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/13.jpg" />
-	                                <div>
-	                                    <h3>Red Right Hand</h3>
-	                                    <span>Release date: March 7, 2013</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="music-open.html">
-	                                <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/14.jpg" />
-	                                <div>
-	                                    <h3>Goin' out west</h3>
-	                                    <span>Release date: March 8, 2013</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-	                                </div>
-	                            </a>
-	                        </li>
-                            <li>
-	                            <a href="music-open.html">
-	                                <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/15.jpg" />
-	                                <div>
-	                                    <h3>We have a tehnical</h3>
-	                                    <span>Release date: March 9, 2013</span>
-	                                    <hr>
-	                                    <h4>Click for details</h4>
-	                                </div>
-	                            </a>
-	                        </li>  
+	                        <?php } ?>
 	                    </ul>
                     </div>
 	</div>				
