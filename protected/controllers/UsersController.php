@@ -2,6 +2,9 @@
 
 class UsersController extends Controller
 {
+	function __construct(){
+		ob_start();
+	}	
 	public function actionIndex()
 	{
 		$this->render('index');
@@ -58,7 +61,7 @@ class UsersController extends Controller
 			if( $model->save() ){
 				$user_details_model = new UserDetails();
 				$user_details_model->user_id = $model->user_id;
-				$user_details_model->user_fb_id = $user_fb_id;
+				$user_details_model->user_fb_id = "$user_fb_id";
 				$user_details_model->user_profile_name = $user_profile_name;
 				$user_details_model->user_link = $user_link;
 				$user_details_model->user_gender = $user_gender;
@@ -66,8 +69,8 @@ class UsersController extends Controller
 				$user_details_model->user_source = $user_source;
 				$user_details_model->user_detail_updated_on = $user_detail_updated_on;
 				$user_details_model->save();
-				$cat[0]->Session( $model->user_email ); 
-				echo 1;
+				$ses_Response = $cat[0]->Session( $model->user_email ); 
+				echo $ses_Response;
 			}
 
 		}
