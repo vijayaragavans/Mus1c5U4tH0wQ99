@@ -52,23 +52,23 @@ return array(
 		),
 */		// uncomment the following to use a MySQL database
 		
-		'db'=>array(
+/*		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=musicstore',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
 		),
-	
+*/	
 
-/*		'db'=>array(
+		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=rightern_musicstore',
 			'emulatePrepare' => true,
 			'username' => 'rightern_news',
 			'password' => 'M0nster.com',
 			'charset' => 'utf8',
 		),
-*/
+
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -96,10 +96,10 @@ return array(
 		'params'=>array(
 			// this is used in contact page
 			'adminEmail'=>'webmaster@example.com',
-/*			'Fb_App_ID' => '298627920311869',			// Demo.haiinteractive.com
+			'Fb_App_ID' => '298627920311869',			// Demo.haiinteractive.com
 			'Fb_URL' => 'http://demo.haiinteractive.com/musicestore'	// Demo.haiinteractive.com
-*/
-			'Fb_App_ID' => '1468178786757324',			// Demo.localhost.com
+
+/*			'Fb_App_ID' => '1468178786757324',			// Demo.localhost.com
 			'Fb_URL' => 'http://demo.locahost.com/musicestore'	// Demo.localhost.com
-		),
+*/		),
 );
