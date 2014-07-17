@@ -2258,3 +2258,689 @@ Stack trace:
 REQUEST_URI=/musicestore/index.php/site/music-open.html
 HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
 ---
+2014/07/14 17:04:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(619): CApplication->getDb()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(TblSongs))
+#7 C:\wamp\www\Hai_interactive\demo\musicestore\protected\models\TblSongs.php(25): CActiveRecord::model('TblSongs')
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(36): TblSongs::model()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/musicestore/
+HTTP_REFERER=http://demo.localhost.com/
+---
+2014/07/14 17:25:28 [error] [exception.CException] exception 'CException' with message 'UserdetailsController cannot find the requested view "index".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(12): CController->render('index')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/14 17:25:42 [error] [exception.CException] exception 'CException' with message 'UserdetailsController cannot find the requested view "fb".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php(10): CController->renderPartial('fb')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('editprofile', NULL, true)
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(12): CController->render('editprofile')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#7 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/14 17:25:58 [error] [php] Undefined variable: model (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:38)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(12): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (38)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (12)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 17:25:58 [error] [php] Undefined variable: model (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:38)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(12): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (38)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (12)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 17:26:45 [error] [exception.CException] exception 'CException' with message 'Property "UserDetails.username" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('username')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('username')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(UserDetails), 'username')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(UserDetails), 'username', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(655): CHtml::activeTextField(Object(UserDetails), 'username', Array)
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php(39): CActiveForm->textField(Object(UserDetails), 'username', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('editprofile', Array, true)
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(13): CController->render('editprofile', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/14 17:28:57 [error] [exception.CException] exception 'CException' with message 'Property "Users.password" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('password')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('password')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Users), 'password')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1351): CHtml::activeInputField('password', Object(Users), 'password', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(685): CHtml::activePasswordField(Object(Users), 'password', Array)
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php(41): CActiveForm->passwordField(Object(Users), 'password', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('editprofile', Array, true)
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(13): CController->render('editprofile', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/14 17:39:56 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_gender" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('user_gender')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('user_gender')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1656): CHtml::resolveValue(Object(Users), 'user_gender')
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(809): CHtml::activeRadioButtonList(Object(Users), 'user_gender', Array, Array)
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php(41): CActiveForm->radioButtonList(Object(Users), 'user_gender', Array, Array)
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('editprofile', Array, true)
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(13): CController->render('editprofile', Array)
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#11 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/14 17:40:04 [error] [php] strpos() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:2106)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1655): resolveNameID()
+#1 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(809): activeRadioButtonList()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php(41): CActiveForm->radioButtonList()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(96): UserdetailsController->renderInternal()
+#5 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#6 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#7 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(13): UserdetailsController->render()
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#9 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (41)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (13)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 17:40:52 [error] [php] include(UserDetailss.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(13): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (13)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 18:04:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_details.id' in 'on clause'. The SQL statement executed was: SELECT `users`.`user_id`, `users`.`user_first_name`, `users`.`user_last_name`, `users`.`user_email`, `users`.`user_password`, `users`.`user_is_active`, `users`.`user_created_on`, `users`.`user_updated_on` FROM `users` `users` JOIN user_details ON (users.user_id=user_details.id) WHERE users.user_id = 41 .
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (21)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 18:04:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_details.id' in 'on clause'. The SQL statement executed was: SELECT `users`.`user_id`, `users`.`user_first_name`, `users`.`user_last_name`, `users`.`user_email`, `users`.`user_password`, `users`.`user_is_active`, `users`.`user_created_on`, `users`.`user_updated_on` FROM `users` `users` JOIN user_details ON (users.user_id=user_details.id) WHERE users.user_id = 41 ' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1286): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1405): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(21): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/14 18:06:13 [error] [php] Trying to get property of non-object (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:38)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(22): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (38)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (22)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 18:06:30 [error] [php] Trying to get property of non-object (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:37)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(22): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (37)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (22)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 18:07:17 [error] [php] Undefined index: user_first_name (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:37)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(22): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (37)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (22)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 18:07:35 [error] [php] Undefined index: user_first_name (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:37)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(22): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (37)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (22)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 18:08:23 [error] [php] Trying to get property of non-object (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:37)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(22): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (37)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (22)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 18:12:26 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_avatar" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('user_avatar')
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php(23): CActiveRecord->__get('user_avatar')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('editprofile', Array, true)
+#6 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(22): CController->render('editprofile', Array)
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/14 18:17:47 [error] [exception.CException] exception 'CException' with message 'UserdetailsController and its behaviors do not have a method or closure named "getCommandBuilder".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1390): CComponent->__call('getCommandBuild...', Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1390): UserdetailsController->getCommandBuilder()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(22): CActiveRecord->find(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/14 18:21:55 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE users.user_id = 41  LIMIT 1.
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (20)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/14 18:21:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE users.user_id = 41  LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1286): CDbCommand->queryRow()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1391): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(20): CActiveRecord->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/14 18:22:15 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.from" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(18): CComponent->__set('from', 'users')
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/15 16:47:38 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.from" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(18): CComponent->__set('from', 'users')
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/15 16:51:58 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE users.user_id = 41  LIMIT 1.
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (20)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/15 16:51:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE users.user_id = 41  LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1286): CDbCommand->queryRow()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1391): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(20): CActiveRecord->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/15 16:55:17 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE users.user_id = 41  LIMIT 1.
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (20)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/15 16:55:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE users.user_id = 41  LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1286): CDbCommand->queryRow()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1391): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(20): CActiveRecord->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/15 16:55:37 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'on clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE user_details.user_id = 41  LIMIT 1.
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (20)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/15 16:55:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'on clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE user_details.user_id = 41  LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1286): CDbCommand->queryRow()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1391): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(20): CActiveRecord->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/15 16:55:39 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'on clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE user_details.user_id = 41  LIMIT 1.
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (20)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/15 16:55:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'on clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE user_details.user_id = 41  LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1286): CDbCommand->queryRow()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1391): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(20): CActiveRecord->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/15 16:55:40 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'on clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE user_details.user_id = 41  LIMIT 1.
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (20)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/15 16:55:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'on clause'. The SQL statement executed was: SELECT `t`.`user_id`, `t`.`user_first_name`, `t`.`user_last_name`, `t`.`user_email`, `t`.`user_password`, `t`.`user_is_active`, `t`.`user_created_on`, `t`.`user_updated_on` FROM `users` `t` LEFT JOIN user_details ON user_details.user_id=users.user_id WHERE user_details.user_id = 41  LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1286): CDbCommand->queryRow()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1391): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(20): CActiveRecord->find(Object(CDbCriteria))
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/07/15 17:00:27 [error] [php] Trying to get property of non-object (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:39)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(22): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (39)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (22)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/15 17:00:41 [error] [php] Trying to get property of non-object (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:40)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(22): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (40)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (22)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/15 17:00:42 [error] [php] Trying to get property of non-object (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:40)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(22): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (40)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (22)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/15 17:36:02 [error] [php] Attempt to assign property of non-object (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php:24)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (24)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/17 16:48:51 [error] [php] Undefined variable: data (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php:32)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (32)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/17 16:50:24 [error] [php] Undefined variable: users (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:39)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(32): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (39)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (32)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/17 16:50:25 [error] [php] Undefined variable: users (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php:39)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserdetailsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserdetailsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(32): UserdetailsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): UserdetailsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): UserdetailsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): UserdetailsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\userdetails\editprofile.php (39)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php (32)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/07/17 16:55:24 [error] [exception.CException] exception 'CException' with message 'UserdetailsController cannot find the requested view "index".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(7): CController->render('index')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/ind...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/index
+---
+2014/07/17 18:17:54 [error] [exception.CException] exception 'CException' with message 'UserdetailsController cannot find the requested view "editprofile".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('editprofile', Array, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(52): CController->render('editprofile', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/userdetails/editprofile
+---
+2014/07/17 18:17:58 [error] [exception.CException] exception 'CException' with message 'UserdetailsController cannot find the requested view "editprofile".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('editprofile', Array, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(52): CController->render('editprofile', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+---
+2014/07/17 18:18:45 [error] [exception.CException] exception 'CException' with message 'UserdetailsController cannot find the requested view "editprofile".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('editprofile', Array, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(52): CController->render('editprofile', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+---
+2014/07/17 18:19:20 [error] [exception.CException] exception 'CException' with message 'UserdetailsController cannot find the requested view "editprofile".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('editprofile', Array, true)
+#1 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\UserdetailsController.php(51): CController->render('editprofile', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserdetailsController->actionEditprofile()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('editprofile')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('userdetails/edi...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/musicestore/index.php/userdetails/editprofile
+---

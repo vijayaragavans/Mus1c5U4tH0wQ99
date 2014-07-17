@@ -71,11 +71,10 @@
 							<li><a href="etune/home.html">index-3</a></li>
 							<li><a href="#">Music</a></li>
 							<li><a href="#">Album</a></li>
-							<li><a href="#">Bio</a></li>
-							<li><a href="#">News</a></li>
 							<?php if( Yii::app()->session['user_first_name'] ==''){  ?>
 							<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/login">Login / Signup</a></li>
 							<?php }else{ ?>
+							<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/userdetails/editprofile">Edit Profile</a></li>
 							<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/logout"><?php echo Yii::app()->session['user_first_name']; ?>( Logout )</a></li>
 							<?php } ?>
 							<li class="nav-tab"><a id="contact-tab" href="#">Contact</a></li>
