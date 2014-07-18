@@ -96,10 +96,18 @@ return array(
 		'params'=>array(
 			// this is used in contact page
 			'adminEmail'=>'webmaster@example.com',
+			'AVATAR_MAX_SIZE'	=> "9000",	
+
 			'Fb_App_ID' => '298627920311869',			// Demo.haiinteractive.com
 			'Fb_URL' => 'http://demo.haiinteractive.com/musicestore'	// Demo.haiinteractive.com
+			'avatar_thumb_path' => '/home3/rightern/public_html/demo/musicestore/images/avatar/',		
+			'avatar_thumb_url' => 'http://demo.haiinteractive.com/musicestore/images/avatar/',
+
 
 /*			'Fb_App_ID' => '1468178786757324',			// Demo.localhost.com
-			'Fb_URL' => 'http://demo.locahost.com/musicestore'	// Demo.localhost.com
-*/		),
+			'Fb_URL' => 'http://demo.locahost.com/musicestore',	// Demo.localhost.com
+			'avatar_thumb_path' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/avatar/',
+			'avatar_thumb_url' => 'http://demo.localhost.com/musicestore/images/avatar/',
+*/
+		),
 );

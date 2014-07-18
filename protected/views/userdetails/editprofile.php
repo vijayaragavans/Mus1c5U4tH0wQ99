@@ -18,7 +18,9 @@ $this->renderPartial('../site/fb');
 <h1>Login</h1>
 
 <!-- <p>Please fill out the following form with your login credentials:</p> -->
-<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/<?php echo $userdetails['user_avatar']; ?>"  width='250' height='250' style='float:left; padding:25px;'/>
+<div id='preview'>
+	<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/avatar/<?php echo $userdetails['user_avatar']; ?>"  width='250' height='250' style='float:left; padding:25px;' id='avatar_img'/>	
+</div>
 <div class="form">
       <h1>Edit Profile</h1>
       <div class='line'></div>
@@ -34,6 +36,7 @@ $this->renderPartial('../site/fb');
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,
 	),
+	'htmlOptions'=>array('enctype'=>'multipart/form-data'),
 )); 
 ?>
 
@@ -42,7 +45,9 @@ $this->renderPartial('../site/fb');
 	              <?php echo $form->textField($model,'user_email', array('placeholder' => 'Email Address', 'value' => $model['user_email'] )); ?> <br/>
 		<?php echo $form->passwordField($model,'user_password', array('placeholder' => 'Change New Password', 'value' => '' )); ?><br />
 		<?php echo $form->passwordField($model,'user_repassword', array('placeholder' => 'Retype Password', 'value' => '' )); ?><br /><br />
-	              <?php echo $form->fileField($userdetails,'user_gender', array('placeholder' => 'User Avatar')); ?> 
+		<div id='imageloadstatus' style='display:none'><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/loader.gif" alt="Uploading...."/></div>
+	              <?php echo $form->fileField($userdetails,'user_avatar', array('placeholder' => 'User Avatar')); ?> 
+	              <input type='hidden' name='is_avatar_uploaded' id='is_avatar_uploaded' />
 		<?php echo CHtml::submitButton('Update Profile', array('class' => 'btn-orange')); ?>
 
 <?php $this->endWidget(); ?>
@@ -64,4 +69,31 @@ $this->renderPartial('../site/fb');
 			$(".error-box").css('display', 'block');
 		}
 	});
+</script>
+<script>
+ $(document).ready(function() { 
+		
+            $('#UserDetails_user_avatar').die('click').live('change', function()			{ 
+			           //$("#preview").html('');
+				$("#editprofile-form").ajaxForm({target: '#preview', 
+				     beforeSubmit:function(){ 
+				     	$("#is_avatar_uploaded").val('yes');
+					$("#imageloadstatus").show();
+					 $("#imageloadbutton").hide();
+					 }, 
+					success:function(){ 
+					  $("#avatar_img").remove();
+					  $("#is_avatar_uploaded").remove();
+					  $("#UserDetails_user_avatar").attr('value', '');
+					 $("#imageloadstatus").hide();
+					 $("#imageloadbutton").show();
+					}, 
+					error:function(){ 
+					 $("#imageloadstatus").hide();
+					$("#imageloadbutton").show();
+					} }).submit();
+					
+		
+			});
+        }); 
 </script>

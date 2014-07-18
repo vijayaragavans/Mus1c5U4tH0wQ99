@@ -94,13 +94,14 @@
 
 </div><!-- page -->
 
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery-1.9.1.min.js"></script>    
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.min.js"></script>    
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/easing.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/playlist.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.hoverdir.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.columnizer.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/functions.js"></script> 
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.feedBackBox.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.wallform.js"></script>
 
 
     <script type="text/javascript">
