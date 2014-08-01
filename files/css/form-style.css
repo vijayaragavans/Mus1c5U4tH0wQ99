@@ -82,7 +82,7 @@ h1 {
 }
 
 .btn-facebook {
-  margin-left: 15px;
+  margin-left: 30px;
   background-color: #3f8ff2;
   background-image: url(../design/fb-icon.png);
   background-image: url(../design/fb-icon.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4f74bf), to(#3f8ff2));
@@ -141,7 +141,7 @@ form input[type="text"], input[type="password"] {
   padding: 10px 14px 12px 14px;
   background-color: #f2f2f2;
   border: 1px solid #c8c8c8;
-  width: 366px;
+  width: 335px;
   color: #838383;
   margin: 10px 0 0 0;
   font-size: 15px;
@@ -149,7 +149,6 @@ form input[type="text"], input[type="password"] {
 
 form input[type="submit"] {
   padding: 8px 35px 10px 35px;
-  margin:20px 20px 20px 125px;
   font-size: 15px;
 }
 
@@ -187,7 +186,7 @@ form input[type="submit"]:hover {
 
 .forgotten-password-box input[type="text"]  {
   margin: 20px 10px 0 0;
-  width: 366px;
+  width: 213px;
 }
 
 /*TERMS AND CONDITIONS*/
@@ -215,10 +214,8 @@ label {
 }
 
 .error-message {
-/*  float: left;
+  float: left;
   margin: 24px 0 0 30px;
-*/
-    text-align: center;
 }
 
 .red {
@@ -234,22 +231,22 @@ label {
   margin: 30px 0 0 30px;
 }
 
-.error {
+.ipt-error {
   background-color: #f4b4b4 !important;
   border: 1px solid #d03e3e !important;
   color: #333 !important;
 }
 
-.error::-webkit-input-placeholder {
+.ipt-error::-webkit-input-placeholder {
     color:    #d03e3e;
 }
-.error:-moz-placeholder {
+.ipt-error:-moz-placeholder {
     color:    #d03e3e;
 }
-.error::-moz-placeholder {
+.ipt-error::-moz-placeholder {
     color:    #d03e3e;
 }
-.error:-ms-input-placeholder {
+.ipt-error:-ms-input-placeholder {
     color:    #d03e3e;
 }
 

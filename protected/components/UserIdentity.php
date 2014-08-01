@@ -19,6 +19,7 @@ class UserIdentity extends CUserIdentity
 	{
 
   		$user = Users::model()->findByAttributes(array('user_email'=>$this->username, 'user_password'=>md5($this->password) ));
+  		$userdetails = UserDetails::model()->findByAttributes( array( 'user_id' => $user->user_id ) );
 		/*$users=array(
 			// username => password
 			'demo'=>'demo',
@@ -31,12 +32,12 @@ class UserIdentity extends CUserIdentity
 	                        $this->errorCode=self::ERROR_PASSWORD_INVALID;
 	                } else { // Okay!
 	                    $this->errorCode=self::ERROR_NONE;
+	                    Yii::app()->session['is_user_loggedin'] = true;
 	                    Yii::app()->session['user_id'] = $user->user_id;
 	                    Yii::app()->session['user_first_name'] = $user->user_first_name;
 	                    Yii::app()->session['user_last_name'] = $user->user_last_name;
 	                    Yii::app()->session['user_email'] = $user->user_email;
-	                    Yii::app()->session['user_thumb'] = $user->user_thumb;
-	                    Yii::app()->session['user_thumb'] = $user->user_thumb;
+	                    Yii::app()->session['user_avatar'] = $userdetails->user_avatar;
 	                    Yii::app()->session['user_created_on'] = $user->user_created_on;                    
 	                    Yii::app()->session['user_updated_on'] = $user->user_updated_on;                    
 	                }

@@ -11,10 +11,17 @@
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/style.css" />
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/media-queries.css" />
 	<link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/jquery.feedBackBox.css" rel="stylesheet" type="text/css">
+	  <link rel='stylesheet' href='<?php echo Yii::app()->request->baseUrl; ?>/files/css/grid-style.css' media='screen' />
+	  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/font-awesome.css">
+	  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/sky-tabs.css">
+	  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/style.css">
+	  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/jquery.mCustomScrollbar.css">
+	  <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hover/css/AdminLTE.css" rel="stylesheet" type="text/css" />  
+	  <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hover/css/bootstrap.min.css" rel="stylesheet" type="text/css" />  
+
 	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/modernizr-2.6.2.dev.js"></script>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body>
@@ -28,60 +35,55 @@
     			<!-- Contact and Share toggle sections -->			
 		                <div class="section group">	
     				<!-- Contact toggle section -->
-					<div id="contact_toggle" class="group">
-	    				<!-- Contact main info -->
-				                        <div class="col span_4_of_8">
-							<h1>Let's get in touch</h1>
-							<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec mi in libero molestie posuere. Donec vel nisi eu augue consequat interdum. </h2>
-							<ul>
-								<li>Phone: 0999 999 999</li>
-								<li>Email: <a href="#">vijay@haiinteractive.com</a></li>
-								<li>Booking: <a href="#">admin@haiinteractive.com</a></li>
-							</ul>
-						</div>
-	    				<!-- Contact form -->
-						<div class="col span_4_of_8 group" id="contactFormContainer">
-							<form action="#" method="post" id="contactForm">
-								<input type="text" placeholder="Full Name" name="name" id="contactName" required/>
-								<input type="email" placeholder="Email Address" name="email" id="contactEmail" required/>
-								<input type="tel" placeholder="Phone Number" id="contactPhone" name="tel"/>
-								<textarea placeholder="Message" name="message" id="contactMessage" required></textarea>
-								<input type="submit" id="submit" name="submit" value="submit" />
-							</form>
-						</div>
-					</div>
-                    
-					<!-- Share toggle section -->
-					<div id="share_toggle" class="group">
-						<ul>
-							<li><h4>Share</h4></li>
-						</ul>
-					</div>                    
-				</div>
-                       
-    			<!-- Music player and Navigation sections -->			
-				<div class="section group">                
-					<!-- Logo and tagline -->   
-						<img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore_clr.png" style="padding-top:10px; padding-left:20px;" />
+			<!-- Share toggle section -->
+			<div id="share_toggle" class="group">
+				<ul>
+					<li><h4>Share</h4></li>
+				</ul>
+			</div>                    
+		</div>
+			<!-- Music player and Navigation sections -->			
+			<div class="section group">                
+				<!-- Logo and tagline -->   
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore_clr.png" style="padding-top:10px; padding-left:20px;" />
 
-					<!-- Navigation -->
-					<nav class="col span_5_of_8">
-						<ul>
-							<li><a href="index.html">index-1</a></li>
-							<li><a href="etune/home.html">index-3</a></li>
-							<li><a href="#">Music</a></li>
-							<li><a href="#">Album</a></li>
-							<?php if( Yii::app()->session['user_first_name'] ==''){  ?>
-							<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/login">Login / Signup</a></li>
-							<?php }else{ ?>
-							<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/userdetails/editprofile">Edit Profile</a></li>
-							<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/logout"><?php echo Yii::app()->session['user_first_name']; ?>( Logout )</a></li>
-							<?php } ?>
-							<li class="nav-tab"><a id="contact-tab" href="#">Contact</a></li>
-						</ul>
-					</nav>
-				</div>                
-			</div>
+				<!-- Navigation -->
+				<nav class="col span_5_of_8">
+					<ul>
+						<li><a href="index.html">index-1</a></li>
+						<li><a href="etune/home.html">index-3</a></li>
+						<li><a href="#">Music</a></li>
+						<li><a href="#">Album</a></li>
+						<?php if( Yii::app()->session['user_first_name'] ==''){  ?>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/login">Login / Signup</a></li>
+						<?php }else{ ?>
+						<li class="dropdown user-menu">
+					                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					                                <i class="glyphicon glyphicon-user"></i>
+					                                <span><?php echo Yii::app()->session['user_first_name']; ?> <i class="caret"></i></span>
+					                            </a>
+					                            <ul class="dropdown-menu">
+					                                <!-- User image -->
+					                                <li class="user-header bg-light-blue">
+					                                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/avatar/<?php echo Yii::app()->session['user_avatar']; ?>" class="img-circle" alt="User Image" />
+					                                    <p><strong>
+					                                    <?php echo Yii::app()->session['user_first_name']; ?> 
+					                                        <small>Member since <?php echo date( 'M Y', strtotime( Yii::app()->session['user_created_on'] ) ); ?></small>
+					                                    </strong></p>
+					                                </li>
+					                                <li class="user-footer">
+					                                    <div class="pull-left">
+					                                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/userdetails/editprofile" class="btn btn-default btn-flat">Edit Profile</a>
+					                                    </div>
+					                                    <div class="pull-right">
+					                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/logout" class="btn btn-default btn-flat"> Logout </a>
+					                                    </div>
+					                                </li>
+						<?php } ?>
+					</ul>
+				</nav>
+			</div>                
+		</div>
                     
 		</header>
 
@@ -95,13 +97,17 @@
 </div><!-- page -->
 
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.min.js"></script>    
+
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hover/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/easing.js"></script>
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/playlist.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.hoverdir.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.columnizer.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/functions.js"></script> 
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.feedBackBox.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.wallform.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/modernizr-2.6.2.dev.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hover/js/app.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hover/js/bootstrap.min.js" type="text/javascript"></script>
 
 
     <script type="text/javascript">

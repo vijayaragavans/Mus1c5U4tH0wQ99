@@ -7,7 +7,6 @@
  * Dual licensed under the MIT and GPL licenses:
  *   http://www.opensource.org/licenses/mit-license.php
  *   http://www.gnu.org/licenses/gpl.html
- * Modified by Arun Sekar http://9lessons.info 
  */
 ;(function($) {
 
@@ -529,7 +528,7 @@ $.fn.ajaxSubmit = function(options) {
             expResult = data.match(exp);
            if(expResult == null)
            {
-            alert("Something went wrong.");
+            //alert("Something went wrong.");
            }
            else{
 			$(options.target).prepend(data);
