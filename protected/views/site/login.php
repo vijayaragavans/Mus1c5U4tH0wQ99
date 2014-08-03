@@ -10,6 +10,7 @@ $this->breadcrumbs=array(
 $this->renderPartial('fb');
 ?>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css' />
+  <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/font-awesome.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/form-style.css" rel="stylesheet" type="text/css" />
  <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.js"></script>
   <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/script.js"></script>
@@ -18,8 +19,8 @@ $this->renderPartial('fb');
 
 <!-- <p>Please fill out the following form with your login credentials:</p> -->
 
-<div class="form">
-      <h1>Sign in</h1>
+<div class="form login_form">
+      <h1>Sign in<div><i class="fa fa-car"></i></div></h1>
       <div class='line'></div>
       
       <!-- If you don't want a social buttons, delete all of these code -->
@@ -39,8 +40,8 @@ $this->renderPartial('fb');
 		<?php echo $form->textField($model,'username', array('placeholder' => 'Username', 'id' => 'ipt-login')); ?>
 		<?php echo $form->labelEx($model,'password', array('class' => 'ie-placeholders', 'placeholder' => 'Password', 'id' => 'ipt-password' )); ?>
 		<?php echo $form->passwordField($model,'password', array('placeholder' => 'Password')); ?>
-	        	<a class='forgotten-password-link' href='#'>Forgotten password</a>
-		<?php echo CHtml::submitButton('Login', array('class' => 'btn-orange')); ?>
+	        	<div class="login_submit"><a class='forgotten-password-link' href='#'>Forgotten password</a>
+		<?php echo CHtml::submitButton('Login', array('class' => 'btn-orange')).'</div>'; ?>
 
 <?php $this->endWidget(); ?>
 
