@@ -3805,3 +3805,202 @@ Stack trace:
 REQUEST_URI=/musicestore/index.php/site/hscroll/img/4.png
 HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
 ---
+2014/08/02 09:12:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(619): CApplication->getDb()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(TblSongs))
+#7 C:\wamp\www\Hai_interactive\demo\musicestore\protected\models\TblSongs.php(25): CActiveRecord::model('TblSongs')
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(36): TblSongs::model()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/musicestore/index.php/site/index
+---
+2014/08/02 09:17:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "etune".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('etune')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('etune')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/etune/home...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/site/etune/home.html
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/index
+---
+2014/08/02 09:17:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "etune".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('etune')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('etune')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/etune/inde...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/site/etune/index.html
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/etune/home.html
+---
+2014/08/02 09:18:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "etune".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('etune')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('etune')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/etune/inde...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/site/etune/index.html
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/etune/home.html
+---
+2014/08/03 17:22:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('index.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('index.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.html')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/site/index.html
+HTTP_REFERER=http://demo.localhost.com/musicestore/index.php/site/signup
+---
+2014/08/03 17:46:57 [error] [exception.CException] exception 'CException' with message 'SubscribeController cannot find the requested view "fb".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\subscribe\index.php(10): CController->renderPartial('fb')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php(7): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SubscribeController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('subscribe')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/musicestore/index.php/subscribe/
+---
+2014/08/03 17:47:13 [error] [php] Undefined variable: model (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\subscribe\index.php:38)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SubscribeController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SubscribeController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php(7): SubscribeController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SubscribeController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SubscribeController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SubscribeController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SubscribeController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/subscribe/
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\subscribe\index.php (38)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php (7)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/08/03 17:47:14 [error] [php] Undefined variable: model (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\subscribe\index.php:38)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SubscribeController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SubscribeController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php(7): SubscribeController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SubscribeController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SubscribeController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SubscribeController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SubscribeController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/subscribe/
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\subscribe\index.php (38)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php (7)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/08/03 17:47:55 [error] [php] include(Subscribe.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php(7): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SubscribeController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): SubscribeController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): SubscribeController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SubscribeController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/subscribe/
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php (7)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/08/03 17:48:16 [error] [exception.CException] exception 'CException' with message 'Property "Subscribers.username" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('username')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('username')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Subscribers), 'username')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Subscribers), 'username', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(655): CHtml::activeTextField(Object(Subscribers), 'username', Array)
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\subscribe\index.php(39): CActiveForm->textField(Object(Subscribers), 'username', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php(9): CController->render('index', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SubscribeController->actionIndex()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('subscribe')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicestore/index.php/subscribe/
+---
+2014/08/03 17:57:24 [error] [php] Undefined index: utm_source (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php:17)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SubscribeController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SubscribeController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SubscribeController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/subscribe/
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php (17)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/08/03 17:59:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "&utm_source=google".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('&utm_source=goo...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('&utm_source=goo...')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('subscribe/&utm_...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/subscribe/&utm_source=google
+---
+2014/08/03 17:59:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "utm_source=google".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('utm_source=goog...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('utm_source=goog...')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('subscribe/utm_s...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/index.php/subscribe/utm_source=google
+---
+2014/08/03 18:08:56 [error] [php] Undefined index: ajax (C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php:8)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): SubscribeController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): SubscribeController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SubscribeController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/index.php/subscribe/
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SubscribeController.php (8)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)

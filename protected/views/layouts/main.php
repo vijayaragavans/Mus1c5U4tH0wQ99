@@ -45,7 +45,7 @@
 			<!-- Music player and Navigation sections -->			
 			<div class="section group">                
 				<!-- Logo and tagline -->   
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore_clr.png" style="padding-top:10px; padding-left:20px;" />
+					<a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/index"> <img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore_clr.png" style="padding-top:10px; padding-left:20px;" /></a>
 
 				<!-- Navigation -->
 				<nav class="col span_5_of_8">
