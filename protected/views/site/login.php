@@ -99,8 +99,9 @@ $this->renderPartial('fb');
 				</div>                </div>
 <script type="text/javascript">
 	$(document).ready(function(){
-		var err = $(".errorMessage").css('display');
-		if(err != 'none'){
+		//var err = $(".errorMessage").css('display');
+		var err = $(".errorMessage").text();
+		if(err != ''){
 			$(".error-box").css('display', 'block');
 		}
 	});
