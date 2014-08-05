@@ -203,7 +203,8 @@ label {
 .sign-link {
   text-align: center;
   float: left;
-  margin: 40px 0 0 120px;
+  margin: 25px 0 0 120px;
+  padding-bottom: 5%;
 }
 
 /*ERROR STATES*/

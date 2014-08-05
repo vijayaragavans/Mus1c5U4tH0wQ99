@@ -21,7 +21,7 @@ $this->renderPartial('../site/fb');
 <div id='preview'>
 	<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/avatar/<?php echo $userdetails['user_avatar']; ?>"  width='250' height='250' style='float:left; padding:25px;' id='avatar_img'/>	
 </div>
-<div class="form">
+<div class="form pro_form">
       <h1>Edit Profile</h1>
       <div class='line'></div>
       
@@ -62,6 +62,38 @@ $this->renderPartial('../site/fb');
            
 
 </div><!-- form -->
+<div class="section group" id="bottom-stripe">				
+                <!-- Newsletter -->
+				<div class="col span_4_of_8" id="newsletter">
+					<h1>get updates</h1>
+					<h2>Sign up for our mailing list to get the latest news, tour dates and more!</h2>
+					<form method="get" action="#" id="#">
+						<input type="email" placeholder="me@email.com" value="" class="" name="" required="">
+						<input type="submit" id="newsletterSubmit" class="newsletter-submit" value="Subscribe" name="">
+					</form>
+				</div>                    
+				<!-- Social Media Buttons -->
+				<div class="col span_4_of_8" id="social">
+					<h1>Connect</h1>
+					<h2>Lorem ipsum dolor amet, consectetur</h2>
+					<ul class="clearfix">
+						<li class="facebook"><a href="#">Facebook</a></li>
+						<li class="twitter-social"><a href="#">Twitter</a></li>  
+						<li class="google-plus"><a href="#">Google+</a></li>
+						<li class="youtube"><a href="#">Youtube</a></li> 
+						<li class="instagram"><a href="#">Instagram</a></li>  
+						<li class="soundcloud"><a href="#">Soundcloud</a></li> 
+						<li class="lastfm"><a href="#">Last.fm</a></li>
+						<li class="myspace"><a href="#">Myspace</a></li> 
+                        <!-- Hidden icons 
+						<li class="vimeo"><a href="#">Vimeo</a></li>
+						<li class="pinterest"><a href="#">Pinterest</a></li>
+						<li class="rss"><a href="#">RSS</a></li>
+						<li class="flickr"><a href="#">Flickr</a></li> 
+						<li class="tumblr"><a href="#">Tumblr</a></li>
+                        -->
+					</ul>
+				</div>                </div>
 <script type="text/javascript">
 	$(document).ready(function(){
 		var err = $(".errorMessage").css('display');

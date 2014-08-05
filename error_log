@@ -1,0 +1,4 @@
+[13-Jul-2014 03:24:24] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/rightern/public_html/demo/musicestore/protected/controllers/UsersController.php on line 89
+[13-Jul-2014 03:26:43] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/rightern/public_html/demo/musicestore/protected/controllers/UsersController.php on line 91
+[18-Jul-2014 22:55:22] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home3/rightern/public_html/demo/musicestore/protected/config/main.php on line 103
+[05-Aug-2014 21:23:34] PHP Fatal error:  Call to a member function getValidators() on a non-object in /home3/rightern/yii/framework/web/helpers/CHtml.php on line 1871
