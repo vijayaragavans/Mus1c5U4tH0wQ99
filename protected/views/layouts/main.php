@@ -45,7 +45,7 @@
 			<!-- Music player and Navigation sections -->			
 			<div class="section group">                
 				<!-- Logo and tagline -->   
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore_clr.png" style="padding-top:10px; padding-left:20px;" />
+					<a href='<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/index'><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore_clr.png" style="padding-top:10px; padding-left:20px;" /></a>
 
 				<!-- Navigation -->
 				<nav class="col span_5_of_8">
@@ -53,7 +53,7 @@
 						<li><a href="index.html">index-1</a></li>
 						<li><a href="etune/home.html">index-3</a></li>
 						<li><a href="#">Music</a></li>
-						<li><a href="#">Album</a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/albums/index">Album</a></li>
 						<?php if( Yii::app()->session['user_first_name'] ==''){  ?>
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/login">Login / Signup</a></li>
 						<?php }else{ ?>
