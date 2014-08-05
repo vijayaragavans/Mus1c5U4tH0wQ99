@@ -45,7 +45,7 @@
 			<!-- Music player and Navigation sections -->			
 			<div class="section group">                
 				<!-- Logo and tagline -->   
-					<a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/index"> <img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore_clr.png" style="padding-top:10px; padding-left:20px;" /></a>
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore_clr.png" style="padding-top:10px; padding-left:20px;" />
 
 				<!-- Navigation -->
 				<nav class="col span_5_of_8">
@@ -65,11 +65,15 @@
 					                            <ul class="dropdown-menu">
 					                                <!-- User image -->
 					                                <li class="user-header bg-light-blue">
-					                                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/avatar/<?php echo Yii::app()->session['user_avatar']; ?>" class="img-circle" alt="User Image" />
+					                                    <div class="img"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/avatar/<?php echo Yii::app()->session['user_avatar']; ?>" class="img-circle" alt="User Image" /></div>
+<!--
 					                                    <p><strong>
-					                                    <?php echo Yii::app()->session['user_first_name']; ?> 
-					                                        <small>Member since <?php echo date( 'M Y', strtotime( Yii::app()->session['user_created_on'] ) ); ?></small>
+-->
+					                                    <div class="udet"><div class="uname"><?php echo Yii::app()->session['user_first_name']; ?> </div>
+					                                    <div class="membership">Member since <?php echo date( 'M Y', strtotime( Yii::app()->session['user_created_on'] ) ); ?></div></div>
+<!--
 					                                    </strong></p>
+-->
 					                                </li>
 					                                <li class="user-footer">
 					                                    <div class="pull-left">
@@ -106,7 +110,6 @@
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.feedBackBox.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/jquery.wallform.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/files/js/modernizr-2.6.2.dev.js"></script>
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hover/js/app.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hover/js/bootstrap.min.js" type="text/javascript"></script>
 
 
