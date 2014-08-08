@@ -2,13 +2,13 @@
 
 class SiteController extends Controller
 {
-	ob_start();
 	/**
 	 * Declares class-based actions.
 	 */
 	private $current_date;
 	public function actions()
 	{
+		ob_start();
 		return array(
 			// captcha action renders the CAPTCHA image displayed on the contact page
 			'captcha'=>array(
