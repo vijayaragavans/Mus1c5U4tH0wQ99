@@ -21,8 +21,6 @@ class UsersController extends Controller
 			echo $response;
 			die;
 		}else{
-			$mail=Yii::app()->createController('mail');		//returns array containing controller instance and action index.
-			$mail[0]->Mailer( 'vijayr', $user_email, 'Registration' );
 			$response = $cat->Session( $user_email ); //use a public method.
 			print_r($response);
 			die;
@@ -43,6 +41,8 @@ class UsersController extends Controller
 		$user_avatar = Yii::app()->request->getPost('user_avatar');
 		$user_detail_updated_on = date('Y-m-d H:i:s');
 			$respons = $this->Store_User_Info( $user_first_name, $user_last_name, $user_email, $user_password, $user_repassword, $user_created_on, $user_fb_id, $user_profile_name, $user_link, $user_gender, $user_avatar, 'facebook', $user_detail_updated_on);
+			$mail=Yii::app()->createController('mail');		//returns array containing controller instance and action index.
+			$mail[0]->Mailer( $user_first_name, $user_email, 'Registration' );
 			if( $respons == 1){
 				$this->redirect(Yii::app()->user->returnUrl);
 			}
