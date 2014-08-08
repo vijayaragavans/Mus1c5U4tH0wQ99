@@ -20,6 +20,8 @@ class SubscribeController extends Controller
 					$model->utm_content = $_GET['utm_content'];
 					$model->utm_campaign = $_GET['utm_campaign'];
 					$model->save();
+					$mail=Yii::app()->createController('mail');		//returns array containing controller instance and action index.
+					$response  = $mail[0]->Mailer( $model->subscribe_name, $model->subscribe_email, 'Subscription' );
 					Yii::app()->user->setFlash('subscribed','Thank you for Subscribed.');
 				}else{
 					Yii::app()->user->setFlash('subscribed_exist','You have already Subscribed with Us.');
