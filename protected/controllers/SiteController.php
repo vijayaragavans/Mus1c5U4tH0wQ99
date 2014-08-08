@@ -139,7 +139,6 @@ class SiteController extends Controller
 					 */
 
 					$mail=Yii::app()->createController('mail');		//returns array containing controller instance and action index.
-
 					$mail[0]->Mailer( $_POST['Users']['user_first_name'], $_POST['Users']['user_email'], 'Registration' );
 					 $this->Session( $_POST['Users']['user_email'] );
 					 //var_export($model->getErrors(), true);

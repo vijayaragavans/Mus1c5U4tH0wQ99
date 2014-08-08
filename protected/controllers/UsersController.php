@@ -21,6 +21,8 @@ class UsersController extends Controller
 			echo $response;
 			die;
 		}else{
+			$mail=Yii::app()->createController('mail');		//returns array containing controller instance and action index.
+			$mail[0]->Mailer( 'vijayr', $user_email, 'Registration' );
 			$response = $cat->Session( $user_email ); //use a public method.
 			print_r($response);
 			die;
