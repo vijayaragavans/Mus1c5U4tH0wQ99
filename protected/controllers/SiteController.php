@@ -97,10 +97,8 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login()){
-				print_r( $model->login() );
-				die;
+				$this->redirect(Yii::app()->user->returnUrl);
 			}
-				//$this->redirect(Yii::app()->user->returnUrl);
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
@@ -138,7 +136,11 @@ class SiteController extends Controller
 					 /*
 					 *	Session Setup for User Information
 					 */
-					       $this->Session( $_POST['Users']['user_email'] );
+
+					$mail=Yii::app()->createController('mail');		//returns array containing controller instance and action index.
+
+					$mail[0]->Mailer( $_POST['Users']['user_first_name'], $_POST['Users']['user_email'], 'Registration' );
+					 $this->Session( $_POST['Users']['user_email'] );
 					 //var_export($model->getErrors(), true);
 
 					$this->redirect(Yii::app()->user->returnUrl);

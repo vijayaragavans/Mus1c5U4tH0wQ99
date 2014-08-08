@@ -12,7 +12,7 @@ class UsersController extends Controller
 
 	public function actionFb(){
 		$user_email = Yii::app()->request->getPost('uemail');
-		$cat=Yii::app()->createController('site');//returns array containing controller instance and action index.
+		$cat=Yii::app()->createController('site');		//returns array containing controller instance and action index.
 		$cat=$cat[0]; //get the controller instance.
 		$details = Users::model()->findByAttributes(array( "user_email"=>$user_email ));
 		if( is_null( $details ) || empty($details ) ){
