@@ -58,6 +58,10 @@ class SiteController extends Controller
 	public function actionContact()
 	{
 		$model=new ContactForm;
+		$mail=Yii::app()->createController('mail');		//returns array containing controller instance and action index.
+		$response  = $mail[0]->Mailer( 'vijayr', $user_email, 'Registration' );
+		print_r($response );
+		die;
 		if(isset($_POST['ContactForm']))
 		{
 			$model->attributes=$_POST['ContactForm'];
