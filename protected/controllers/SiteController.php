@@ -2,6 +2,7 @@
 
 class SiteController extends Controller
 {
+	ob_start();
 	/**
 	 * Declares class-based actions.
 	 */
