@@ -104,8 +104,8 @@ return array(
 			'avatar_thumb_path' => '/home3/rightern/public_html/demo/musicestore/images/avatar/',		
 			'avatar_thumb_url' => 'http://demo.haiinteractive.com/musicestore/images/avatar/',
 
-
-/*			'Fb_App_ID' => '1468178786757324',			// Demo.localhost.com
+/*
+			'Fb_App_ID' => '1468178786757324',			// Demo.localhost.com
 			'Fb_URL' => 'http://demo.locahost.com/musicestore',	// Demo.localhost.com
 			'avatar_thumb_path' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/avatar/',
 			'avatar_thumb_url' => 'http://demo.localhost.com/musicestore/images/avatar/',

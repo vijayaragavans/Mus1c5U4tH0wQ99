@@ -4,6 +4,9 @@ class AlbumsController extends Controller
 {
 	public function actionIndex()
 	{
+	      	$slider = TblSongs::model()->findByAttributes(array("order" => "cong_created_on DESC" ));
+	      	var_dump( $slider );
+	      	die;
 		$this->render('index');
 	}
 
