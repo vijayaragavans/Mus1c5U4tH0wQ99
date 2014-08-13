@@ -67,19 +67,13 @@
             if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
                 $(window).bind('resize', ScaleSlider);
             }
-
-
-            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
-            //    $(window).bind("orientationchange", ScaleSlider);
-            //}
-            //responsive code end
         });
     </script>
 
 
         <div class="section group wrapper">        
                       <div class='col span_2_of_8'>
-							<div class='categories-containers left_nav'>
+		<div class='categories-containers left_nav'>
                             <h3> Music</h3>
                             <div class="nav_opt"><p>
                                       <select>
@@ -99,275 +93,261 @@
                             </p>
                             </div>
                          </div>
-						 <div class="topsongs-containers left_nav">
-									<div class="top_songs">
-											<div class="see_all col span_8_of_8">
-												<span class="col span_6_of_8"><h3>Top Songs</h3></span>
-												<span class="col span_2_of_8" style="font-style: normal; float: right;cursor: pointer;">
-												<a href="albums.html">See all ›</a></span>
-											</div>
-											<ul>
-												<li class="col span_8_of_8">
-													<div class="col span_8_of_8">
-														<div class="col span_2_of_8">
-															<div class="top_song">
-																<img src="hscroll/img/6.jpg">
-															</div>
-														</div>
-														<div class="col span_6_of_8">
-															<a href="#">1.Samjhawan</a><br>
-															<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-														</div>
-													</div>
-												</li>
-												<li class="col span_8_of_8">
-													<div class="col span_8_of_8">
-														<div class="col span_2_of_8">
-															<div class="top_song">
-																<img src="hscroll/img/7.jpg">
-															</div>
-														</div>
-														<div class="col span_6_of_8">
-															<a href="#">1.Samjhawan</a><br>
-															<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-														</div>
-													</div>
-												</li>
-												<li class="col span_8_of_8">
-													<div class="col span_8_of_8">
-														<div class="col span_2_of_8">
-															<div class="top_song">
-																<img src="hscroll/img/8.jpg">
-															</div>
-														</div>
-														<div class="col span_6_of_8">
-															<a href="#">1.Samjhawan</a><br>
-															<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-														</div>
-													</div>
-												</li>																								
-												<li class="col span_8_of_8">
-													<div class="col span_8_of_8">
-														<div class="col span_2_of_8">
-															<div class="top_song">
-																<img src="hscroll/img/9.jpg">
-															</div>
-														</div>
-														<div class="col span_6_of_8">
-															<a href="#">1.Samjhawan</a><br>
-															<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-														</div>
-													</div>
-												</li>
-												<li class="col span_8_of_8">
-													<div class="col span_8_of_8">
-														<div class="col span_2_of_8">
-															<div class="top_song">
-																<img src="hscroll/img/4.png">
-															</div>
-														</div>
-														<div class="col span_6_of_8">
-															<a href="#">1.Samjhawan</a><br>
-															<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-														</div>
-													</div>
-												</li>																								
-												
-											</ul>
+		 <div class="topsongs-containers left_nav">
+			<div class="top_songs">
+					<div class="see_all col span_8_of_8">
+						<span class="col span_6_of_8"><h3>Top Songs</h3></span>
+						<span class="col span_2_of_8" style="font-style: normal; float: right;cursor: pointer;">
+						<a href="albums.html">See all ›</a></span>
+					</div>
+					<ul>
+						<li class="col span_8_of_8">
+							<div class="col span_8_of_8">
+								<div class="col span_2_of_8">
+									<div class="top_song">
+										<img src="hscroll/img/6.jpg">
 									</div>
+								</div>
+								<div class="col span_6_of_8">
+									<a href="#">1.Samjhawan</a><br>
+									<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
+								</div>
 							</div>
+						</li>
+						<li class="col span_8_of_8">
+							<div class="col span_8_of_8">
+								<div class="col span_2_of_8">
+									<div class="top_song">
+										<img src="hscroll/img/7.jpg">
+									</div>
+								</div>
+								<div class="col span_6_of_8">
+									<a href="#">1.Samjhawan</a><br>
+									<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
+								</div>
+							</div>
+						</li>
+						<li class="col span_8_of_8">
+							<div class="col span_8_of_8">
+								<div class="col span_2_of_8">
+									<div class="top_song">
+										<img src="hscroll/img/8.jpg">
+									</div>
+								</div>
+								<div class="col span_6_of_8">
+									<a href="#">1.Samjhawan</a><br>
+									<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
+								</div>
+							</div>
+						</li>																								
+						<li class="col span_8_of_8">
+							<div class="col span_8_of_8">
+								<div class="col span_2_of_8">
+									<div class="top_song">
+										<img src="hscroll/img/9.jpg">
+									</div>
+								</div>
+								<div class="col span_6_of_8">
+									<a href="#">1.Samjhawan</a><br>
+									<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
+								</div>
+							</div>
+						</li>
+						<li class="col span_8_of_8">
+							<div class="col span_8_of_8">
+								<div class="col span_2_of_8">
+									<div class="top_song">
+										<img src="hscroll/img/4.png">
+									</div>
+								</div>
+								<div class="col span_6_of_8">
+									<a href="#">1.Samjhawan</a><br>
+									<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
+								</div>
+							</div>
+						</li>														
+						</ul>
+					</div>
+			</div>
                       </div>
                       <div class="col span_6_of_8 rightt_nav" style=" margin:20px; border-radius:5px; float:right;">
-								<!-- You can move inline styles to css file or css block. -->
-								<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 810px; height: 300px; background: white; overflow: hidden; ">
+		<!-- You can move inline styles to css file or css block. -->
+		<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 810px; height: 300px; background: white; overflow: hidden; ">
 
-									<!-- Loading Screen -->
-									<div u="loading" style="position: absolute; top: 0px; left: 0px;">
-										<div class="thumb-back" style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-											background-color: white; top: 0px; left: 0px;width: 100%;height:100%;">
-										</div>
-										<div style="position: absolute; display: block; background: url(itunestyle/img/loading.gif) no-repeat center center;
-											top: 0px; left: 0px;width: 100%;height:100%;">
-										</div>
-									</div>
+			<!-- Loading Screen -->
+			<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+				<div class="thumb-back" style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+					background-color: white; top: 0px; left: 0px;width: 100%;height:100%;">
+				</div>
+				<div style="position: absolute; display: block; background: url(itunestyle/img/loading.gif) no-repeat center center;
+					top: 0px; left: 0px;width: 100%;height:100%;">
+				</div>
+			</div>
 
-									<!-- Slides Container -->
-									<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
-										overflow: hidden;">
-										<div>
-											<img u="image" src="http://clubber.wizedesign.com/wp-content/uploads/2012/11/dj-andi-980x400.jpg" />
-											<div u="thumb">
-												<img class="i" src="http://clubber.wizedesign.com/wp-content/uploads/2012/11/dj-andi-980x400.jpg" />
-											</div>
-										</div>
-										<div>
-											<img u="image" src="http://clubber.wizedesign.com/wp-content/uploads/2012/11/umf-08-980x400.jpg" />
-											<div u="thumb">
-												<img class="i" src="http://clubber.wizedesign.com/wp-content/uploads/2012/11/umf-08-980x400.jpg" />
-											</div>
-										</div>
-										<div>
-											<img u="image" src="http://clubber.wizedesign.com/wp-content/uploads/2012/11/7074349727_ec7a3965c6_b-980x400.jpg" />
-											<div u="thumb">
-												<img class="i" src="http://clubber.wizedesign.com/wp-content/uploads/2012/11/7074349727_ec7a3965c6_b-980x400.jpg" />
-											</div>
-										</div>
-										<div>
-											<img u="image" src="http://clubber.wizedesign.com/wp-content/uploads/2012/11/ff1-980x400.jpeg" />
-											<div u="thumb">
-												<img class="i" src="http://clubber.wizedesign.com/wp-content/uploads/2012/11/ff1-980x400.jpeg" />
+			<!-- Slides Container -->
+			<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
+				overflow: hidden;">
 
-											</div>
-										</div>
-										<div>
-											<img u="image" src="http://design.haiinteractive.com/musicstore/assets/img/slide3.jpg" />
-											<div u="thumb">
-												<img class="i" src="http://design.haiinteractive.com/musicstore/assets/img/slide3.jpg" />
-
-											</div>
-										</div>
-									</div>
-									
-									<!-- ThumbnailNavigator Skin Begin -->
-									<div u="thumbnavigator" class="jssort11" style="position: absolute; width: 200px; height: 300px; left:605px; top:0px;">
-										<!-- Thumbnail Item Skin Begin -->
-										<style>
-											/* jssor slider thumbnail navigator skin 11 css */
-											/*
-											.jssort11 .p            (normal)
-											.jssort11 .p:hover      (normal mouseover)
-											.jssort11 .pav          (active)
-											.jssort11 .pav:hover    (active mouseover)
-											.jssort11 .pdn          (mousedown)
-											*/
-											.jssort11
-											{
-												font-family: Arial, Helvetica, sans-serif;
-											}
-											.jssort11 .i
-<!--
-											, .jssort11 .pav:hover .i
--->
-											{
-												position: absolute;
-												top:3px;
-												left:3px;
-												WIDTH: 60px;
-												HEIGHT: 30px;
-												border: white 1px solid;
-											}
-											* html .jssort11 .i
-											{
-												WIDTH /**/: 62px;
-												HEIGHT /**/: 32px;
-											}
-											.jssort11 .pav .i
-											{
-												border: white 1px solid;
-											}
-											.jssort11 img.i{width:100%;height:100%;}
-											.jssort11 .t, .jssort11 .pav:hover .t
-											{
-												position: absolute;
-												top: 3px;
-												left: 68px;
-												width:129px;
-												height: 32px;
-												line-height:32px;
-												text-align: center;
-												color:#fc9835;
-												font-size:13px;
-												font-weight:700;
-											}
-											.jssort11 .pav .t, .jssort11 .phv .t, .jssort11 .p:hover .t
-											{
-												color:#fff;
-											}
-											.jssort11 .c, .jssort11 .pav:hover .c
-											{
-												position: absolute;
-												top: 38px;
-												left: 3px;
-												width:197px;
-												height: 31px;
-												line-height:31px;
-												color:#fff;
-												font-size:11px;
-												font-weight:400;
-												overflow: hidden;
-											}
-											.jssort11 .pav .c, .jssort11 .phv .c, .jssort11 .p:hover .c
-											{
-												color:#fc9835;
-											}
-											.jssort11 .t, .jssort11 .c
-											{
-												transition: color 2s;
-												-moz-transition: color 2s;
-												-webkit-transition: color 2s;
-												-o-transition: color 2s;
-											}
-											.jssort11 .p:hover .t, .jssort11 .phv .t, .jssort11 .pav:hover .t, .jssort11 .p:hover .c, .jssort11 .phv .c, .jssort11 .pav:hover .c
-											{
-												transition: none;
-												-moz-transition: none;
-												-webkit-transition: none;
-												-o-transition: none;
-											}
-											.jssort11 .p
-											{
-												background:#181818;
-											}
-											.jssort11 .pav, .jssort11 .pdn
-											{
-												background:#462300;
-											}
-											.jssort11 .p:hover, .jssort11 .phv, .jssort11 .pav:hover
-											{
-												background:#333;
-											}
-										</style>
-										<div u="slides" style="cursor: move;">
-											<div u="prototype" class="p" style="position: absolute; width: 200px; height: 69px; top: 0; left: 0;">
-												<thumbnailtemplate style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></thumbnailtemplate>
-											</div>
-										</div>
-										<!-- Thumbnail Item Skin End -->
-									</div>
-									<!-- ThumbnailNavigator Skin End -->
-									<a style="display: none" href="http://www.jssor.com">banner slider</a>
+				<?php 	
+				
+						foreach( $slider as $slider_img ){  ?> 
+							<div>
+								<img u="image" src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$slider_img->song_img_url; ?>"  />
+								<div u="thumb">
+									<img u="image" src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$slider_img->song_img_url; ?>"  />
 								</div>
-								<!-- Jssor Slider End -->
-								
-								
-							<div class="itune_hscroll right_nav" style="border: 1px solid #eaeaea;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; float:right;-webkit-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-moz-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-webkit-border-radius: 5px;">
-									<div id="demo">
-											<h3 style="padding:1%;">International Hits</h3>
-											<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="albums.html">See All ></a></div>
-									</div>
-									<section id="examples" class="snap-scrolling-example">
-										
-										<!-- content -->
-										<div id="content-1" class="content horizontal-images">
-											<ul>
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/1.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/9.jpg" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/2.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/9.jpg" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/1.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/2.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/9.jpg" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/2.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/1.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/9.jpg" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/2.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>				
-												<li><div><div><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/img/1.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong><div></div></li>									
-											</ul>
-										</div>
-									</section>
-							</div> 
-						  
-					  </div>
+							</div>
+				<?php		}
+				?>
+			</div>
+			
+			<!-- ThumbnailNavigator Skin Begin -->
+			<div u="thumbnavigator" class="jssort11" style="position: absolute; width: 200px; height: 300px; left:605px; top:0px;">
+				<!-- Thumbnail Item Skin Begin -->
+				<style>
+					/* jssor slider thumbnail navigator skin 11 css */
+					/*
+					.jssort11 .p            (normal)
+					.jssort11 .p:hover      (normal mouseover)
+					.jssort11 .pav          (active)
+					.jssort11 .pav:hover    (active mouseover)
+					.jssort11 .pdn          (mousedown)
+					*/
+					.jssort11
+					{
+						font-family: Arial, Helvetica, sans-serif;
+					}
+					.jssort11 .i
+<!--
+					, .jssort11 .pav:hover .i
+-->
+					{
+						position: absolute;
+						top:3px;
+						left:3px;
+						WIDTH: 60px;
+						HEIGHT: 30px;
+						border: white 1px solid;
+					}
+					* html .jssort11 .i
+					{
+						WIDTH /**/: 62px;
+						HEIGHT /**/: 32px;
+					}
+					.jssort11 .pav .i
+					{
+						border: white 1px solid;
+					}
+					.jssort11 img.i{width:100%;height:100%;}
+					.jssort11 .t, .jssort11 .pav:hover .t
+					{
+						position: absolute;
+						top: 3px;
+						left: 68px;
+						width:129px;
+						height: 32px;
+						line-height:32px;
+						text-align: center;
+						color:#fc9835;
+						font-size:13px;
+						font-weight:700;
+					}
+					.jssort11 .pav .t, .jssort11 .phv .t, .jssort11 .p:hover .t
+					{
+						color:#fff;
+					}
+					.jssort11 .c, .jssort11 .pav:hover .c
+					{
+						position: absolute;
+						top: 38px;
+						left: 3px;
+						width:197px;
+						height: 31px;
+						line-height:31px;
+						color:#fff;
+						font-size:11px;
+						font-weight:400;
+						overflow: hidden;
+					}
+					.jssort11 .pav .c, .jssort11 .phv .c, .jssort11 .p:hover .c
+					{
+						color:#fc9835;
+					}
+					.jssort11 .t, .jssort11 .c
+					{
+						transition: color 2s;
+						-moz-transition: color 2s;
+						-webkit-transition: color 2s;
+						-o-transition: color 2s;
+					}
+					.jssort11 .p:hover .t, .jssort11 .phv .t, .jssort11 .pav:hover .t, .jssort11 .p:hover .c, .jssort11 .phv .c, .jssort11 .pav:hover .c
+					{
+						transition: none;
+						-moz-transition: none;
+						-webkit-transition: none;
+						-o-transition: none;
+					}
+					.jssort11 .p
+					{
+						background:#181818;
+					}
+					.jssort11 .pav, .jssort11 .pdn
+					{
+						background:#462300;
+					}
+					.jssort11 .p:hover, .jssort11 .phv, .jssort11 .pav:hover
+					{
+						background:#333;
+					}
+				</style>
+				<div u="slides" style="cursor: move;">
+					<div u="prototype" class="p" style="position: absolute; width: 200px; height: 69px; top: 0; left: 0;">
+						<thumbnailtemplate style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></thumbnailtemplate>
+					</div>
+				</div>
+				<!-- Thumbnail Item Skin End -->
+			</div>
+			<!-- ThumbnailNavigator Skin End -->
+			<a style="display: none" href="http://www.jssor.com">banner slider</a>
+		</div>
+		<!-- Jssor Slider End -->
+		
+		
+	<div class="itune_hscroll right_nav" style="border: 1px solid #eaeaea;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; float:right;-webkit-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-moz-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-webkit-border-radius: 5px;">
+			<div id="demo">
+					<h3 style="padding:1%;">International Hits</h3>
+					<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="albums.html">See All ></a></div>
+			</div>
+			<section id="examples" class="snap-scrolling-example">
+				<!-- content -->
+				<div id="content-1" class="content horizontal-images hrscroll">
+					<ul>
+					<?php foreach ($international_songs as $key => $international_hits_value) { ?>
+						<li><div><div><img src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$international_hits_value->song_img_url; ?>" /></div><div class="album-title"><strong><?php echo $international_hits_value->song_title; ?></strong><div></div></li>		
+					<?php }?>
+					</ul>
+					</div>
+			</section>
+		</div> 				  
+
+	<div class="itune_hscroll right_nav" style="border: 1px solid #eaeaea;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; float:right;-webkit-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-moz-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-webkit-border-radius: 5px;">
+			<div id="demo">
+					<h3 style="padding:1%;">Films</h3>
+					<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="albums.html">See All ></a></div>
+			</div>
+			<section id="examples" class="snap-scrolling-example">
+				<!-- content -->
+				<div id="content-1" class="content horizontal-images hrscroll">
+					<ul>
+					<?php foreach ($films as $key => $film_value) { ?>
+						<li><div><div><img src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$film_value->song_img_url; ?>" /></div><div class="album-title"><strong><?php echo $film_value->song_title; ?></strong><div></div></li>		
+					<?php }?>
+					</ul>
+					</div>
+			</section>
+		</div> 				  
+
+			  </div>
 
 				</div>
 
@@ -376,15 +356,10 @@
     <script type="text/javascript">
         //<![CDATA[    
 		(function($){
-			$(window).load(function(){
-				
-				/* 
-				get snap amount programmatically or just set it directly (e.g. "273") 
-				in this example, the snap amount is list item's (li) outer-width (width+margins)
-				*/
+			$(window).load(function(){				
 				var amount=Math.max.apply(Math,$("#content-1 li").map(function(){return $(this).outerWidth(true);}).get());
 				
-				$("#content-1").mCustomScrollbar({
+				$(".hrscroll").mCustomScrollbar({
 					axis:"x",
 					theme:"inset",
 					advanced:{

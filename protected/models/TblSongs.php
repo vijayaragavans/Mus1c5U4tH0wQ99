@@ -100,4 +100,28 @@ class TblSongs extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	function Get_Latest_Songs( $params,  $limit )
+	{		
+		//$criteria = new CDbCriteria(array('select'=>'song_img_url', 'order'=>'cong_created_on DESC', 'limit' => $limit));
+	        	$criteria = new CDbCriteria;
+	        	$criteria->select = 'song_img_url';
+	        	//$criteria->params = array( 'song_img_url' );
+	        	$criteria->order = 'cong_created_on DESC';
+	        	$criteria->limit = $limit;
+	        	$output = TblSongs::model()->findAll( $criteria );
+	        	return($output);
+	}
+
+	function Songs_List( $params, $limit )
+	{
+	        	$criteria = new CDbCriteria;
+	        	$criteria->select = 'song_id, song_title, song_img_url';
+	        	$criteria->condition = "song_album_page_category_id = $params";
+	        	//$criteria->params = array( 'song_img_url' );
+	        	$criteria->order = 'cong_created_on DESC';
+	        	$criteria->limit = $limit;
+	        	$output = TblSongs::model()->findAll( $criteria );
+	        	return($output);		
+	}
 }

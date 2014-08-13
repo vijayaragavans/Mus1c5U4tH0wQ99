@@ -4,10 +4,19 @@ class AlbumsController extends Controller
 {
 	public function actionIndex()
 	{
-	      	$slider = TblSongs::model()->findByAttributes(array("order" => "cong_created_on DESC" ));
-	      	var_dump( $slider );
-	      	die;
-		$this->render('index');
+
+		$model = new TblSongs();
+        		$slider_img = $model->Get_Latest_Songs( $params = 'song_img_url' , $limit = 5 );
+        		$international_songs = $model->Songs_List( $params = 2 , $limit = 15 );		// International Hits
+        		$films = $model->Songs_List( $params = 3 , $limit = 15 );		// Films
+
+        		$arg = array( 
+        				'slider' => $slider_img, 
+        				'international_songs' => $international_songs, 
+        				'films' => $films 
+        			);
+
+		$this->render('index', $arg );		// HTML Rendering
 	}
 
 	// Uncomment the following methods and override them if needed
