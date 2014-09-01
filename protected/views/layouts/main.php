@@ -24,6 +24,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<?php if(!emty($this->pageTitle)){  ?>
 	    <meta name="title" content="<?php echo $this->pageTitle; ?>" />
 	    <meta name="description" content="<?php echo $this->pageDescription; ?>">
 	    <meta name="keywords" content="<?php echo $this->pageKeyword; ?>">
@@ -31,7 +32,7 @@
 	    <meta property="og:image" content="<?php echo $this->ogImage; ?>">
 	    <meta name="og:title" content="<?php echo $this->pageTitle; ?>" />
 	    <meta name="og:description" content="<?php echo $this->pageDescription; ?>" />
-
+	    <?php } ?>
 </head>
 <body>
 	<div id="ajax-window"></div>
