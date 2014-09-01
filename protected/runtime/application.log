@@ -8369,3 +8369,56 @@ Stack trace:
 REQUEST_URI=/musicestore/site
 HTTP_REFERER=http://demo.localhost.com/musicestore/albums/details/desingu-raja/38
 ---
+2014/09/01 17:47:27 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.pageDescription" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\layouts\main.php(29): CComponent->__get('pageDescription')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#3 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#4 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#11 C:\wamp\www\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#12 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(38): CController->render('index', Array)
+#13 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site')
+#19 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/musicestore/site
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums/details/desingu-raja/38
+---
+2014/09/01 17:47:30 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.pageDescription" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\layouts\main.php(29): CComponent->__get('pageDescription')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#3 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#4 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#11 C:\wamp\www\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#12 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(38): CController->render('index', Array)
+#13 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site')
+#19 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/musicestore/site
+---

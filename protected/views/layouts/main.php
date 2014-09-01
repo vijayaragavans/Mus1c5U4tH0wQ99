@@ -24,7 +24,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php if(!empty($this->pageTitle)){  ?>
+	<?php if(isset($this->pageDescription) && $this->pageDescription != ''){  ?>
 	    <meta name="title" content="<?php echo $this->pageTitle; ?>" />
 	    <meta name="description" content="<?php echo $this->pageDescription; ?>">
 	    <meta name="keywords" content="<?php echo $this->pageKeyword; ?>">
