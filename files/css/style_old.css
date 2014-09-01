@@ -1332,14 +1332,42 @@ header nav{background:none;}
 header #contact-tab{background:none;}
 header .nav-tab a{background:none;color:white;padding-left:0;}
 header .nav-tab a:hover{color:white;}
-.dropdown-menu .user-header img{width:40%;float:left;}
+.dropdown-menu .user-header img{float:left;padding: 0 20%;}
+.dropdown-menu .user-header .udet{width: 100%;float: left;text-align: center;}
+.dropdown-menu .user-header .udet .uname{font-weight: bold;}
+.dropdown-menu .user-header .udet .membership{font-size: 8px;}
 .dropdown-menu .user-header p{width:60%;float:left;font-size: 12px;margin: 10% 0%;}
-.dropdown-menu .user-footer{padding:0 2%;}
+.dropdown-menu .user-footer .pull-left{
+	width: 50%;
+	float: left;
+	padding: 10% 0;
+}
+.dropdown-menu .user-footer .pull-left a,
+.dropdown-menu .user-footer .pull-right a{
+	font-size: 12px;
+	font-weight: bold;
+}
+.dropdown-menu .user-footer .pull-right{
+	width: 50%;
+	padding: 10% 0;
+	text-align: right;
+}
+.dropdown-menu .user-footer {
+	padding: 0 5%;
+	margin: 0;
+	width: 100%;
+}
 nav .dropdown .dropdown-menu {
-	width: 200%;
-	position: absolute;
-	left: -105px;
-	padding: 2% 2%;
+width: 300px;
+position: absolute;
+left: -105px;
+padding: 2% 2%;
+	
 }
 #content-1{padding: 20px 15px; 
  background: none;}
+.user-header.bg-light-blue{
+	width: 100%;
+	margin: 0;
+}
+.user-header.bg-light-blue p small{font-size: 75%;}
