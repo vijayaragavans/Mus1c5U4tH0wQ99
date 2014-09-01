@@ -58,16 +58,16 @@ return array(
 		),
 */		// uncomment the following to use a MySQL database
 		
-		'db'=>array(
+/*		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=musicstore',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
 		),
-	
+*/	
 
-/*		'db'=>array(
+		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=rightern_musicstore',
 			'emulatePrepare' => true,
 			'username' => 'rightern_news',
@@ -75,7 +75,7 @@ return array(
 			'charset' => 'utf8',
 		),
 
-*/
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
@@ -105,18 +105,18 @@ return array(
 			'page_Keyword'		=> 'Music eStore, Music Market, Download Music',
 			'adminEmail'=>'webmaster@example.com',
 			'AVATAR_MAX_SIZE'	=> "9000",	
-/*			'Fb_App_ID' => '298627920311869',			// Demo.haiinteractive.com
+			'Fb_App_ID' => '298627920311869',			// Demo.haiinteractive.com
 			'Fb_URL' => 'http://demo.haiinteractive.com/musicestore',	// Demo.haiinteractive.com
 			'avatar_thumb_path' => '/home3/rightern/public_html/demo/musicestore/images/avatar/',		
 			'avatar_thumb_url' => 'http://demo.haiinteractive.com/musicestore/images/avatar/',
 			'song_url' => 'http://demo.haiinteractive.com/musicestore/images/',
-*/			
+			
 
-			'Fb_App_ID' => '1468178786757324',			// Demo.localhost.com
+/*			'Fb_App_ID' => '1468178786757324',			// Demo.localhost.com
 			'Fb_URL' => 'http://demo.locahost.com/musicestore',	// Demo.localhost.com
 			'avatar_thumb_path' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/avatar/',
 			'avatar_thumb_url' => 'http://demo.localhost.com/musicestore/images/avatar/',
 			'song_url' => 'http://demo.localhost.com/musicestore/images/',
-
+*/
 		),
 );
