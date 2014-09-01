@@ -23,6 +23,15 @@
 	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="title" content="<?php echo $this->pageTitle; ?>" />
+	    <meta name="description" content="<?php echo $this->pageDescription; ?>">
+	    <meta name="keywords" content="<?php echo $this->pageKeyword; ?>">
+	    <meta name="og:site_name" content="<?php echo $this->siteName; ?>" />
+	    <meta property="og:image" content="<?php echo $this->ogImage; ?>">
+	    <meta name="og:title" content="<?php echo $this->pageTitle; ?>" />
+	    <meta name="og:description" content="<?php echo $this->pageDescription; ?>" />
+
 </head>
 <body>
 	<div id="ajax-window"></div>
@@ -45,7 +54,7 @@
 			<!-- Music player and Navigation sections -->			
 			<div class="section group">                
 				<!-- Logo and tagline -->   
-					<a href='<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/index'><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore_clr.png" style="padding-top:10px; padding-left:20px;" /></a>
+					<a href='<?php echo Yii::app()->request->baseUrl; ?>/site'><img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore_clr.png" style="padding-top:10px; padding-left:20px;" /></a>
 
 				<!-- Navigation -->
 				<nav class="col span_5_of_8">
@@ -53,9 +62,9 @@
 						<li><a href="index.html">index-1</a></li>
 						<li><a href="etune/home.html">index-3</a></li>
 						<li><a href="#">Music</a></li>
-						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/albums/index">Album</a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/albums">Album</a></li>
 						<?php if( Yii::app()->session['user_first_name'] ==''){  ?>
-						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/login">Login / Signup</a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/login">Login / Signup</a></li>
 						<?php }else{ ?>
 						<li class="dropdown user-menu">
 					                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -77,10 +86,10 @@
 					                                </li>
 					                                <li class="user-footer">
 					                                    <div class="pull-left">
-					                                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/userdetails/editprofile" class="btn btn-default btn-flat">Edit Profile</a>
+					                                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/userdetails/editprofile" class="btn btn-default btn-flat">Edit Profile</a>
 					                                    </div>
 					                                    <div class="pull-right">
-					                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/logout" class="btn btn-default btn-flat"> Logout </a>
+					                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout" class="btn btn-default btn-flat"> Logout </a>
 					                                    </div>
 					                                </li>
 						<?php } ?>

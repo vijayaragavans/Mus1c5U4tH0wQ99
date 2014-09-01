@@ -5,6 +5,7 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Music eStore',
@@ -16,8 +17,10 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.controllers.*',
 	),
 
+ 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		
@@ -27,7 +30,8 @@ return array(
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		
+	
+
 	),
 
 	// application components
@@ -36,7 +40,7 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		// uncomment the following to enable URLs in path-format
+           		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
@@ -97,6 +101,8 @@ return array(
 	// using Yii::app()->params['paramName']
 		'params'=>array(
 			// this is used in contact page
+			'Site_Name'		=> 'Music eStore Market',
+			'page_Keyword'		=> 'Music eStore, Music Market, Download Music',
 			'adminEmail'=>'webmaster@example.com',
 			'AVATAR_MAX_SIZE'	=> "9000",	
 			'Fb_App_ID' => '298627920311869',			// Demo.haiinteractive.com
@@ -105,7 +111,6 @@ return array(
 			'avatar_thumb_url' => 'http://demo.haiinteractive.com/musicestore/images/avatar/',
 			'song_url' => 'http://demo.haiinteractive.com/musicestore/images/',
 			
-
 
 /*			'Fb_App_ID' => '1468178786757324',			// Demo.localhost.com
 			'Fb_URL' => 'http://demo.locahost.com/musicestore',	// Demo.localhost.com

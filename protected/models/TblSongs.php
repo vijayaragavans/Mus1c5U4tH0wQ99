@@ -116,7 +116,7 @@ class TblSongs extends CActiveRecord
 	function Songs_List( $params, $limit )
 	{
 	        	$criteria = new CDbCriteria;
-	        	$criteria->select = 'song_id, song_title, song_img_url';
+	        	$criteria->select = 'song_id, song_url_title, song_title, song_img_url';
 	        	$criteria->condition = "song_album_page_category_id = $params";
 	        	//$criteria->params = array( 'song_img_url' );
 	        	$criteria->order = 'cong_created_on DESC';
@@ -124,4 +124,17 @@ class TblSongs extends CActiveRecord
 	        	$output = TblSongs::model()->findAll( $criteria );
 	        	return($output);		
 	}
+
+	function Song_Details( $album_id, $album_url_title )
+	{
+	        	$criteria = new CDbCriteria;
+	        	$criteria->select = '*';
+	        	 $criteria->join = ' LEFT JOIN `tbl_songs_url` AS `tu` ON tu.song_id = t.song_id';
+	        	$criteria->condition = "t.song_url_title = '$album_url_title'";
+	        	//$criteria->params = array( 'song_img_url' );
+	        	$output = TblSongs::model()->findAll( $criteria );
+	        	return($output);		
+	}
+
+
 }

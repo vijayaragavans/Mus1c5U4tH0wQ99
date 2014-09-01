@@ -1,5 +1,4 @@
 
-
   <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/style.css">
   <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/hscroll/jquery.mCustomScrollbar.css">
 
@@ -77,17 +76,13 @@
                             <h3> Music</h3>
                             <div class="nav_opt"><p>
                                       <select>
-                                          <option selected="selected">All Categories</option>
-                                          <option>Alternative</option>
-                                          <option>Boolywood</option>
-                                          <option>Children's Music</option>
-                                          <option>Classical</option>
-                                          <option>Dance / Electronic</option>
-                                          <option>Alternative</option>
-                                          <option>Alternative</option>
+                                          <option selected="selected" disabled="disabled">All Categories</option>
+                                          <?php foreach( $categories as $category ) {?>
+                                          <option value="<?php echo $category->album_category_id; ?>"><?php echo $category->album_category_name; ?></option>
+                                          <?php } ?>
                                       </select>
                                       <p>Pre-Order New Music</p>
-                                      <p>Subscribe to Newsletter</p>
+                                      <p><a href='<?php echo Yii::app()->request->baseUrl; ?>/subscribe?utm_source=direct'>Subscribe to Newsletter</a></p>
                                       <p>Browse</p>
                                       <p>Recommended for You</p>
                             </p>
@@ -189,7 +184,6 @@
 				overflow: hidden;">
 
 				<?php 	
-				
 						foreach( $slider as $slider_img ){  ?> 
 							<div>
 								<img u="image" src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$slider_img->song_img_url; ?>"  />
@@ -205,14 +199,6 @@
 			<div u="thumbnavigator" class="jssort11" style="position: absolute; width: 200px; height: 300px; left:605px; top:0px;">
 				<!-- Thumbnail Item Skin Begin -->
 				<style>
-					/* jssor slider thumbnail navigator skin 11 css */
-					/*
-					.jssort11 .p            (normal)
-					.jssort11 .p:hover      (normal mouseover)
-					.jssort11 .pav          (active)
-					.jssort11 .pav:hover    (active mouseover)
-					.jssort11 .pdn          (mousedown)
-					*/
 					.jssort11
 					{
 						font-family: Arial, Helvetica, sans-serif;
@@ -323,7 +309,12 @@
 				<div id="content-1" class="content horizontal-images hrscroll">
 					<ul>
 					<?php foreach ($international_songs as $key => $international_hits_value) { ?>
-						<li><div><div><img src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$international_hits_value->song_img_url; ?>" /></div><div class="album-title"><strong><?php echo $international_hits_value->song_title; ?></strong><div></div></li>		
+						<li><div><div><a href='<?php echo Yii::app()->request->baseUrl; ?>/albums/details/<?php echo $international_hits_value->song_url_title; ?>/<?php echo $international_hits_value->song_id; ?>'><img src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$international_hits_value->song_img_url; ?>" /></a></div>
+							<div class="album-title">
+								<a href='<?php echo Yii::app()->request->baseUrl; ?>/albums/details/<?php echo $international_hits_value->song_url_title; ?>/<?php echo $international_hits_value->song_id; ?>'><strong><?php echo $international_hits_value->song_title; ?></strong></a>
+							<div>
+						</div>
+						</li>		
 					<?php }?>
 					</ul>
 					</div>
@@ -340,14 +331,52 @@
 				<div id="content-1" class="content horizontal-images hrscroll">
 					<ul>
 					<?php foreach ($films as $key => $film_value) { ?>
-						<li><div><div><img src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$film_value->song_img_url; ?>" /></div><div class="album-title"><strong><?php echo $film_value->song_title; ?></strong><div></div></li>		
+						<li>
+							<div>
+							<div>
+							<a href='<?php echo Yii::app()->request->baseUrl; ?>/albums/details/<?php echo $film_value->song_url_title; ?>/<?php echo $film_value->song_id; ?>'>
+							<img src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$film_value->song_img_url; ?>" /></a>
+							</div>
+							<div class="album-title">
+							<a href='<?php echo Yii::app()->request->baseUrl; ?>/albums/details/<?php echo $film_value->song_url_title; ?>/<?php echo $film_value->song_id; ?>'>
+								<strong><?php echo $film_value->song_title; ?></strong></a>
+							<div>
+							</div>
+						</li>		
 					<?php }?>
 					</ul>
 					</div>
 			</section>
-		</div> 				  
+		</div>
 
-			  </div>
+	<div class="itune_hscroll right_nav" style="border: 1px solid #eaeaea;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; float:right;-webkit-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-moz-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-webkit-border-radius: 5px;">
+			<div id="demo">
+					<h3 style="padding:1%;">Hot Compilations</h3>
+					<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="albums.html">See All ></a></div>
+			</div>
+			<section id="examples" class="snap-scrolling-example">
+				<!-- content -->
+				<div id="content-1" class="content horizontal-images hrscroll">
+					<ul>
+					<?php foreach ($hot_compilations as $key => $hot_compilations_value) { ?>
+						<li>
+						<div>
+						<div>
+						<a href='<?php echo Yii::app()->request->baseUrl; ?>/albums/details/<?php echo $hot_compilations_value->song_url_title; ?>/<?php echo $hot_compilations_value->song_id; ?>'>
+						<img src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$hot_compilations_value->song_img_url; ?>" /></a>
+						</div>
+						<div class="album-title">
+						<a href='<?php echo Yii::app()->request->baseUrl; ?>/albums/details/<?php echo $hot_compilations_value->song_url_title; ?>/<?php echo $hot_compilations_value->song_id; ?>'>
+						<strong><?php echo $hot_compilations_value->song_title; ?></strong></a>
+						<div>
+						</div>
+						</li>		
+					<?php }?>
+					</ul>
+					</div>
+			</section>
+		</div> 				
+		</div>
 
 				</div>
 
