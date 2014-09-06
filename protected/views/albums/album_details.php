@@ -271,8 +271,9 @@ color: white;
 </style>
 <div class="col-sm-9 col-sm-12 songs-det" id="content">
 	<div class="breadcrumb">
-		<a href="/home">Home</a>
-		 » <a href="#" class="last"><?php echo $details[0]->song_title; ?></a>
+		<a href="<?php echo Yii::app()->request->baseUrl; ?>/">Home</a>
+		 » <a href="<?php echo Yii::app()->request->baseUrl; ?>/albums/">Albums</a>
+		 » <a href="<?php echo Yii::app()->request->baseUrl; ?>/albums/category/<?php echo $album_category[0]->album_category_id; ?>" class="last"><?php echo $album_category[0]->album_category_name; ?></a>   » <a href="#" class="last"><?php echo $details[0]->song_title; ?></a>
 		</div>
 	<div class="product-info">
 		<div class="row">
@@ -280,7 +281,7 @@ color: white;
 	<div id="default_gallery" class="left spacing">
 		<div class="image"> 
 			<div class="zoomWrapper">
-				<img id="zoom_01" data-zoom-image="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$details[0]->song_img_url; ?>" src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$details[0]->song_img_url; ?>" title="<?php echo $details[0]->song_title; ?>" alt="<?php echo $details[0]->song_title; ?>">
+				<img id="zoom_01" src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$details[0]->song_img_url; ?>" title="<?php echo $details[0]->song_title; ?>" alt="<?php echo $details[0]->song_title; ?>" style='max-height:400px;'>
 			</div>
 		</div>
 	</div>
@@ -304,116 +305,18 @@ color: white;
 								<div class="wishlist">
 									<a title="Add to Wish List"><i class="fa fa-star"></i><span>Add to Wish List</span></a>
 								</div>
-<!--
-								<div class="compare">
-									<a title="Add to Compare"><i class="fa fa-bar-chart-o"></i><span>Add to Compare</span></a>
-								</div>
--->
 							</div>
 							<div class="clear"></div>
 						</div>
 					</div>
 				</div>
 				<div class="clear"></div>
-				<div class="review">
-					<div><span>Overall Rating</span>
-							<span>
-<div class="exemple">
-	<div class="basic" data-average="12" data-id="1"></div>
-</div>
-							</span>
-							<div class="btn-rew">
-								<a onclick="document.getElementById('tab-review').scrollIntoView();">0 reviews</a>
-								<a onclick="document.getElementById('tab-review').scrollIntoView();"><i class="fa fa-pencil"></i>Write a review</a>
-								<div class="clear"></div>
-							</div>
-					</div>
-					<div class="clear"></div>
-				</div>
+
 				<div class="share">
 					<div class="share-title"><h4>Share This Song:</h4></div>
 					<div id='social-share-buttons'></div>					
 				</div>				
 				<div class="clear"></div>
-			</div>
-			<div class="col-sm-6 top_sngs">
-				<div class="topsongs-containers left_nav">
-					<div class="top_songs">
-							<div class="see_all col col-sm-12">
-								<span class="col col-sm-10"><h3>Top Songs</h3></span>
-								<span class="col col-sm-2" style="font-style: normal; float: right;cursor: pointer;padding:0;">
-								<a href="albums.html">See all ›</a></span>
-							</div>
-							<ul>
-								<li class="col span_8_of_8">
-									<div class="col span_8_of_8">
-										<div class="col img_content">
-											<div class="top_song">
-												<img src="hscroll/img/6.jpg">
-											</div>
-										</div>
-										<div class="col txt_content">
-											<a href="#">1.Samjhawan</a><br>
-											<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-										</div>
-									</div>
-								</li>
-								<li class="col span_8_of_8">
-									<div class="col span_8_of_8">
-										<div class="col img_content">
-											<div class="top_song">
-												<img src="hscroll/img/7.jpg">
-											</div>
-										</div>
-										<div class="col txt_content">
-											<a href="#">1.Samjhawan</a><br>
-											<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-										</div>
-									</div>
-								</li>
-								<li class="col span_8_of_8">
-									<div class="col span_8_of_8">
-										<div class="col img_content">
-											<div class="top_song">
-												<img src="hscroll/img/8.jpg">
-											</div>
-										</div>
-										<div class="col txt_content">
-											<a href="#">1.Samjhawan</a><br>
-											<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-										</div>
-									</div>
-								</li>																								
-								<li class="col span_8_of_8">
-									<div class="col span_8_of_8">
-										<div class="col img_content">
-											<div class="top_song">
-												<img src="hscroll/img/9.jpg">
-											</div>
-										</div>
-										<div class="col txt_content">
-											<a href="#">1.Samjhawan</a><br>
-											<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-										</div>
-									</div>
-								</li>
-								<li class="col span_8_of_8">
-									<div class="col span_8_of_8">
-										<div class="col img_content">
-											<div class="top_song">
-												<img src="hscroll/img/4.png">
-											</div>
-										</div>
-										<div class="col txt_content">
-											<a href="#">1.Samjhawan</a><br>
-											<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-										</div>
-									</div>
-								</li>																								
-								
-							</ul>
-					</div>
-							</div>
 			</div>
 		</div>
 	</div>
@@ -465,52 +368,49 @@ color: white;
 				 <h4>Description</h4>
 	-->
 				<div class="tab-content">
-					<p><?php echo $details[0]->song_description; ?></p>
+					<pre><?php echo $details[0]->song_description; ?></pre>
 				</div>
 			</div>
 			<div class="tab-pane" id="tab_c">
 				<div class="review-tab-content">
 					<h2 id="review-title">Write a review</h2>
-				<label>Your Name:</label>
-				<input type="text" name="name" value="">
-				<br>
-				<br>
-				<label>Your Review:</label>
-				<textarea name="text" cols="40" rows="8" style="width: 93%;"></textarea>
-				<div class="clear"></div>
-				<span style="font-size: 11px;"><span style="color: #FF0000;">Note:</span> HTML is not translated!</span><br>
-				<br>
-				<label class="inline">Rating:</label>
-]
-				<div class="exemple">
-					<div class="basic" data-average="12" data-id="1"></div>
-				</div>
 
-				<div class="buttons">
-				<div><a id="button-review" class="button-cont-right">Continue<i class="fa fa-arrow-circle-right"></i></a></div>
-				</div>
+					<div id="disqus_thread"></div>
+					    <script type="text/javascript">
+					        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+					        var disqus_shortname = 'musicestore'; // required: replace example with your forum shortname
+
+					        /* * * DON'T EDIT BELOW THIS LINE * * */
+					        (function() {
+					            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					        })();
+					    </script>
 				</div>
 			</div>
 			<div class="tab-pane" id="tab_d">
 				<div id="demo">
 					<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="albums.html">See All &gt;</a></div>
 					<section id="examples" class="snap-scrolling-example">
-						
 						<!-- content -->
 						<div id="content-1" class="content horizontal-images">
 							<ul>
-								<li><div><div><img src="hscroll/img/1.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/2.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/top-song.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/4.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/5.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/top-song.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/1.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/2.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/top-song.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/4.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/5.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>				
-								<li><div><div><img src="hscroll/img/top-song.png" /></div><div class="album-title"><strong>Kick (Original Motion Picture..</strong></div></div></li>									
+							<?php foreach($related_albums as $related_album ){ 
+								?>
+								<li>
+								<div>
+								<div>
+									<a href='<?php echo Yii::app()->request->baseUrl; ?>/albums/details/<?php echo $related_album->song_url_title; ?>/<?php echo $related_album->song_id; ?>'>
+									<img src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$related_album->song_img_url; ?>" />
+									</a>
+								</div>
+									<div class="album-title">
+										<strong><?php echo $related_album->song_title; ?></strong>
+									</div>
+								</div>
+								</li>
+							<?php } ?>
 							</ul>
 						</div>
 						

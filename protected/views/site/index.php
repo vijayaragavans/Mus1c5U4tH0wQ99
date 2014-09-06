@@ -40,8 +40,8 @@
 	                    <ul id="covers" class="group">
 	                    <?php foreach( $songs as $song ){
  ?>	                        <li>
-			<a href="music-open.html">
-			<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/images/songs_thumb/<?php echo $song->song_img_url; ?>" style='height:260px; width:260px;'/>
+			<a href="<?php echo Yii::app()->request->baseUrl; ?>/albums/details/<?php echo $song->song_url_title; ?>/<?php echo $song->song_id; ?>">
+			<img alt="" src="<?php echo Yii::app()->request->baseUrl; ?>/images/songs_thumb/<?php echo $song->song_img_url; ?>" style='height:260px; width:260px;'/>
 	                                <div>
 	                                    <h3><?php echo $song->song_title; ?></h3>
 	                                    <span>Release date: March 28, 2013</span>

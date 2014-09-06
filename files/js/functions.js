@@ -609,4 +609,8 @@ $(document).ready(function (){
 	});
 
 });
+$("#covers li a").on('click', function(){
+	var redirect_url = $(this).attr('href');
+	window.location.href = redirect_url;
+});
 })(window.jQuery);
