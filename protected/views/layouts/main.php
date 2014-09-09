@@ -60,10 +60,9 @@
 				<!-- Navigation -->
 				<nav class="col span_5_of_8">
 					<ul>
-						<li><a href="index.html">index-1</a></li>
-						<li><a href="etune/home.html">index-3</a></li>
-						<li><a href="#">Music</a></li>
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/albums">Album</a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/wishlist">Wishlist</a></li>
+						<li><a href="#">History</a></li>
 						<?php if( Yii::app()->session['user_first_name'] ==''){  ?>
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/login">Login / Signup</a></li>
 						<?php }else{ ?>
@@ -105,7 +104,7 @@
 
 	<div class="clear"></div>
 	<footer class="section">            
-		<p>&copy;2013 <a href="#" target="_blank">Music eStore</a>, All Rights Reserved &mdash;  Powered By  <a href="http://haiinteractive.com" target="_blank">Hai Interactive</a></p>
+		<p>&copy;2013 <a href="#">Music eStore</a>, All Rights Reserved &mdash;  Powered By  <a href="http://haiinteractive.com" target="_blank">Hai Interactive</a></p>
 	</footer>		
 
 </div><!-- page -->

@@ -303,7 +303,11 @@ color: white;
 							</div>
 							<div class="extra-button">
 								<div class="wishlist">
+									<?php if( !empty( $wishlish_info[0]->wishlist_id ) || $wishlish_info[0]->wishlist_id > 0 ){ ?>
+									<span title="Add to Wish List" disabled='disabled'><i class="fa fa-star"></i><span>Already Wishlisted</span></span>
+									<?php }else{ ?>
 									<a title="Add to Wish List"><i class="fa fa-star"></i><span>Add to Wish List</span></a>
+									<?php } ?>
 								</div>
 							</div>
 							<div class="clear"></div>
@@ -311,7 +315,9 @@ color: white;
 					</div>
 				</div>
 				<div class="clear"></div>
-
+				<form>
+					<input type="hidden" name="album_id" id="album_id" value="<?php echo $details[0]->song_id; ?>" />
+				</form>
 				<div class="share">
 					<div class="share-title"><h4>Share This Song:</h4></div>
 					<div id='social-share-buttons'></div>					

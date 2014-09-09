@@ -2,7 +2,7 @@
 
 class AlbumsController extends Controller
 {
-	public $pageDescription	, $pageTitle, $siteName, $ogImage, $pageKeyword;	
+	public $pageDescription, $pageTitle, $siteName, $ogImage, $pageKeyword;	
 	public function actionIndex()
 	{
 
@@ -38,11 +38,13 @@ class AlbumsController extends Controller
     array(':song_id'=> $album_id), array('order' => 'cong_created_on DESC'), array('limit' => 10));
 		$songs_url = TblSongsUrl::model()->findAllByAttributes(array('song_id'=> $album_id ));
 		$album_category = TblAlbumCategory::model()->findAllByAttributes(array('album_category_id'=> $details[0]->song_category ));
+		$wishlish_info = Wishlist::model()->findAllByAttributes(array('album_id'=> $album_id, 'user_id' =>  Yii::app()->session['user_id'] ));
 		$output = array(
 				'details' => $details,
 				'songs_url' => $songs_url,
 				'album_category'	=> $album_category,
-				'related_albums'	=> $related_albums
+				'related_albums'	=> $related_albums,
+				'wishlish_info'		=> $wishlish_info
 			);
 		$this->render('album_details', $output );		// HTML Rendering
 	}

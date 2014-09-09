@@ -8567,3 +8567,233 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/musicestore/
 ---
+2014/09/09 15:59:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(619): CApplication->getDb()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(TblSongs))
+#7 C:\wamp\www\Hai_interactive\demo\musicestore\protected\models\TblSongs.php(25): CActiveRecord::model('TblSongs')
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(37): TblSongs::model()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/musicestore/
+HTTP_REFERER=http://demo.localhost.com/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407603052Vaalu-Tamil-Movie-Songs-Vaalu-Vaalu-2013-Vaalu-Movie-Songs-Vaalu-Mp3-Vaalu-Song-2013-Tamil-Movie-Song-Mp3-Free-Download-Audio-ACDRIP-Hansika.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407603052Vaalu-Tamil-Movie-Songs-Vaalu-Vaalu-2013-Vaalu-Movie-Songs-Vaalu-Mp3-Vaalu-Song-2013-Tamil-Movie-Song-Mp3-Free-Download-Audio-ACDRIP-Hansika.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407603158Vanakkam-Chennai-2013-Tamil-Movie.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407603158Vanakkam-Chennai-2013-Tamil-Movie.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407602666samar.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407602666samar.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407602545rammy.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407602545rammy.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407602853tamil-cinema-puli-vaal-movie-wallpaper02.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407602853tamil-cinema-puli-vaal-movie-wallpaper02.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407602966thillu-mullu-2-tamil-movie-mp3-songs-download.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407602966thillu-mullu-2-tamil-movie-mp3-songs-download.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407602339pattathu-yanai.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407602339pattathu-yanai.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407602468Raja-Rani-2013-Tamil-Movie-Watch-Online.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407602468Raja-Rani-2013-Tamil-Movie-Watch-Online.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407601896Naiyaandi.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407601896Naiyaandi.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407601731ManthiraKaran-Movie-Poster.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407601731ManthiraKaran-Movie-Poster.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407602123Nimirnthu-Nil.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407602123Nimirnthu-Nil.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407602235NSS.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407602235NSS.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/
+---
+2014/09/09 16:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/09/09 16:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/09/09 16:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/09/09 16:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/09/09 16:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/09/09 16:02:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/09/09 16:02:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/09/09 16:02:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/09/09 16:02:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/09/09 16:02:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/09/09 16:02:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---

@@ -62,7 +62,7 @@ function getUserInfo() {
 		            data: params,
 		            async: false,
 		            success: function(sresponse) {
-                                window.location.reload();
+                                window.location.href = document.referrer;
   		            }
 		          });
 
