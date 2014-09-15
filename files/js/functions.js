@@ -7,10 +7,10 @@
 
 // sample CSS: html[data-useragent*='Chrome/13.0'] { ... }
 
+var dir_url = '/musicestore';
 
 // remap jQuery to $
 (function($){
-
 
 var galNr = 1,
 	picNr = 1,
@@ -613,4 +613,43 @@ $("#covers li a").on('click', function(){
 	var redirect_url = $(this).attr('href');
 	window.location.href = redirect_url;
 });
+
+$(".wishlist a").on('click', function(){
+	var params = 'album_id='+$("#album_id").val();
+	ajax_request( 'wishlist', params );
+});
+var ajax_request = function( purpose, params ){
+	 $.ajax({
+	            type: "POST",
+	            url: dir_url+"/wishlist/add",
+	            data: params,
+	            async: false,
+	            success: function(sresponse) {
+	            		if(sresponse == 'login')
+	            		{
+		                                window.location.href = dir_url+'/site/login';
+		               }else if( sresponse == 'success')
+		               {
+		               	$('.wishlist span').text('Already WishListed');
+		               	$('.wishlist a').attr('disabled', 'disabled');
+		               }else{
+		               	alert('response' + sresponse);
+		               }
+	            }
+	 });
+}
+
 })(window.jQuery);
+
+ function removeWishlist( wishlist_id ){
+ 		 $.ajax({
+	            type: "POST",
+	            url: dir_url+"/wishlist/remove",
+	            data: 'wishlist_id='+wishlist_id,
+	            async: false,
+	            success: function(sresponse) {
+	            		window.location.reload();
+	            }
+	           });
+
+}

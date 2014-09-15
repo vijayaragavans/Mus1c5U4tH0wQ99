@@ -95,4 +95,16 @@ class Wishlist extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	function Wishlist_History( $user_id )
+	{
+		$rows = Yii::app()->db->createCommand()
+		            ->select('*')
+		            ->from('wishlist w')
+		            ->join('tbl_songs s','w.album_id = s.song_id')
+		            ->join('users u', 'w.user_id = u.user_id')
+		            ->where('w.user_id=:user_id', array(':user_id'=>$user_id))
+		            ->queryAll();
+		           return $rows;
+          	}	
 }

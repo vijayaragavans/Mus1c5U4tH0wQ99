@@ -4,7 +4,11 @@ class WishlistController extends Controller
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+		$user_id = Yii::app()->session['user_id'];
+		$model = new Wishlist;
+		//$wishlist_history = Wishlist::model()->with('album','user')->findAll('user_id = :user_id', array(':user_id'=> $user_id ));
+		$wishlist_history = $model->Wishlist_History( $user_id );
+		$this->render('index', array( 'wishlist_history' => $wishlist_history) );
 	}
 
 	public function actionAdd()
@@ -28,6 +32,13 @@ class WishlistController extends Controller
 		}
 	}
 
+	public function actionRemove()
+	{
+		$wishlist_id = Yii::app()->request->getPost('wishlist_id');
+		$response = Wishlist::model()->deleteAll( 'wishlist_id =' .$wishlist_id);
+		echo $response;
+		die;
+	}
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

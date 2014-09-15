@@ -61,11 +61,11 @@
 				<nav class="col span_5_of_8">
 					<ul>
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/albums">Album</a></li>
-						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/wishlist">Wishlist</a></li>
-						<li><a href="#">History</a></li>
 						<?php if( Yii::app()->session['user_first_name'] ==''){  ?>
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/login">Login / Signup</a></li>
 						<?php }else{ ?>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/wishlist">Wishlist</a></li>
+						<li><a href="#">History</a></li>
 						<li class="dropdown user-menu">
 					                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 					                                <i class="glyphicon glyphicon-user"></i>
