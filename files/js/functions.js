@@ -639,6 +639,7 @@ var ajax_request = function( purpose, params ){
 	 });
 }
 
+
 })(window.jQuery);
 
  function removeWishlist( wishlist_id ){

@@ -302,7 +302,7 @@
 	<div class="itune_hscroll right_nav" style="border: 1px solid #eaeaea;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; float:right;-webkit-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-moz-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-webkit-border-radius: 5px;">
 			<div id="demo">
 					<h3 style="padding:1%;">International Hits</h3>
-					<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="albums.html">See All ></a></div>
+					<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="<?php echo Yii::app()->request->baseUrl; ?>/browse/index/2">See All ></a></div>
 			</div>
 			<section id="examples" class="snap-scrolling-example">
 				<!-- content -->
@@ -324,7 +324,7 @@
 	<div class="itune_hscroll right_nav" style="border: 1px solid #eaeaea;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; float:right;-webkit-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-moz-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-webkit-border-radius: 5px;">
 			<div id="demo">
 					<h3 style="padding:1%;">Films</h3>
-					<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="albums.html">See All ></a></div>
+					<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="<?php echo Yii::app()->request->baseUrl; ?>/browse/index/3">See All ></a></div>
 			</div>
 			<section id="examples" class="snap-scrolling-example">
 				<!-- content -->
@@ -352,7 +352,7 @@
 	<div class="itune_hscroll right_nav" style="border: 1px solid #eaeaea;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; float:right;-webkit-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-moz-box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);box-shadow: 0px 1px 10px -4px rgba(50, 50, 50, 0.75);-webkit-border-radius: 5px;">
 			<div id="demo">
 					<h3 style="padding:1%;">Hot Compilations</h3>
-					<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="albums.html">See All ></a></div>
+					<div style="float:right;  margin-right: 30px; margin-top: -23px;padding:1%;"><a href="<?php echo Yii::app()->request->baseUrl; ?>/browse/index/4">See All ></a></div>
 			</div>
 			<section id="examples" class="snap-scrolling-example">
 				<!-- content -->

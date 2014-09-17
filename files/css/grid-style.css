@@ -118,4 +118,57 @@ a:hover, a:active{
 		margin-top:90px;
 	}
 }
-
+.song-date
+{
+	font-size:10px;
+}
+li .song-desc strong
+{
+	font-size:12px;
+	border:none;
+	margin:0;
+}
+li .buy-btn
+{
+  background: #013A79;
+/*
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #b3b3b3);
+  background-image: -moz-linear-gradient(top, #f0f0f0, #b3b3b3);
+  background-image: -ms-linear-gradient(top, #f0f0f0, #b3b3b3);
+  background-image: -o-linear-gradient(top, #f0f0f0, #b3b3b3);
+  background-image: linear-gradient(to bottom, #f0f0f0, #b3b3b3);
+*/
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	width: 65%;
+	margin: 0 20%;
+	font-size: 10px;
+	font-weight: bold;
+	box-shadow: 1px 1px 5px #aaa;
+	-moz-box-shadow: 1px 1px 5px #aaa;
+	-webkit-box-shadow: 1px 1px 5px #aaa;
+}
+li .btn-wrap{width:100%;cursor:pointer;margin: 5% 0;}
+/*
+li .buy-btn:hover {
+  background: #c2c2c2;
+  background-image: -webkit-linear-gradient(top, #c2c2c2, #e0e0e0);
+  background-image: -moz-linear-gradient(top, #c2c2c2, #e0e0e0);
+  background-image: -ms-linear-gradient(top, #c2c2c2, #e0e0e0);
+  background-image: -o-linear-gradient(top, #c2c2c2, #e0e0e0);
+  background-image: linear-gradient(to bottom, #c2c2c2, #e0e0e0);
+  text-decoration: none;
+}
+*/
+#all_songs a{color:#013A79;text-decoration: none;}
+#all_songs.sky-tabs > input:checked + label span span,
+#all_songs.sky-tabs > label:hover span span
+{background-color:#013A79;}
+#all_songs #container1{width:100%;}
+#all_songs .grid{width:23.5%;}
