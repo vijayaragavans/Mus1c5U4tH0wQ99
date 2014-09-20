@@ -83,7 +83,7 @@
                                       </select>
                                       <p>Pre-Order New Music</p>
                                       <p><a href='<?php echo Yii::app()->request->baseUrl; ?>/subscribe?utm_source=direct'>Subscribe to Newsletter</a></p>
-                                      <p>Browse</p>
+                                      <p><a href='<?php echo Yii::app()->request->baseUrl; ?>/browse/index'>Browse</a></p>
                                       <p>Recommended for You</p>
                             </p>
                             </div>
