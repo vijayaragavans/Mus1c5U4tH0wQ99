@@ -298,8 +298,12 @@ color: white;
 					<div class="prod-row">
 						<div class="cart-top">
 							<div class="cart-top-padd form-inline">
-								
+							<form name='buy-form' id='buy-form' method="POST" action='<?php echo Yii::app()->request->baseUrl; ?>/paypal/buy'>	
 								<a id="button-cart" class="button-prod"><i class="fa fa-shopping-cart"></i>Buy</a>
+								<input type='hidden' name='amt' id='amt' readonly="readonly" value="<?php echo $details[0]->song_price; ?>" />
+								<input type='hidden' name='song_id' id='song_id' readonly="readonly" value="<?php echo $details[0]->song_id; ?>" />
+								<input type='hidden' name='description' id='description' readonly="readonly" value="<?php echo $details[0]->song_title; ?>" />
+							</form>
 							</div>
 							<div class="extra-button">
 								<div class="wishlist">
@@ -468,4 +472,10 @@ color: white;
 				
 			});
 		})($);
+
+		$(document).ready(function(){
+			$("#button-cart").on('click', function(){
+				$('form#buy-form').submit();
+			});
+		});
 	</script>

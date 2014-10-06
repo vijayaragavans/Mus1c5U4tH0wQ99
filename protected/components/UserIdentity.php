@@ -19,7 +19,6 @@ class UserIdentity extends CUserIdentity
 	{
 
   		$user = Users::model()->findByAttributes(array('user_email'=>$this->username, 'user_password'=>md5($this->password) ));
-  		$userdetails = UserDetails::model()->findByAttributes( array( 'user_id' => $user->user_id ) );
 		/*$users=array(
 			// username => password
 			'demo'=>'demo',
@@ -31,6 +30,7 @@ class UserIdentity extends CUserIdentity
 	                } else if ($user->user_password !== md5($this->password) ) { 
 	                        $this->errorCode=self::ERROR_PASSWORD_INVALID;
 	                } else { // Okay!
+  		$userdetails = UserDetails::model()->findByAttributes( array( 'user_id' => $user->user_id ) );
 	                    $this->errorCode=self::ERROR_NONE;
 	                    Yii::app()->session['is_user_loggedin'] = true;
 	                    Yii::app()->session['user_id'] = $user->user_id;

@@ -10725,3 +10725,1869 @@ Stack trace:
 REQUEST_URI=/musicestore/itunestyle/img/loading.gif
 HTTP_REFERER=http://demo.localhost.com/musicestore/albums
 ---
+2014/10/06 15:32:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(619): CApplication->getDb()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(TblSongs))
+#7 C:\wamp\www\Hai_interactive\demo\musicestore\protected\models\TblSongs.php(25): CActiveRecord::model('TblSongs')
+#8 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(37): TblSongs::model()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/musicestore/
+---
+2014/10/06 15:59:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 15:59:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 15:59:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 15:59:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 15:59:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 15:59:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:15:15 [error] [php] Trying to get property of non-object (C:\wamp\www\Hai_interactive\demo\musicestore\protected\components\UserIdentity.php:22)
+Stack trace:
+#0 C:\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#1 C:\wamp\www\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php(100): LoginForm->validate()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/site/login
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\components\UserIdentity.php (22)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\models\LoginForm.php (52)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\SiteController.php (100)
+2014/10/06 16:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:39:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:39:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:40:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:40:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:40:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:41:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:41:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:41:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 16:42:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:48:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:48:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:53:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:53:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:54:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:54:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:55:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:55:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:55:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:55:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:59:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:59:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 16:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:01:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:15:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:15:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:15:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:33:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:33:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:33:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:33:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:33:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:34:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/songs_thumb/1407600063Alex".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/songs_th...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/images/songs_thumb/1407600063Alex
+HTTP_REFERER=http://demo.localhost.com/musicestore/browse/index
+---
+2014/10/06 17:36:44 [error] [php] Trying to get property of non-object (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\wishlist\index.php:20)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): WishlistController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): WishlistController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\WishlistController.php(11): WishlistController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): WishlistController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): WishlistController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): WishlistController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): WishlistController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/wishlist
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\wishlist\index.php (20)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\WishlistController.php (11)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/10/06 17:37:11 [error] [php] Trying to get property of non-object (C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\wishlist\index.php:23)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): WishlistController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): WishlistController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\WishlistController.php(11): WishlistController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): WishlistController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): WishlistController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): WishlistController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): WishlistController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicestore/wishlist
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\views\wishlist\index.php (23)
+in C:\wamp\www\Hai_interactive\demo\musicestore\protected\controllers\WishlistController.php (11)
+in C:\wamp\www\Hai_interactive\demo\musicestore\index.php (13)
+2014/10/06 17:37:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:37:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:37:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:37:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:38:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:38:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:41:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:41:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:47:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:47:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:48:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:48:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:48:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:48:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:48:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:48:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:48:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:48:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:49:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:49:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:51:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:51:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:52:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:52:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:52:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:52:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:52:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:52:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 17:54:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:54:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:54:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:54:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 17:54:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "category".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('category')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('category')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('albums/category')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicestore/albums/category/2
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums/details/aarambam/37
+---
+2014/10/06 18:16:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/6.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/6.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/6.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 18:16:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/7.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/7.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/7.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 18:16:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/8.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/8.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/8.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 18:16:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/9.jpg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/9.j...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/9.jpg
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 18:16:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hscroll/img/4.png".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('hscroll/img/4.p...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/hscroll/img/4.png
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 18:16:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "itunestyle/img/loading.gif".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('itunestyle/img/...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/itunestyle/img/loading.gif
+HTTP_REFERER=http://demo.localhost.com/musicestore/albums
+---
+2014/10/06 18:16:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 18:16:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---
+2014/10/06 18:16:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/fonts/glyphicons-halflings-regular.svg".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('files/fonts/gly...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\Hai_interactive\demo\musicestore\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicestore/files/fonts/glyphicons-halflings-regular.svg
+HTTP_REFERER=http://demo.localhost.com/musicestore/files/css/blue.css
+---

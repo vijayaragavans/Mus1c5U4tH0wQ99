@@ -5,7 +5,6 @@ class AlbumsController extends Controller
 	public $pageDescription, $pageTitle, $siteName, $ogImage, $pageKeyword;	
 	public function actionIndex()
 	{
-
 		$model = new TblSongs;
 		$categories = TblAlbumCategory::model()->findAllByAttributes(array('album_category_is_active'=> 'Y' ));
         		$slider_img = $model->Get_Latest_Songs( $params = 'song_img_url' , $limit = 5 );

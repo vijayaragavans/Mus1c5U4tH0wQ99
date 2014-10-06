@@ -41,14 +41,14 @@ $this->renderPartial('fb');
 		<?php echo $form->labelEx($model,'password', array('class' => 'ie-placeholders', 'placeholder' => 'Password', 'id' => 'ipt-password' )); ?>
 		<?php echo $form->passwordField($model,'password', array('placeholder' => 'Password')); ?>
 	        	<div class="login_submit"><a class='forgotten-password-link' href='#'>Forgotten password</a>
-		<?php echo CHtml::submitButton('Login', array('class' => 'btn-orange')).'</div>'; ?>
+		<?php echo CHtml::submitButton('Login', array('class' => 'btn-orange btn-sign-in')).'</div>'; ?>
 
 <?php $this->endWidget(); ?>
 
       <div class='forgotten-password-box'>
         <form class='input-form' id='forgotten-password-form' action='#'>
           <span class='ie-placeholders'>Email:</span><input type='text' id='ipt-fp-email' class='forgotten-password-email' placeholder='E-mail' />
-          <input type='submit' class='btn-orange' value='Send' /><br /><br />
+          <input type='submit' class='btn-orange ' value='Send' /><br /><br />
           We'll send you e-mail with password reset.
         </form>
       </div>

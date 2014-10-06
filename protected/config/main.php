@@ -39,8 +39,35 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+
 		),
-           		// uncomment the following to enable URLs in path-format
+			'Paypal' => array(
+				    'class'=>'application.components.Paypal',
+				    /*'apiUsername' => 'sjvmv_api1.yahoo.co.in',
+				    'apiPassword' => '9R9K82M66Y6QEKUE',
+				    'apiSignature' => 'AAI2vtI8Y2GBeHHmNUWRIK5z.YDZApPCngdYQb.U8-vxm9OIeupu0nH0', */
+
+				    // Beta Haiinteractive Credentials
+				    'apiUsername' => 'vijayaragavan.sivagurusamy_api1.gmail.com',
+				    'apiPassword' => 'EBNVW39WQSFCBG94',
+				    'apiSignature' => 'AFcWxV21C7fd0v3bYYYRCpSSRl31AgwZPwwb3aVfxGpjRfL6aTkNc9Ug', 
+				    'apiLive' => false,
+				 
+				    'returnUrl' => 'paypal/confirm/', //regardless of url management component
+				    'cancelUrl' => 'paypal/cancel/', //regardless of url management component
+				 
+				    // Default currency to use, if not set USD is the default
+				    'currency' => 'USD',
+				 
+				    // Default description to use, defaults to an empty string
+				    //'defaultDescription' => '',
+				 
+				    // Default Quantity to use, defaults to 1
+				    //'defaultQuantity' => '1',
+				 
+				    //The version of the paypal api to use, defaults to '3.0' (review PayPal documentation to include a valid API version)
+				    //'version' => '3.0',
+				),			           		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
