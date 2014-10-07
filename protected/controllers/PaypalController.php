@@ -101,40 +101,47 @@ class PaypalController extends Controller
 
      public function actionSuccess()
      {
+     	//$this->_download( Yii::app()->session['song_id'] );
      	$this->render('confirm');
      }	
-     public function _download( $album_id )
+     public function actionDownload(  )
      {
+     		$album_id = Yii::app()->session['song_id'];
 		$error = "";
-		if(extension_loaded('zip'))
-		{
-			$zip = new ZipArchive(); // Load zip library 
-			$zip_name = time().".zip"; // Zip name
-			if($zip->open($zip_name, ZIPARCHIVE::CREATE)!==TRUE)
-			{ 
-			 // Opening zip file to load files
-			$error .= "* Sorry ZIP creation failed at this time";
-			}
-			$datas = TblSongsUrl::model()->findAllByAttributes(array('song_id' => $album_id ));
-			foreach($datas as $song ){
-				//echo $main_dir.'\songs\\'.$song->song_url;
-				$zip->addFile('../../images/songs/'.$song->song_url); // Adding files into zip
-			}
-			$zip->close();
-			if(file_exists($zip_name))
-			{
-				return $zip_name;
-				//header("Location: /musicestore/paypal/confirm");
-			}
-			else{
-			$error .= "* Please select file to zip ";
-			}
-		}else{
-			$error .= "* You dont have ZIP extension";
+		$datas = TblSongsUrl::model()->findAllByAttributes(array('song_id' => $album_id ));
+		$file_name = TblSongs::model()->findAllByAttributes(array('song_id' => $album_id ));
+		$zip_file_name = $file_name[0]->song_url_title.'.zip';
+		foreach($datas as $song ){
+			//echo $main_dir.'\songs\\'.$song->song_url;
+			$songs[ ] = $song->song_url;
+			//$zip->addFile('../../images/songs/'.$song->song_url); // Adding files into zip
 		}
+		$song_path = $_SERVER['DOCUMENT_ROOT'].'/musicestore/images/songs/';
+		$this->zipFilesAndDownload($songs,$zip_file_name,$song_path);
 			
      }
-
+	function zipFilesAndDownload($file_names,$archive_file_name,$file_path)
+	{
+	    $zip = new ZipArchive();
+	    //create the file and throw the error if unsuccessful
+	    if ($zip->open($archive_file_name, ZIPARCHIVE::CREATE )!==TRUE) {
+	        exit("cannot open <$archive_file_name>\n");
+	    }
+	    //add each files of $file_name array to archive
+	    foreach($file_names as $files)
+	    {
+	          $zip->addFile($file_path.$files,$files);
+	        //echo $file_path.$files,$files."<br>";
+	    }
+	    $zip->close();
+	    //then send the headers to foce download the zip file
+	    header("Content-type: application/zip"); 
+	    header("Content-Disposition: attachment; filename=$archive_file_name"); 
+	    header("Pragma: no-cache"); 
+	    header("Expires: 0"); 
+	    readfile("$archive_file_name");
+	    exit;
+	}
     public function actionCancel()
 	{
 		//The token of the cancelled payment typically used to cancel the payment within your application

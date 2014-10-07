@@ -13,26 +13,7 @@ $this->breadcrumbs=array(
 	</p>
 </div>
 <div style="margin-top:75px;">
-	<input type='button' name='download' id='download' value='Download Album' />
+	<form name='download' name='download' method='POST' action='<?php echo Yii::app()->request->baseUrl; ?>/paypal/download' >
+		<input type='submit' name='download' id='download' value='Download Album' />
+	</form>
 </div>
-<?php
-	function download_albums(){
-             $file_name = PaypalController::_download( Yii::app()->session['song_id'] );
-	// push to download the zip
-	header('Content-type: application/zip');
-	header('Content-Disposition: attachment; filename="'.$file_name.'"');
-	readfile($file_name);
-	// remove zip file is exists in temp path
-	unlink($file_name);
-
-	}
-
-?>
-
-<script type='text/javascript'>
-	$(document).ready(function(){
-		$("#download").on('click', function(){
-			<?php  //download_albums(); ?> 
-		});
-	});
-</script>

@@ -43,10 +43,10 @@ return array(
 		),
 			'Paypal' => array(
 				    'class'=>'application.components.Paypal',
-				    /*'apiUsername' => 'sjvmv_api1.yahoo.co.in',
+/*				    'apiUsername' => 'sjvmv_api1.yahoo.co.in',
 				    'apiPassword' => '9R9K82M66Y6QEKUE',
-				    'apiSignature' => 'AAI2vtI8Y2GBeHHmNUWRIK5z.YDZApPCngdYQb.U8-vxm9OIeupu0nH0', */
-
+				    'apiSignature' => 'AAI2vtI8Y2GBeHHmNUWRIK5z.YDZApPCngdYQb.U8-vxm9OIeupu0nH0', 
+*/
 				    // Beta Haiinteractive Credentials
 				    'apiUsername' => 'vijayaragavan.sivagurusamy_api1.gmail.com',
 				    'apiPassword' => 'EBNVW39WQSFCBG94',
