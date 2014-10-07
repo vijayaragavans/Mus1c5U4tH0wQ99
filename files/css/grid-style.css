@@ -98,6 +98,7 @@ a:hover, a:active{
 	width:100%;
 	background:#ccc;
 	display:block;
+	max-height: 300px;
 }
 
 @media screen and (max-width : 1240px) {
