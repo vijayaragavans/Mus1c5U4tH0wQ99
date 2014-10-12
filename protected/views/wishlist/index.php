@@ -4,7 +4,7 @@
 .col{
 	margin: 0px !important;
 }
-#button-cart:hover{
+.button-cart:hover{
   background: #013A79;
   background-image: -webkit-linear-gradient(top, #013A79, #013A79);
   background-image: -moz-linear-gradient(top, #013A79, #013A79);
@@ -13,7 +13,7 @@
   background-image: linear-gradient(to bottom, #013A79, #013A79);
   text-decoration: none;
 }
-#button-cart
+.button-cart
 {
 	width:60%;
 	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
@@ -41,7 +41,7 @@
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffee66;
 }
-#button-cart:hover{
+.button-cart:hover{
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
 	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
 	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
@@ -287,12 +287,7 @@ color: white;
 		                        <span class="post-author ipost-author"><?php echo $history['song_price']; ?></span> | 
 		                        <span class="post-date"> <?php echo date('M d Y', strtotime( $history['cong_created_on']) ); ?></span>
 		                        <a href='#'  onclick="removeWishlist( <?php echo $history['wishlist_id']; ?> )">X</a></div>
-			<form name='buy-form' id='buy-form' method="POST" action='<?php echo Yii::app()->request->baseUrl; ?>/paypal/buy'>	
-				<a id="button-cart" class="button-prod"><i class="fa fa-shopping-cart"></i>Buy</a>
-				<input type='hidden' name='amt' id='amt' readonly="readonly" value="<?php echo $history['song_price']; ?>" />
-				<input type='hidden' name='song_id' id='song_id' readonly="readonly" value="<?php echo $history['song_id']; ?>" />
-				<input type='hidden' name='description' id='description' readonly="readonly" value="<?php echo $history['song_title']; ?>" />
-			</form>
+				<a href='#' class="button-cart button-prod" id="<?php echo $history['song_id']; ?>"><i class="fa fa-shopping-cart"></i>Buy</a>
 		                    </div>
 		</div>
 
@@ -310,8 +305,10 @@ color: white;
 
 <script type='text/javascript'>
 	$(document).ready(function(){
-			$("#button-cart").on('click', function(){
-				$('form#buy-form').submit();
+			$(".button-cart").on('click', function(){
+				var album_id = $(this).attr('id');
+				window.location.href = '<?php echo Yii::app()->request->baseUrl; ?>/paypal/buy?q='+album_id;
+				//$('form.buy-form').submit();
 			});
 	});
 </script>

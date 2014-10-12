@@ -2,15 +2,16 @@
 
 class PaypalController extends Controller
 {
-	public function actionBuy(){
-               
+	public function actionBuy(  ){
+		$song_id = $_GET['q'];
+		$song_info = TblSongs::model()->findAllByAttributes(array('song_id' => $song_id ));
 		// set 
 		//Yii::app()->request->getPost('uemail');
-		$paymentInfo['Order']['theTotal'] = Yii::app()->request->getPost('amt');
-		$paymentInfo['Order']['description'] = Yii::app()->request->getPost('description');
+		$paymentInfo['Order']['theTotal'] = $song_info[0]->song_price;
+		$paymentInfo['Order']['description'] = $song_info[0]->song_description;
 		$paymentInfo['Order']['quantity'] = '1';
 		Yii::app()->session['theTotal']  = $paymentInfo['Order']['theTotal'];
-		Yii::app()->session['song_id'] = Yii::app()->request->getPost('song_id');
+		Yii::app()->session['song_id'] = $song_id;
 		// call paypal 
 		$result = Yii::app()->Paypal->SetExpressCheckout($paymentInfo); 
 		//Detect Errors 
