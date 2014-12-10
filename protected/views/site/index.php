@@ -83,139 +83,32 @@
 			</ul>
 		</div>
                     <div class="section" id="photos" style="display: block;">
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/5.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/6.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/7.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/8.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/9.jpg" width="140" height="170" />
-									</div>
-
-									<!-- Second Row in New Release	-->
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/10.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/11.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/12.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/1.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/3.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/2.jpg" width="140" height="170" />
-									</div>
+                    
+	             <?php foreach( $newsongs as $newsong ){ ?>
+			<div class='col-xs-6 col-sm-4 col-md-3 col-lg-2' style="margin-top:20px;">
+				<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/images/songs_thumb/<?php echo $newsong['song_img_url']; ?>" width="140" height="170" />
+			</div>
+		<?php  } ?>
                     </div>
                     <div class="section" id="videos">
-
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/4.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/13.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/5.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/2.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/1.jpg" width="140" height="170" />
-									</div>
-
-
-
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/7.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/8.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/6.jpg" width="140" height="170" />
-									</div>
+	             <?php foreach( $popularsongs as $popularsong ){ ?>
+			<div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+				<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/images/songs_thumb/<?php echo $popularsong['song_img_url']; ?>" width="140" height="170" />
+			</div>
+		<?php } ?>
                     </div>
 
-					<div class="section" id="favourite">
-
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/4.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/13.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/5.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/2.jpg" width="140" height="170" />
-									</div>
-						  <div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
-						 <img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/discography/1.jpg" width="140" height="170" />
-									</div>
-                    </div>                    
+		<div class="section" id="favourite">
+	                    <?php foreach( $favsongs as $favsong ){ ?>
+				<div class='col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+					<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/images/songs_thumb/<?php echo $favsong['song_img_url']; ?>" width="140" height="170" />
+				</div>
+	                    <?php } ?>
+                    			</div>                    
 
 				</div>                
 			</div>
             
-		<!-- BIOGRAPHY -->
-		<div class="section group container" id="bio">
-			<div class="col span_1_of_8 section-title">
-				<h1>biography</h1>
-			</div>    
-			<div class="col span_6_of_8 bio-columns">
-				<h2>Music eStore are part of the vanguard of "new country" artists who helped redefine the genre.</h2>
-				<hr>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod pharetra enim at ornare. Sed vitae neque velit. Vivamus sed magna orci, euismod bibendum orci. Etiam pellentesque, diam in condimentum tristique, ante hendrerit at diam. Vestibulum id felis turpis risus in ipsum ullamcorper tincidunt id eu risus. Sed eget vulputate mauris. Ut non tellus ac dui fermentum diam in condimentum tristique suscipit eget eu erat.</p><h3>Sed bibendum egestas accumsan</h3><img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/bio-pic.jpg"/><p>Curabitur fermentum ullamcorper quam, ut rhoncus sapien ultrices non. Proin accumsan commodo turpis, vitae convallis ipsum varius sed. Vivamus pretium, urna quis porta gravida, turpis risus elementum leo, ut sollicitudin felis metus non elit. Duis turpis risus sit amet eros lacus, molestie aliquet odio. In congue ultricies sem, fermentum fringilla velit sodales condimentum. </p><p>Sed ac iaculis metus. Sed bibendum egestas accumsan. Sed eget justo turpis risus mauris. In eu massa nec leo pharetra aliquam et ac magna. Nulla vehicula, lectus non tempus mattis, lacus erat sagittis tellus, auctor facilisis tellus dolor sit amet quam. Etiam pellentesque, diam in condimentum tristique, ante lectus fringilla metus, et cursus velit nisl ut quam.</p>
-			</div>    
-		</div>
-                
-			<!-- NEWS -->
-			<div class="section group container" id="news">				
-                <div class="col span_1_of_8 section-title">
-					<h1>news</h1>
-				</div>                    
-				<div class="col span_2_of_8">
-					<h3>April 24, 2013</h3>
-					<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/news-thumbnail1.jpg" />
-					<h2><a href="news-open.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h2>
-                    <p>Phasellus posuere diam sed leo laoreet et adipiscing ligula placerat. Pellentesque ullamcorper sem arcu commodo tempor pellentesque.</p>
-                    <h4><a href="news-open.html">read more</a></h4>
-				</div>                    
-				<div class="col span_2_of_8">
-					<h3>April 24, 2013</h3>
-					<img alt=" " src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/news-thumbnail2.jpg" />
-					<h2><a href="news-open.html">Nullam semper luctus lorem, dignissim accumsan neque pharetra</a></h2>
-                    <p>Integer gravida ipsum et ligula adipiscing tristique. Nullam aliquet, metus ac elementum varius, tortor justo rhoncus nisi, metus. </p>
-                    <h4><a href="news-open.html">read more</a></h4>
-				</div>                    
-				<div class="col span_2_of_8">
-					<h3>More Headlines</h3>
-					<ul>
-				                        <li><a href="news-open.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
-				                        <li><a href="news-open.html">Nullam ut nibh ante, non porta magna</a></li>
-				                        <li><a href="news-open.html">Commodo in risus convallis venenatis</a></li>
-				                        <li><a href="news-open.html">Nunc id nulla non enim accumsan rutrum ac vel nulla</a></li>
-				                        <li><a href="news-open.html">Fusce facilisis vehicula magna, dui ullamcorper </a></li>
-					</ul>
-				</div>                
-			</div>    
-
-
 			<!-- UPDATES/CONNECT Stripe -->
 			<div class="section group" id="bottom-stripe">				
                 <!-- Newsletter -->
@@ -228,6 +121,7 @@
 					</form>
 				</div>                    
 				<!-- Social Media Buttons -->
+			
 				<div class="col span_4_of_8" id="social">
 					<h1>Connect</h1>
 					<h2>Lorem ipsum dolor amet, consectetur</h2>

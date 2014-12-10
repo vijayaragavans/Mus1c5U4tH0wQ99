@@ -61,7 +61,7 @@ a:hover, a:active{
 }
 .grid{
 	width:188px;
-	min-height:100px;
+	height:265px;
 	padding: 15px;
 	background:#fff;
 	margin:8px;
@@ -98,7 +98,7 @@ a:hover, a:active{
 	width:100%;
 	background:#ccc;
 	display:block;
-	max-height: 300px;
+	max-height: 120px;
 }
 
 @media screen and (max-width : 1240px) {
