@@ -138,7 +138,7 @@ class TblSongs extends CActiveRecord
 	        	return($output);		
 	}
 
-	function Browsebyfav( $category_id = '' )
+	function Browsebyfav( $category_id = '', $perpage, $starts  )
 	{
 		if( is_numeric($category_id) ){
 		$rows = Yii::app()->db->createCommand()
@@ -151,7 +151,7 @@ class TblSongs extends CActiveRecord
 		            ->where('apc.album_page_category_id=:album_page_category_id', array(':album_page_category_id'=> $category_id ) ) 
 		            ->group('ts.song_id')
 		            ->order('total_fav DESC')
-		            ->limit(9)
+		            ->limit($perpage, $starts)
 		            ->queryAll();
 		}else{
 		$rows = Yii::app()->db->createCommand()
@@ -163,7 +163,7 @@ class TblSongs extends CActiveRecord
             		            ->leftjoin('wishlist w', 'w.album_id = ts.song_id')
 		            ->group('ts.song_id')
 		            ->order('total_fav DESC')
-		            ->limit(9)
+		            ->limit($perpage, $starts)
 		            ->queryAll();
 
 		}
@@ -172,7 +172,7 @@ class TblSongs extends CActiveRecord
 	}
 
 
-	function Browsebynew( $category_id = '' ){
+	function Browsebynew( $category_id = '', $perpage, $starts ){
 		if( is_numeric( $category_id ) ){
 		$rows = Yii::app()->db->createCommand()
 		            ->select('apc.album_page_category as page_category, tac.album_category_name as category, ts.song_id, ts.song_url_title, ts.song_title, ts.song_img_url, ts.song_price, ts.song_description, ts.song_tags')
@@ -183,7 +183,7 @@ class TblSongs extends CActiveRecord
 		            ->where('apc.album_page_category_id=:album_page_category_id', array(':album_page_category_id'=>$category_id))
 		            ->group('ts.song_id')
 		            ->order('ts.cong_created_on DESC')
-		            ->limit(9)
+		            ->limit($perpage, $starts)
 		            ->queryAll();
 		}else{
 		$rows = Yii::app()->db->createCommand()
@@ -194,14 +194,14 @@ class TblSongs extends CActiveRecord
 		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
 		            ->group('ts.song_id')
 		            ->order('ts.cong_created_on DESC')
-		            ->limit(9)
+		            ->limit($perpage, $starts)
 		            ->queryAll();
 		        }
 		           return $rows;	
 
 	}
 
-	function Browsebypopular( $category_id = ''){
+	function Browsebypopular( $category_id = '', $perpage, $starts ){
 		if( is_numeric( $category_id ) ){
 		$rows = Yii::app()->db->createCommand()
 		            ->select('apc.album_page_category as page_category, tac.album_category_name as category, ts.song_id, ts.song_url_title, ts.song_title, ts.song_img_url, ts.song_price, ts.song_description, ts.song_tags, count(tvd.track_id) as total_popular')
@@ -213,7 +213,7 @@ class TblSongs extends CActiveRecord
 		            ->where('apc.album_page_category_id=:album_page_category_id', array(':album_page_category_id'=>$category_id))
 		            ->group('ts.song_id')
 		            ->order('total_popular DESC')
-		            ->limit(9)
+		            ->limit($perpage, $starts)
 		            ->queryAll();
 		 }else{
 		$rows = Yii::app()->db->createCommand()
@@ -225,7 +225,7 @@ class TblSongs extends CActiveRecord
 		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
 		            ->group('ts.song_id')
 		            ->order('total_popular DESC')
-		            ->limit(9)
+		            ->limit($perpage, $starts)
 		            ->queryAll();
 
 		 }

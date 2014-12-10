@@ -31,11 +31,16 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-	              $criteria = new CDbCriteria;
-	              $criteria->order = "song_id desc";
-	              $criteria->limit = 12;
+	        $criteria = new CDbCriteria;
+	        $criteria->order = "song_id desc";
+	        $criteria->limit = 12;
 		$songs = TblSongs::model()->findAll( $criteria ); 
-		$this->render('index',array('songs'=>$songs));
+		$model = new TblSongs;
+		$favsongs = $model->Browsebyfav( '', 9, 1 );
+		$newsongs = $model->Browsebynew( '', 9, 1 );
+		$popularsongs = $model->Browsebypopular( '', 9, 1 );
+
+		$this->render('index',array('songs'=>$songs, 'favsongs' => $favsongs, 'newsongs' => $newsongs, 'popularsongs' => $popularsongs ));
 	}
 
 	/**

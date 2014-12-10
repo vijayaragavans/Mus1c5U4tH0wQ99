@@ -44,8 +44,9 @@ $this->breadcrumbs=array(
 		<?php echo $form->textField($model,'subscribe_name', array('placeholder' => 'subscribe_name', 'id' => 'ipt-login')); ?>
 		<?php echo $form->labelEx($model,'subscribe_email', array('class' => 'ie-placeholders', 'placeholder' => 'subscribe_email', 'id' => 'ipt-subscribe_email' )); ?>
 		<?php echo $form->textField($model,'subscribe_email', array('placeholder' => 'subscribe_email', 'id' => 'ipt-login')); ?>
-	        	<div class="login_submit"><a class='forgotten-subscribe_email-link' href='#'>&nbsp;</a>
+	        	<div class="login_submit"><a class='forgotten-subscribe_email-link' href='#'>&nbsp;</a><br />
 		<?php echo CHtml::submitButton('Subscribe', array('class' => 'btn-orange')).'</div>'; ?>
+		<br />
 
 <?php $this->endWidget(); ?>
 
