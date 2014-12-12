@@ -10,7 +10,6 @@ class SiteController extends Controller
 	public function actions()
 	{
 		ob_start();
-                  date_default_timezone_set("Asia/Kolkata");
 		return array(
 			// captcha action renders the CAPTCHA image displayed on the contact page
 			'captcha'=>array(
@@ -33,6 +32,7 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
+                date_default_timezone_set("Asia/Kolkata");
 	        $criteria = new CDbCriteria;
 	        $criteria->order = "song_id desc";
 	        $criteria->limit = 12;
