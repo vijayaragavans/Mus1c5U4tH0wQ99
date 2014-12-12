@@ -6,9 +6,11 @@ class SiteController extends Controller
 	 * Declares class-based actions.
 	 */
 	private $current_date;
+        
 	public function actions()
 	{
 		ob_start();
+                  date_default_timezone_set("Asia/Kolkata");
 		return array(
 			// captcha action renders the CAPTCHA image displayed on the contact page
 			'captcha'=>array(
