@@ -111,6 +111,8 @@ class SiteController extends Controller
 	}
 
 	public function actionSignup(){
+                date_default_timezone_set("Asia/Kolkata");
+                
 		$this->current_date =  date('Y-m-d H:i:s');
 		( Yii::app()->session['user_id'] > 0 ) ? $this->redirect( Yii::app()->baseUrl .'/index.php/site/index') : '';
 		$model=new Users;

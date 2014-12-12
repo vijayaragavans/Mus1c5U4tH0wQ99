@@ -8,9 +8,38 @@ class BrowseController extends Controller
 	{
 		$url_input = explode( '/', Yii::app()->request->url);
 		$category = end( $url_input );
-		$this->render('index', array('category_id' => $category ) );
+                
+		$model = new TblSongs;
+
+                $count_songs = $model->GetCountOfFav( );  
+                
+		$this->render('index', array('category_id' => $category, 'count_songs' => $count_songs ) );
                 
 	}
+        
+        public function actionbrowsealbums()
+        {
+                $perPage = 5;
+		$current_page = str_replace(array('Prev', 'Next'), '',   Yii::app()->request->getParam('current_page') );
+                
+	            if(empty($current_page) || $current_page == 1){
+	                 $start_no = 0;
+	            }else{
+	                $start_no = ($current_page-1) * $perPage;
+	            }
+
+                $url_input = explode( '/', Yii::app()->request->url);
+		//$album_url_title = $url_input[count($url_input) - 2];
+		//$category = end( $url_input );
+                $category  = Yii::app()->request->getParam('cat_id');
+                
+		$model = new TblSongs;
+		$details = $model->BrowseAll( $category, $perPage, $start_no );
+                
+		echo json_encode($details);
+		die;
+              
+        }
 
 	public function actionGetalbumsbyfav()
 	{
@@ -25,9 +54,12 @@ class BrowseController extends Controller
 
                 $url_input = explode( '/', Yii::app()->request->url);
 		//$album_url_title = $url_input[count($url_input) - 2];
-		$category = end( $url_input );
+		//$category = end( $url_input );
+                $category  = Yii::app()->request->getParam('cat_id');
+                
 		$model = new TblSongs;
 		$details = $model->Browsebyfav( $category, $perPage, $start_no );
+                
 		echo json_encode($details);
 		die;
 	}

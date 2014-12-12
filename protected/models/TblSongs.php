@@ -137,6 +137,39 @@ class TblSongs extends CActiveRecord
 	        	$output = TblSongs::model()->findAll( $criteria );
 	        	return($output);		
 	}
+        
+        
+        function BrowseAll( $category_id = '', $perpage, $starts ){
+              
+		if( is_numeric($category_id) ){
+		$rows = Yii::app()->db->createCommand()
+		            ->select('apc.album_page_category as page_category, tac.album_category_name as category, ts.song_id, ts.song_url_title, ts.song_title, ts.song_img_url, ts.song_price, ts.song_description, ts.song_tags, count(w.wishlist_id) as total_fav')
+		            ->from('tbl_songs ts')
+		            ->leftjoin('album_page_categories apc','apc.album_page_category_id = ts.song_album_page_category_id')
+		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
+		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
+		            ->where('apc.album_page_category_id=:album_page_category_id', array(':album_page_category_id'=> $category_id ) ) 
+		            ->group('ts.song_id')
+		            ->order('total_fav DESC')
+		            ->limit($perpage, $starts)
+		            ->queryAll();
+		}else{
+		$rows = Yii::app()->db->createCommand()
+		            ->select('apc.album_page_category as page_category, tac.album_category_name as category, ts.song_id, ts.song_url_title, ts.song_title, ts.song_img_url, ts.song_price, ts.song_description, ts.song_tags, count(w.wishlist_id) as total_fav')
+		            ->from('tbl_songs ts')
+		            ->leftjoin('album_page_categories apc','apc.album_page_category_id = ts.song_album_page_category_id')
+		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
+		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
+            		            ->leftjoin('wishlist w', 'w.album_id = ts.song_id')
+		            ->group('ts.song_id')
+		            ->order('total_fav DESC')
+		            ->limit($perpage, $starts)
+		            ->queryAll();
+
+		}
+
+		return $rows;	
+        }
 
 	function Browsebyfav( $category_id = '', $perpage, $starts  )
 	{
@@ -232,5 +265,17 @@ class TblSongs extends CActiveRecord
 		           return $rows;	
 
 	}
+        
+        function GetCountOfFav( )
+        {
+              
+		$rows = Yii::app()->db->createCommand()
+		            ->select('count(1) as total_fav')
+		            ->from('tbl_songs ts')
+		            ->queryAll();
+
+                return $rows[0]['total_fav'];
+       }
+       
 
 }
