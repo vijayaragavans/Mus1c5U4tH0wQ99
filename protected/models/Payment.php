@@ -151,4 +151,20 @@ class Payment extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	function Downloaded_Albums( $user_id )
+	{
+		$rows = Yii::app()->db->createCommand()
+		            ->select('apc.album_page_category as page_category, tac.album_category_name as category, tsg.song_id, tsg.song_url_title, tsg.song_title, tsg.song_img_url, tsg.song_price, tsg.song_description, tsg.song_tags, pay.paid_on')
+		            ->from('payment pay')
+		            ->leftjoin('tbl_songs tsg', 'tsg.song_id = pay.album_id')
+		            ->leftjoin('album_page_categories apc','apc.album_page_category_id = tsg.song_album_page_category_id')
+		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = tsg.song_id')
+		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = tsg.song_category')
+		            ->where('pay.paid_by=:paid_by', array(':paid_by'=>$user_id))
+		            ->group('tsg.song_id')
+		            ->queryAll();
+
+		return $rows;		
+	}
 }

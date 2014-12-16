@@ -10,28 +10,27 @@
                     <div class="typography">
                     <div id="container1">
 <?php
-	if(is_array($wishlist_history) && !empty($wishlist_history)){
-		foreach( $wishlist_history as $history )
+	if(is_array($downloaded_albums) && !empty($downloaded_albums)){
+		foreach( $downloaded_albums as $albums )
 		{ 
 
 			?>
 			<div class='grid'>
 				<div class='imgholder'>
-					<a href="<?php echo Yii::app()->request->baseUrl; ?>/albums/details/<?php echo $history['song_url_title']; ?>/<?php echo $history['song_id']; ?>" ?>
-					<img src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$history['song_img_url']; ?>"></a>
+					<a href="<?php echo Yii::app()->request->baseUrl; ?>/albums/details/<?php echo $albums['song_url_title']; ?>/<?php echo $albums['song_id']; ?>" ?>
+					<img src="<?php echo Yii::app()->params['song_url'].'songs_thumb/'.$albums['song_img_url']; ?>"></a>
 				</div>
 				<a href='#' class='song-title'>
-					<strong><?php echo $history['song_title']; ?></strong>
-					<div class='song-date'><?php echo date('M d Y', strtotime( $history['cong_created_on']) ); ?></div>
+					<strong><?php echo $albums['song_title']; ?></strong>
+					<div class='song-date'><?php echo date('M d Y', strtotime( $albums['paid_on']) ); ?></div>
 				</a>
-				<a href='#'  onclick="removeWishlist( <?php echo $history['wishlist_id']; ?> )">X</a>
-				<a href="#" id="<?php echo $history['song_id']; ?>" class="button-cart" ?>
-					<div class='btn-wrap'><div class='buy-btn' >  BUY NOW For $<?php echo $history['song_price']; ?></div></div>
+				<a href="#" id="<?php echo $albums['song_id']; ?>" class="button-cart" ?>
+					<div class='btn-wrap'><div class='buy-btn' > Download </div></div>
 				</a>
 			</div>       
 	<?php }
 	    }else{
-	    		echo ' No Items Available ';
+	    		echo ' No Items are Downloaded  ';
 	    	} ?>             
                     </div>
                     </div>
@@ -53,7 +52,7 @@
 	$(document).ready(function(){
 			$(".button-cart").on('click', function(){
 				var album_id = $(this).attr('id');
-				window.location.href = '<?php echo Yii::app()->request->baseUrl; ?>/paypal/buy?q='+album_id;
+				window.location.href = '<?php echo Yii::app()->request->baseUrl; ?>/paypal/download?q='+album_id;
 				//$('form.buy-form').submit();
 			});
 	});

@@ -151,6 +151,22 @@ class PaypalController extends Controller
 		$this->render('cancel');
 	}
 	
+	public function actionDownloadAlbum( )
+	{
+		$album_id  = Yii::app()->params['q'];
+    		//$album_id = Yii::app()->session['song_id'];
+		$error = "";
+		$datas = TblSongsUrl::model()->findAllByAttributes(array('song_id' => $album_id ));
+		$file_name = TblSongs::model()->findAllByAttributes(array('song_id' => $album_id ));
+		$zip_file_name = $file_name[0]->song_url_title.'.zip';
+		foreach($datas as $song ){
+			//echo $main_dir.'\songs\\'.$song->song_url;
+			$songs[ ] = $song->song_url;
+			//$zip->addFile('../../images/songs/'.$song->song_url); // Adding files into zip
+		}
+		$song_path = $_SERVER['DOCUMENT_ROOT'].'/musicestore/images/songs/';
+		$this->zipFilesAndDownload($songs,$zip_file_name,$song_path);
+	}
 	public function actionDirectPayment(){ 
 		$paymentInfo = array('Member'=> 
 			array( 
