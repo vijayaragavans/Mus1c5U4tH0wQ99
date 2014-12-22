@@ -41,24 +41,19 @@
 <script type='text/javascript'>
       $(document).ready(function(){
             var rts = $(location).attr('pathname');
-            ajaxRequest( 'browsealbums' );
+            ajaxRequest( 'GetCategorySongs' );
             $("#pag_id").val(1);
-            $("#sky-tab1").on('click', function(){
-                    ajaxRequest( 'browsealbums' );
-                    $("#pag_id").val(1);
-            });
-
           });
           
           
             $('.pagination').pagination({
-		  items: <?php echo $count_songs; ?>,
+		  items: <?php echo $count_of_order_music; ?>,
 		  itemsOnPage: 5,
 		  cssStyle: 'light-theme',
 		  onPageClick: function(){
                        var page_for = $('#pag_id').val();
                        if( page_for == 1){
-                             ajaxRequest( 'browsealbums' );
+                             ajaxRequest( 'GetCategorySongs' );
                        }
                  }
             });
@@ -70,8 +65,8 @@
                        var cat_id = $("#category_id").val();
                      $.ajax({
                           type: "POST",
-		          data: 'current_page='+current_page+'&cat_id='+cat_id,
-                          url: dir_url+"/browse/"+call_func+"/"+cat_id,
+		data: 'current_page='+current_page+'&cat_id='+cat_id,
+                          url: dir_url+"/albums/"+call_func+"/"+cat_id,
                           async: false,
                           dataType: 'JSON',
                           success: function(sresponse) {

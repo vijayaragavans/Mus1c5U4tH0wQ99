@@ -141,16 +141,15 @@ class TblSongs extends CActiveRecord
         
         function BrowseAll( $category_id = '', $perpage, $starts ){
               
-		if( is_numeric($category_id) ){
+		if( $category_id > 0 ){
 		$rows = Yii::app()->db->createCommand()
-		            ->select('apc.album_page_category as page_category, tac.album_category_name as category, ts.song_id, ts.song_url_title, ts.song_title, ts.song_img_url, ts.song_price, ts.song_description, ts.song_tags, count(w.wishlist_id) as total_fav')
+		            ->select('apc.album_page_category as page_category, tac.album_category_name as category, ts.song_id, ts.song_url_title, ts.song_title, ts.song_img_url, ts.song_price, ts.song_description, ts.song_tags')
 		            ->from('tbl_songs ts')
 		            ->leftjoin('album_page_categories apc','apc.album_page_category_id = ts.song_album_page_category_id')
 		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
 		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
-		            ->where('apc.album_page_category_id=:album_page_category_id', array(':album_page_category_id'=> $category_id ) ) 
+		            ->where('apc.album_page_category_id=:album_page_category_id AND ts.is_lauched=:is_lauched', array(':album_page_category_id'=> $category_id, ':is_lauched'=> '1' ) ) 
 		            ->group('ts.song_id')
-		            ->order('total_fav DESC')
 		            ->limit($perpage, $starts)
 		            ->queryAll();
 		}else{
@@ -161,6 +160,7 @@ class TblSongs extends CActiveRecord
 		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
 		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
             		            ->leftjoin('wishlist w', 'w.album_id = ts.song_id')
+		            ->where('ts.is_lauched=:is_lauched', array(':is_lauched'=> '1' ) ) 
 		            ->group('ts.song_id')
 		            ->order('total_fav DESC')
 		            ->limit($perpage, $starts)
@@ -181,7 +181,7 @@ class TblSongs extends CActiveRecord
 		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
 		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
             		            ->leftjoin('wishlist w', 'w.album_id = ts.song_id')
-		            ->where('apc.album_page_category_id=:album_page_category_id', array(':album_page_category_id'=> $category_id ) ) 
+		            ->where('apc.album_page_category_id=:album_page_category_id AND ts.is_lauched=:is_lauched', array(':album_page_category_id'=> $category_id, ':is_lauched'=> '1' ) ) 
 		            ->group('ts.song_id')
 		            ->order('total_fav DESC')
 		            ->limit($perpage, $starts)
@@ -194,6 +194,7 @@ class TblSongs extends CActiveRecord
 		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
 		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
             		            ->leftjoin('wishlist w', 'w.album_id = ts.song_id')
+		            ->where('ts.is_lauched=:is_lauched', array(':is_lauched'=> '1' ) ) 
 		            ->group('ts.song_id')
 		            ->order('total_fav DESC')
 		            ->limit($perpage, $starts)
@@ -213,7 +214,7 @@ class TblSongs extends CActiveRecord
 		            ->leftjoin('album_page_categories apc','apc.album_page_category_id = ts.song_album_page_category_id')
 		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
 		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
-		            ->where('apc.album_page_category_id=:album_page_category_id', array(':album_page_category_id'=>$category_id))
+		            ->where('apc.album_page_category_id=:album_page_category_id AND ts.is_lauched=:is_lauched', array(':album_page_category_id'=> $category_id, ':is_lauched'=> '1' ) ) 
 		            ->group('ts.song_id')
 		            ->order('ts.cong_created_on DESC')
 		            ->limit($perpage, $starts)
@@ -225,6 +226,7 @@ class TblSongs extends CActiveRecord
 		            ->leftjoin('album_page_categories apc','apc.album_page_category_id = ts.song_album_page_category_id')
 		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
 		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
+		            ->where('ts.is_lauched=:is_lauched', array(':is_lauched'=> '1' ) ) 
 		            ->group('ts.song_id')
 		            ->order('ts.cong_created_on DESC')
 		            ->limit($perpage, $starts)
@@ -243,7 +245,7 @@ class TblSongs extends CActiveRecord
 		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
 		            ->leftjoin('track_view_details tvd','tvd.album_id = ts.song_id')
 		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
-		            ->where('apc.album_page_category_id=:album_page_category_id', array(':album_page_category_id'=>$category_id))
+		            ->where('apc.album_page_category_id=:album_page_category_id AND ts.is_lauched=:is_lauched', array(':album_page_category_id'=> $category_id, ':is_lauched'=> '1' ) ) 
 		            ->group('ts.song_id')
 		            ->order('total_popular DESC')
 		            ->limit($perpage, $starts)
@@ -256,6 +258,7 @@ class TblSongs extends CActiveRecord
 		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
 		            ->leftjoin('track_view_details tvd','tvd.album_id = ts.song_id')
 		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
+		            ->where('ts.is_lauched=:is_lauched', array(':is_lauched'=> '1' ) ) 
 		            ->group('ts.song_id')
 		            ->order('total_popular DESC')
 		            ->limit($perpage, $starts)
@@ -266,16 +269,78 @@ class TblSongs extends CActiveRecord
 
 	}
         
-        function GetCountOfFav( )
+        function GetCountOfFav( $category_id )
         {
-              
+              if( $category_id > 0 )
+              {
 		$rows = Yii::app()->db->createCommand()
 		            ->select('count(1) as total_fav')
 		            ->from('tbl_songs ts')
+		            ->leftjoin('album_page_categories apc','apc.album_page_category_id = ts.song_album_page_category_id')
+		            ->where('apc.album_page_category_id=:album_page_category_id AND ts.is_lauched=:is_lauched', array(':album_page_category_id'=> $category_id, ':is_lauched'=> '1' ) ) 
 		            ->queryAll();
+	}else{
+		$rows = Yii::app()->db->createCommand()
+		            ->select('count(1) as total_fav')
+		            ->from('tbl_songs ts')
+		            ->where('ts.is_lauched=:is_lauched', array(':is_lauched'=> '1' ) ) 
+		            ->queryAll();
+	}
 
                 return $rows[0]['total_fav'];
        }
        
+       function Get_Pre_Order_Music( $limit )
+       {
+		$rows = Yii::app()->db->createCommand()
+		            ->select('apc.album_page_category as page_category, tac.album_category_name as category, ts.song_id, ts.song_url_title, ts.song_title, ts.song_img_url, ts.song_price, ts.song_description, ts.song_tags, count(tvd.track_id) as total_popular')
+		            ->from('tbl_songs ts')
+		            ->leftjoin('album_page_categories apc','apc.album_page_category_id = ts.song_album_page_category_id')
+		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
+		            ->leftjoin('track_view_details tvd','tvd.album_id = ts.song_id')
+		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
+		            	->where('ts.is_lauched=:is_lauched', array(':is_lauched'=> '0' ) ) 
+		            ->group('ts.song_id')
+		            ->order('total_popular DESC')
+		            ->limit($limit)
+		            ->queryAll();
+		return $rows;       	
+       }
+       function CountOfPreOrder( )
+       {
+		$rows = Yii::app()->db->createCommand()
+		            ->select('count(1) as total_pre_order_music')
+		            ->from('tbl_songs ts')
+		            ->where('ts.is_lauched=:is_lauched', array(':is_lauched'=> '0' ) ) 
+		            ->queryAll();
+		return $rows[0]['total_pre_order_music'];
+       }
 
+       function GetCategoryMusic( $perpage, $starts, $album_id )
+       {
+		$rows = Yii::app()->db->createCommand()
+		            ->select('apc.album_page_category as page_category, tac.album_category_name as category, ts.song_id, ts.song_url_title, ts.song_title, ts.song_img_url, ts.song_price, ts.song_description, ts.song_tags, count(tvd.track_id) as total_popular')
+		            ->from('tbl_songs ts')
+		            ->leftjoin('album_page_categories apc','apc.album_page_category_id = ts.song_album_page_category_id')
+		            ->leftjoin('tbl_songs_url tsu','tsu.song_id = ts.song_id')
+		            ->leftjoin('track_view_details tvd','tvd.album_id = ts.song_id')
+		            ->leftjoin('tbl_album_category tac', 'tac.album_category_id = ts.song_category')
+		            	->where('ts.song_category=:song_category', array(':song_category'=> $album_id ) ) 
+		            ->group('ts.song_id')
+		            ->order('total_popular DESC')
+		            ->limit($perpage, $starts)
+		            ->queryAll();
+		return $rows;       	
+
+       }
+
+      function CountOfCategoryMusic(  $category_id )
+       {
+		$rows = Yii::app()->db->createCommand()
+		            ->select('count(1) as total_order_music')
+		            ->from('tbl_songs ts')
+		            ->where('ts.song_category=:song_category', array(':song_category'=> $category_id ) ) 
+		            ->queryAll();
+		return $rows[0]['total_order_music'];
+       }
 }

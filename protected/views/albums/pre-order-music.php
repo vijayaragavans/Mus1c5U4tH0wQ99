@@ -19,7 +19,6 @@
               <!--/ tabs -->
 		<p class="pagination"></p>
                 <input type='hidden' id='pag_id' name='pag_id' value='' />
-                <input type='hidden' name='category_id' id='category_id' value="<?php echo $category_id; ?> " />
               
             </div>
         </div>
@@ -41,37 +40,26 @@
 <script type='text/javascript'>
       $(document).ready(function(){
             var rts = $(location).attr('pathname');
-            ajaxRequest( 'browsealbums' );
-            $("#pag_id").val(1);
-            $("#sky-tab1").on('click', function(){
-                    ajaxRequest( 'browsealbums' );
-                    $("#pag_id").val(1);
-            });
-
+            ajaxRequest( 'browsepreordermusic' );
           });
           
           
             $('.pagination').pagination({
-		  items: <?php echo $count_songs; ?>,
+		  items: <?php echo $count_of_pre_order_music; ?>,
 		  itemsOnPage: 5,
 		  cssStyle: 'light-theme',
 		  onPageClick: function(){
-                       var page_for = $('#pag_id').val();
-                       if( page_for == 1){
-                             ajaxRequest( 'browsealbums' );
-                       }
+                             	ajaxRequest( 'browsepreordermusic' );
                  }
             });
                     
             function ajaxRequest( call_func )
             {
                  var current_page = $('.current').text();
-                 
-                       var cat_id = $("#category_id").val();
                      $.ajax({
                           type: "POST",
-		          data: 'current_page='+current_page+'&cat_id='+cat_id,
-                          url: dir_url+"/browse/"+call_func+"/"+cat_id,
+		          data: 'current_page='+current_page,
+                          url: dir_url+"/albums/"+call_func+"/",
                           async: false,
                           dataType: 'JSON',
                           success: function(sresponse) {

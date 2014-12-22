@@ -68,102 +68,23 @@
             }
         });
     </script>
-
-
         <div class="section group wrapper">        
                       <div class='col span_2_of_8'>
 		<div class='categories-containers left_nav'>
                             <h3> Music</h3>
                             <div class="nav_opt"><p>
-                                      <select>
+                                      <select name='maincategory' id='maincategory'>
                                           <option selected="selected" disabled="disabled">All Categories</option>
                                           <?php foreach( $categories as $category ) {?>
                                           <option value="<?php echo $category->album_category_id; ?>"><?php echo $category->album_category_name; ?></option>
                                           <?php } ?>
                                       </select>
-                                      <p>Pre-Order New Music</p>
+                                      <p><a href="<?php echo Yii::app()->request->baseUrl; ?>/albums/PreOrderMusic" >Pre-Order New Music</a></p>
                                       <p><a href='<?php echo Yii::app()->request->baseUrl; ?>/subscribe?utm_source=direct'>Subscribe to Newsletter</a></p>
                                       <p><a href='<?php echo Yii::app()->request->baseUrl; ?>/browse/index'>Browse</a></p>
-                                      <p>Recommended for You</p>
                             </p>
                             </div>
                          </div>
-		 <div class="topsongs-containers left_nav">
-			<div class="top_songs">
-					<div class="see_all col span_8_of_8">
-						<span class="col span_6_of_8"><h3>Top Songs</h3></span>
-						<span class="col span_2_of_8" style="font-style: normal; float: right;cursor: pointer;">
-						<a href="albums.html">See all ›</a></span>
-					</div>
-					<ul>
-						<li class="col span_8_of_8">
-							<div class="col span_8_of_8">
-								<div class="col span_2_of_8">
-									<div class="top_song">
-										<img src="hscroll/img/6.jpg">
-									</div>
-								</div>
-								<div class="col span_6_of_8">
-									<a href="#">1.Samjhawan</a><br>
-									<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-								</div>
-							</div>
-						</li>
-						<li class="col span_8_of_8">
-							<div class="col span_8_of_8">
-								<div class="col span_2_of_8">
-									<div class="top_song">
-										<img src="hscroll/img/7.jpg">
-									</div>
-								</div>
-								<div class="col span_6_of_8">
-									<a href="#">1.Samjhawan</a><br>
-									<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-								</div>
-							</div>
-						</li>
-						<li class="col span_8_of_8">
-							<div class="col span_8_of_8">
-								<div class="col span_2_of_8">
-									<div class="top_song">
-										<img src="hscroll/img/8.jpg">
-									</div>
-								</div>
-								<div class="col span_6_of_8">
-									<a href="#">1.Samjhawan</a><br>
-									<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-								</div>
-							</div>
-						</li>																								
-						<li class="col span_8_of_8">
-							<div class="col span_8_of_8">
-								<div class="col span_2_of_8">
-									<div class="top_song">
-										<img src="hscroll/img/9.jpg">
-									</div>
-								</div>
-								<div class="col span_6_of_8">
-									<a href="#">1.Samjhawan</a><br>
-									<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-								</div>
-							</div>
-						</li>
-						<li class="col span_8_of_8">
-							<div class="col span_8_of_8">
-								<div class="col span_2_of_8">
-									<div class="top_song">
-										<img src="hscroll/img/4.png">
-									</div>
-								</div>
-								<div class="col span_6_of_8">
-									<a href="#">1.Samjhawan</a><br>
-									<small>Jawad Ahmed, Sharib-Toshi, Arijt..</small>
-								</div>
-							</div>
-						</li>														
-						</ul>
-					</div>
-			</div>
                       </div>
                       <div class="col span_6_of_8 rightt_nav" style=" margin:20px; border-radius:5px; float:right;">
 		<!-- You can move inline styles to css file or css block. -->
@@ -405,5 +326,11 @@
 				
 			});
 		})($);        
+		$(document).ready(function(){
+			$("#maincategory").on('change', function(){
+				var cat_id = $("#maincategory").val();
+					window.location.href = '/musicestore/albums/category/'+cat_id;
+			});
+		});
     </script>
 

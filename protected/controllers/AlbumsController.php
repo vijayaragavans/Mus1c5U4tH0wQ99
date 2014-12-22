@@ -21,7 +21,52 @@ class AlbumsController extends Controller
 
 		$this->render('index', $arg );		// HTML Rendering
 	}
+	public function actionPreOrderMusic(  )
+	{
+		$url_input = explode( '/', Yii::app()->request->url);
+		$album_code = end( $url_input );
+		$model = new TblSongs;
 
+	        		$order_music = $model->Get_Pre_Order_Music( $limit = 20  );		// Hot Compilations
+	        		$count_of_order_music = $model->CountOfPreOrder( );
+		$this->render('pre-order-music', array('pre_order_music' => $order_music, 'count_of_pre_order_music' => $count_of_order_music ) );		// HTML Rendering
+	}
+
+	public function actionCategory( )
+	{
+		$url_input = explode( '/', Yii::app()->request->url);
+		$model = new TblSongs;
+		$category_id = end( $url_input );
+	        	$count_of_order_music = $model->CountOfCategoryMusic( $category_id );
+		$this->render('category', array('category_id' => $category_id, 'count_of_order_music' => $count_of_order_music ) );		// HTML Rendering
+	}
+
+	public function actionGetCategorySongs( )
+	{
+                	$perPage = 5;
+		$current_page = str_replace(array('Prev', 'Next'), '',   Yii::app()->request->getParam('current_page') );
+	            if(empty($current_page) || $current_page == 1){
+	                 $start_no = 0;
+	            }else{
+	                $start_no = ($current_page-1) * $perPage;
+	            }
+		$url_input = explode( '/', Yii::app()->request->url);
+		$category_id = end( $url_input );
+		$model = new TblSongs;
+	        	$order_music = $model->GetCategoryMusic( $perPage, $start_no, $category_id );
+	        	echo json_encode( $order_music );
+	        	die;
+
+	} 
+
+	public function actionBrowsepreordermusic( )
+	{
+		$model = new TblSongs;
+        		$pre_order_music = $model->Get_Pre_Order_Music( $limit = 20  );		// Hot Compilations
+        		$count_of_pre_order_music = $model->CountOfPreOrder( );
+        		echo json_encode( $pre_order_music );
+
+	}
 	public function actionDetails( )
 	{
 		error_reporting(0);
@@ -87,6 +132,8 @@ class AlbumsController extends Controller
 		$this->pageKeyword = Yii::app()->params['page_Keyword'];
 		$this->pageDescription = $song_description;
 	}
+
+
 
 	// Uncomment the following methods and override them if needed
 	/*
